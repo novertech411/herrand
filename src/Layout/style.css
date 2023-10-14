@@ -81,6 +81,50 @@
 .nnon {
   display: none;
 }
+/* footer */
+.footer-container {
+  background: #1f2124;
+  margin-top: 60px;
+  color: #fff;
+  padding: 40px 80px;
+}
+.footer-logo-bx {
+  width: 30%;
+}
+.badge-app-cont img {
+  width: 30%;
+  height: 40px;
+  margin-right: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.txt-foot {
+  font-size: 15px;
+  cursor: pointer;
+  line-height: 20px;
+}
+.footer-main-container {
+  display: flex;
+  justify-content: space-between;
+}
+.the-all-footer-txt {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 60%;
+}
+.line-foot {
+  border: 1px solid #535353;
+  margin: 30px 0;
+}
+.pol-copy {
+  color: #686868;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
 @media only screen and (max-width: 1150px) {
   #ul {
     margin-right: 01rem;
@@ -168,8 +212,36 @@
   .nnil {
     display: none;
   }
+  .footer-container {
+    padding: 30px 40px;
+  }
+  .footer-logo-bx {
+    width: 30%;
+  }
+  .badge-app-cont img {
+    width: 40%;
+    height: 30px;
+  }
+  .txt-foot {
+    font-size: 13px;
+  }
+  .the-all-footer-txt {
+    width: 65%;
+  }
 }
 
+@media only screen and (max-width: 650px) {
+  .footer-main-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-logo-bx {
+    width: 50%;
+  }
+  .the-all-footer-txt {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 500px) {
   .nav-login {
     width: 90%;
@@ -177,6 +249,25 @@
   }
   .login-up {
     font-size: 15px;
+  }
+  .footer-logo-bx {
+    width: 80%;
+  }
+  .one-mg {
+    width: 40px;
+  }
+  .txt-foot {
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .footer-container {
+    padding: 10px;
+  }
+  .line-foot {
+    margin: 10px 0;
+  }
+  .pol-copy {
+    font-size: 11px;
   }
 }
 @media only screen and (max-width: 350px) {
@@ -191,5 +282,14 @@
   }
   .logo img {
     width: 50px;
+  }
+  .each-col-cont {
+    margin-bottom: 15px;
+  }
+  .txt-foot {
+    font-size: 13px;
+  }
+  .the-all-footer-txt {
+    flex-wrap: wrap;
   }
 }
