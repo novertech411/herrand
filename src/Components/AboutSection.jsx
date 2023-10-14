@@ -1,7 +1,7 @@
 import "../css/about.css";
 const AboutSection = () => {
   return (
-    <div className="about-section-container">
+    <div className="about-section-container" id="about-section">
       <div className="left-side-about">
         <img src="images/land5.jpg" alt="" />
       </div>

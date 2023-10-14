@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <div className="hero-section-container">
+    <div className="hero-section-container" id="hero-section">
       <div className="left-side-hero">
         <div className="head-line-box">
           <div className="main-hero-head">

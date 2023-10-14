@@ -12,7 +12,9 @@ const LandingPage = () => {
       <HeroSection />
       <AboutSection />
       <OurApp />
-      <OurFeature />
+      <div className="our-fer" id="our-feature-section">
+        <OurFeature />
+      </div>
       <HowItWorks />
       <div className="download-boxx">
         <DownComp />

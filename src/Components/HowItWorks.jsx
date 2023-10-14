@@ -3,7 +3,7 @@ import HowCompSecond from "./HowCompSecond";
 
 const HowItWorks = () => {
   return (
-    <div className="our-feature-container">
+    <div className="our-feature-container" id="how-it-works-section">
       <div className="our-feature-head">
         <div className="head-tit">How it Works</div>
         <div className="rec-head"></div>

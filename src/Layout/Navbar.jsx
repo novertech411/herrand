@@ -1,8 +1,9 @@
 import { HiX } from "react-icons/hi";
 import { FaBars } from "react-icons/fa";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./style.css";
 import { useState } from "react";
+import { Link as ScrollLink } from "react-scroll";
 
 const data = [
   {
@@ -35,6 +36,7 @@ const Navbar = () => {
   const handleToggleItem = () => {
     setToggleIcon(false);
   };
+  const scrollOffset = -90;
   return (
     <div className="header">
       <nav className="navbar">
@@ -49,15 +51,56 @@ const Navbar = () => {
         <ul id="ul" className={toggleIcon ? "active" : ""}>
           {data.map((item, key) => (
             <li key={key}>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? "active-link" : "navbar_links"
-                }
-                to={item.to}
-                onClick={handleToggleItem}
-              >
-                {item.label}
-              </NavLink>
+              {item.label === "Home" ? (
+                <ScrollLink
+                  to="hero-section"
+                  smooth={true}
+                  duration={500}
+                  onClick={handleToggleItem}
+                  offset={scrollOffset}
+                >
+                  {item.label}
+                </ScrollLink>
+              ) : item.label === "About Us" ? (
+                <ScrollLink
+                  to="about-section"
+                  smooth={true}
+                  duration={500}
+                  onClick={handleToggleItem}
+                  offset={scrollOffset}
+                >
+                  {item.label}
+                </ScrollLink>
+              ) : item.label === "Our Features" ? (
+                <ScrollLink
+                  to="our-feature-section"
+                  smooth={true}
+                  duration={500}
+                  onClick={handleToggleItem}
+                  offset={scrollOffset}
+                >
+                  {item.label}
+                </ScrollLink>
+              ) : item.label === "How it works" ? (
+                <ScrollLink
+                  to="how-it-works-section"
+                  smooth={true}
+                  duration={500}
+                  onClick={handleToggleItem}
+                  offset={scrollOffset}
+                >
+                  {item.label}
+                </ScrollLink>
+              ) : (
+                <div
+                  className="navbar_links"
+                  to={item.to}
+                  onClick={handleToggleItem}
+                  offset={scrollOffset}
+                >
+                  {item.label}
+                </div>
+              )}
             </li>
           ))}
           <div className="nav-login nnon">
