@@ -1,0 +1,282 @@
+.about-section-container {
+  display: flex;
+  align-items: center;
+  padding: 50px 90px;
+  color: #383838;
+}
+.advice-txt {
+  color: #0066f5;
+  font-size: 14px;
+}
+.abt-h1 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+.abt-body {
+  font-size: 14px;
+}
+.button-cont {
+  margin: 20px 0;
+}
+.down-btn {
+  border-radius: 35px;
+  background: #0066f5;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  height: 35px;
+  border: none;
+  width: 150px;
+  cursor: pointer;
+}
+.left-side-about {
+  width: 50%;
+}
+.left-side-about img {
+  width: 70%;
+  border-radius: 20px;
+  height: 400px;
+  object-fit: cover;
+}
+.right-side-about {
+  width: 50%;
+}
+
+/* our App */
+.our-app-ms img {
+  width: 60%;
+  height: 600px;
+}
+.our-app-mss {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 120%;
+}
+.our-app-md img {
+  width: 80%;
+  height: 600px;
+}
+.indd img {
+  height: 60px;
+}
+.our-app-container {
+  background: #090712dc;
+  color: #fff;
+  width: 100%;
+  overflow-x: hidden;
+}
+.app-bod {
+  color: grey;
+}
+.our-app-left {
+  width: 35%;
+}
+.down-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.down-left-bx {
+  width: 50%;
+  margin-right: 80px;
+}
+.down-right-container {
+  width: 50%;
+}
+.down-right-container img {
+  width: 100%;
+}
+.img-badg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.img-badg img {
+  width: 50%;
+  height: 80px;
+  margin-top: 50px;
+}
+.reddd {
+  color: #fff;
+}
+@media only screen and (max-width: 1200px) {
+  .our-app-md img {
+    width: 90%;
+    height: 400px;
+  }
+  .our-app-ms img {
+    width: 90%;
+    height: 500px;
+  }
+  .our-app-left {
+    width: 35%;
+  }
+  .app-right-text {
+    width: 50%;
+    margin-left: 30px;
+  }
+  .reddd {
+    font-size: 25px;
+  }
+  .img-badg img {
+    height: 60px;
+  }
+}
+@media only screen and (max-width: 940px) {
+  .about-section-container {
+    padding: 70px;
+  }
+  .left-side-about img {
+    width: 90%;
+    height: 400px;
+  }
+  .red-dw {
+    font-size: 20px;
+  }
+  .img-badg img {
+    height: 50px;
+  }
+}
+@media only screen and (max-width: 745px) {
+  .about-section-container {
+    padding: 25px;
+    flex-direction: column;
+    margin: 50px 0;
+    gap: 20px;
+  }
+  .down-container {
+    flex-direction: column-reverse;
+  }
+  .left-side-about {
+    width: 100%;
+  }
+  .left-side-about img {
+    width: 100%;
+  }
+  .right-side-about {
+    width: 100%;
+  }
+  .button-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .our-app-md {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .our-app-md img {
+    width: 80%;
+    height: 600px;
+  }
+  .indd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .indd img {
+    width: 30% !important;
+  }
+  .down-left-bx {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 60px;
+  }
+  .down-right-container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .about-section-container {
+    padding: 25px;
+    flex-direction: column;
+    margin: 50px 0;
+    gap: 20px;
+  }
+  .left-side-about {
+    width: 100%;
+  }
+  .left-side-about img {
+    width: 100%;
+  }
+  .right-side-about {
+    width: 100%;
+  }
+  .button-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .app-right-text {
+    width: 100%;
+  }
+  .indd img {
+    width: 30% !important;
+    height: 45px !important;
+  }
+  .app-right-text {
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .indd img {
+    width: 40% !important;
+    height: 40px !important;
+  }
+  .our-app-md img {
+    width: 100%;
+    height: 450px;
+  }
+  .reddd {
+    font-size: 20px;
+  }
+  .app-bod {
+    font-size: 11px;
+  }
+  .red-dw {
+    font-size: 16px;
+  }
+  .down-container {
+    padding: 0 10px;
+    gap: 10px;
+  }
+  .down-left-bx {
+    margin-left: 80px;
+  }
+  .img-badg {
+    justify-content: center;
+    gap: 10px;
+  }
+  .img-badg img {
+    width: 40%;
+    height: 40px;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .indd img {
+    width: 50% !important;
+    height: 35px !important;
+  }
+  .our-app-md img {
+    width: 100%;
+    height: 240px;
+  }
+  .reddd {
+    font-size: 17px;
+  }
+  .app-bod {
+    font-size: 10px;
+  }
+}
