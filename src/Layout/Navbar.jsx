@@ -95,6 +95,16 @@ const Navbar = () => {
                 >
                   {item.label}
                 </ScrollLink>
+              ) : item.label === "Contact Us" ? (
+                <ScrollLink
+                  to="footer"
+                  smooth={true}
+                  duration={500}
+                  onClick={handleToggleItem}
+                  offset={scrollOffset}
+                >
+                  {item.label}
+                </ScrollLink>
               ) : (
                 <div
                   className="navbar_links"
