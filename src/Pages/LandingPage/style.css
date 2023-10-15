@@ -18,6 +18,7 @@
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
+  color: #282828;
 }
 .main-hero-head span {
   color: #0066f5;
@@ -28,6 +29,7 @@
 .hero-simple {
   font-size: 15px;
   margin: 20px 0;
+  color: #686868;
 }
 .app-badge-box img {
   width: 90%;

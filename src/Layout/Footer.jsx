@@ -11,10 +11,10 @@ const Footer = () => {
         </div>
         <div className="the-all-footer-txt">
           <div className="each-col-cont">
-            <div className="txt-foot">About Us</div>
-            <div className="txt-foot">Our Features</div>
-            <div className="txt-foot">How it works</div>
-            <div className="txt-foot">Support</div>
+            <div className="txt-foot">Terms of Service</div>
+            <div className="txt-foot">Privacy Policy</div>
+            <div className="txt-foot">Guides for Agents</div>
+            <div className="txt-foot">Safety for Customers</div>
           </div>
           <div className="each-col-cont">
             <div className="txt-foot chg-wd">
@@ -32,8 +32,10 @@ const Footer = () => {
       <hr className="line-foot" />
       <div className="pol-copy">
         <div className="copp"></div>
-        <div className="copp">COPYRIGHT BY HERRAND </div>
-        <div className="copp">PRIVACY POLICY</div>
+        <div className="copp">
+          ©2023 Herrands Solutions Limited. All rights reserved
+        </div>
+        <div className="copp"></div>
       </div>
     </div>
   );

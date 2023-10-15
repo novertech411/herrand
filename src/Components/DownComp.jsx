@@ -1,6 +1,6 @@
 const DownComp = () => {
   return (
-    <div className="dow-main-box">
+    <div className="dow-main-box" id="download-section">
       <div className="download-comp-container">
         <div className="left-bx-con ">
           <div className="fonsx">

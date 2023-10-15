@@ -7,10 +7,6 @@ import { Link as ScrollLink } from "react-scroll";
 
 const data = [
   {
-    label: "Home",
-    to: "/",
-  },
-  {
     label: "About Us",
     to: "/jobslisting",
   },
@@ -41,9 +37,17 @@ const Navbar = () => {
     <div className="header">
       <nav className="navbar">
         <div className="navbar_container">
-          <Link to={"/"} className="logo">
-            <img src="images/alo.jpg" alt="" />
-          </Link>
+          <ScrollLink
+            to="hero-section"
+            smooth={true}
+            duration={500}
+            onClick={handleToggleItem}
+            offset={scrollOffset}
+          >
+            <Link className="logo">
+              <img src="images/alo.jpg" alt="" />
+            </Link>
+          </ScrollLink>
         </div>
         <div className="nav-icon" onClick={handleToggleIcon}>
           {toggleIcon ? <HiX size={30} /> : <FaBars size={30} />}
@@ -103,17 +107,29 @@ const Navbar = () => {
               )}
             </li>
           ))}
-          <div className="nav-login nnon">
-            <Link to={"/login"} className="login-up ">
-              Download the App
-            </Link>
-          </div>
+          <ScrollLink
+            to="download-section"
+            smooth={true}
+            duration={500}
+            onClick={handleToggleItem}
+            offset={scrollOffset}
+          >
+            <div className="nav-login nnon">
+              <Link className="login-up ">Download the App</Link>
+            </div>
+          </ScrollLink>
         </ul>
-        <div className="nav-login nnil">
-          <Link to={"/login"} className="login-up ">
-            Download the App
-          </Link>
-        </div>
+        <ScrollLink
+          to="download-section"
+          smooth={true}
+          duration={500}
+          onClick={handleToggleItem}
+          offset={scrollOffset}
+        >
+          <div className="nav-login nnil">
+            <Link className="login-up ">Download the App</Link>
+          </div>
+        </ScrollLink>
       </nav>
     </div>
   );

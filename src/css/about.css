@@ -11,9 +11,11 @@
 .abt-h1 {
   font-size: 30px;
   margin: 10px 0;
+  color: #383838;
 }
 .abt-body {
   font-size: 14px;
+  color: #686868;
 }
 .button-cont {
   margin: 20px 0;
@@ -69,7 +71,7 @@
   overflow-x: hidden;
 }
 .app-bod {
-  color: grey;
+  color: #aeaeae;
 }
 .our-app-left {
   width: 35%;
