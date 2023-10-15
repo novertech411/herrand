@@ -101,7 +101,7 @@
 .txt-foot {
   font-size: 15px;
   cursor: pointer;
-  line-height: 20px;
+  line-height: 25px;
 }
 .footer-main-container {
   display: flex;
@@ -258,7 +258,7 @@
   }
   .txt-foot {
     font-size: 11px;
-    line-height: 16px;
+    line-height: 20px;
   }
   .footer-container {
     padding: 10px;
