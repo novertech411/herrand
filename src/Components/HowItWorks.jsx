@@ -9,8 +9,8 @@ const HowItWorks = () => {
         <div className="rec-head"></div>
 
         <div className="inst-works">
-          Lorem ipsum dolor sit amet consectetur. Lacus porttitor sed arcu
-          integer non duis. Eget et odio non
+          Enjoy Your Newfound Freedom to Focus on what truly matters to You in 4
+          Easy Steps
         </div>
       </div>
 

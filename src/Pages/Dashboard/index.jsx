@@ -1,10 +1,16 @@
+import DashCard from "../../Components/DashboardComp/DashCard";
 import MainLayout from "../../Layout/MainLayout";
-
 const Dashboard = () => {
   return (
-    <div className="dashboard-container">
-      <MainLayout></MainLayout>
-    </div>
+    <>
+      <MainLayout>
+        <div className="dashboard-container">
+          <div className="dash-card-row">
+            <DashCard />
+          </div>
+        </div>
+      </MainLayout>
+    </>
   );
 };
 

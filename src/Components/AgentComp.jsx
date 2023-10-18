@@ -5,15 +5,21 @@ const AgentComp = () => {
         <img src="images/land6.png" alt="" />
       </div>
       <div className="right-side-about">
-        <div className="advice-txt">MAKE MONEY EASILY</div>
-        <h1 className="abt-h1 fnt">Become an agent</h1>
+        <div className="advice-txt">MAKE MONEY WITH YOUR FREE TIME</div>
+        <h1 className="abt-h1 fnt">Become an Agent</h1>
 
         <div className="abt-body">
-          Become an agent with herrand and make money easily in over 24hrs by
-          using our herrand agent and await customers that need your unique
-          skills and ability.to become an agent all you have to do is download
-          the app by clicking the button below, register, select the skill that
-          applies to you and get ready to start making money.
+          - Earn-as-You-Go: If you're looking to turn your available time into a
+          source of income, our platform is the ideal solution for you. Get paid
+          for running errands and helping others. <br />
+          <br />
+          - Flexibility: We value your freedom. Work on your schedule and choose
+          errands that suit you. Whether you want to run errands occasionally or
+          make it a regular gig, the choice is yours. <br />
+          <br />- Community: Join our thriving community of like-minded
+          individuals making a difference. By becoming an agent, you're not only
+          helping others; you're also contributing to a community that upholds
+          your values.
         </div>
         <div className="button-cont">
           <button className="down-btn">Download the App</button>

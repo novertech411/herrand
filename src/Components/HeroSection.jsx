@@ -4,11 +4,14 @@ const HeroSection = () => {
       <div className="left-side-hero">
         <div className="head-line-box">
           <div className="main-hero-head">
-            <span>Unlock More</span> Time With Herrand
+            <span>Empower Your Day</span> with Time-Sharing
           </div>
           <div className="hero-simple">
-            Lorem ipsum dolor sit amet consectetur. Scelerisque mauris sit proin
-            urna tristique sed purus. Sed tristique nunc vulputate magna orci.
+            In a fast-paced world where every second counts, the value of your
+            time should never be compromised. Herrands connects you with vetted
+            agents who share their time with you and handle your errands
+            on-demand, giving you the freedom to focus on what truly matters.
+            It’s easy, quick and safe!
           </div>
           <div className="app-badge-box">
             <img src="images/bad1.png" alt="" />

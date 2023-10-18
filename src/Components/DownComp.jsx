@@ -4,12 +4,14 @@ const DownComp = () => {
       <div className="download-comp-container">
         <div className="left-bx-con ">
           <div className="fonsx">
-            Download our Application to Experience its features
+            Embrace the future of work: more time, less stress, and limitless
+            possibilities.
           </div>
           <div className="instruct">
-            Lorem ipsum dolor sit amet consectetur. Pretium nunc vel volutpat
-            dolor vitae posuere ut. Tellus euismod faucibus gravida sit accumsan
-            facilisis eu aliquam tempus.
+            Ready to reclaim your time? Download our app now and start enjoying
+            the benefits of time-sharing. Your journey to a more effective way
+            of pursuing your dreams, passions, and goals with renewed vigour
+            begins here.
           </div>
           <div className="app-badge-dow">
             <img src="images/bad1.png" alt="" />
