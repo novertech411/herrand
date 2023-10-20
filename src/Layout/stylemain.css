@@ -22,7 +22,6 @@
 }
 .logo-side {
   margin: 10px 0 20px;
-  margin-left: 80px;
 }
 .logo-side img {
   width: 50px;
@@ -302,9 +301,6 @@ li {
   .navbar-container {
     padding: 10px 50px;
   }
-  .logo-side {
-    margin-left: 50px;
-  }
 }
 @media only screen and (max-height: 600px) {
   .side-item {
@@ -385,9 +381,7 @@ li {
   .bell {
     font-size: 27px;
   }
-  .logo-side {
-    margin-left: 40px;
-  }
+
   .logo-text {
     display: none;
   }
