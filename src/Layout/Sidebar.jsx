@@ -11,10 +11,10 @@ const Sidebar = ({ isCollapsed }) => {
     <div
       className={isCollapsed ? "sidebar-container  nil" : "sidebar-container"}
     >
-      <div className="logo-side">
-        <img src="images/logo.png" alt="" />
-      </div>
       <div className="sidebar-box">
+        <div className="logo-side">
+          <img src="images/logo.png" alt="" />
+        </div>
         <div className="sidebar-items">
           <NavLink
             to="/dashboard"
