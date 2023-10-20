@@ -1,12 +1,12 @@
 import { PiBellSimpleLight } from "react-icons/pi";
 import { BiChevronDown } from "react-icons/bi";
 
-const NavBarDas = () => {
+const NavBarDas = ({ pname }) => {
   return (
     <div className="navbar-container">
       <div className="logo-container">
         <img src="images/logo.png" alt="" className="logo-img" />
-        <div className="logo-text">Dashboard</div>
+        <div className="logo-text">{pname}</div>
       </div>
       <div className="searc-profile">
         <div className="notif-cont">

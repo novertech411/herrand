@@ -1,3 +1,201 @@
 .dashboard-container {
   margin-top: 70px;
+  padding: 20px;
+}
+.dash-card-container {
+  border-radius: 7px;
+  border: 1px solid #e8e8e8;
+  background: #fff;
+  justify-content: space-between;
+  width: 22%;
+  padding: 10px;
+}
+.card-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+.tot-cus-agt {
+  font-size: 30px;
+  font-weight: 600;
+}
+.tot-cus-agt span {
+  font-size: 14px;
+}
+.positive {
+  color: #42ce02;
+}
+
+#customer {
+  background: rgba(66, 173, 226, 0.12);
+  color: #42ade2;
+}
+#errand {
+  background: rgba(255, 198, 0, 0.12);
+  color: #ffc600;
+}
+#payout {
+  background: rgba(234, 19, 62, 0.12);
+  color: #ea133e;
+}
+.per-mont {
+  font-size: 14px;
+}
+.negative {
+  color: #ff0000;
+}
+.iconbx {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(86, 229, 20, 0.12);
+  justify-content: center;
+  font-size: 25px;
+  color: #42ce02;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.left-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.justify {
+  justify-content: space-between;
+}
+.image-conter {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+.image-conter img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+.tag-dd {
+  width: 25px;
+  height: 25px;
+  background: rgba(245, 134, 52, 1);
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  justify-content: center;
+  font-size: 15px;
+  position: absolute;
+  bottom: -15%;
+  left: 30%;
+}
+.name-cus {
+  font-size: 15px;
+  font-weight: 600;
+}
+.erand {
+  color: #898989;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.top-cus-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 10px;
+  margin: 10px 0;
+}
+.top-customer-cont {
+  height: 99%;
+  overflow-y: auto;
+  scrollbar-width: normal;
+}
+.top-customer-cont::-webkit-scrollbar {
+  width: 0.1vw;
+}
+@media only screen and (max-width: 1150px) {
+  .dashboard-container {
+    width: 120%;
+    margin-left: 24px;
+  }
+  .dash-card-container {
+    width: 30%;
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .dash-card-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .dash-card-container {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .dashboard-container {
+    margin-left: 12px;
+    padding: 20px 10px;
+  }
+  .iconbx {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+  .card-title {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .tot-cus-agt {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .tot-cus-agt span {
+    font-size: 10px;
+  }
+  .per-mont {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .iconbx {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+  .card-title {
+    font-size: 12px;
+  }
+  .tot-cus-agt {
+    font-size: 15px;
+  }
+  .tot-cus-agt span {
+    font-size: 9px;
+  }
+  .per-mont {
+    font-size: 9px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .iconbx {
+    width: 40px;
+    height: 40px;
+  }
+  .card-title {
+    font-size: 15px;
+  }
+  .tot-cus-agt {
+    font-size: 15px;
+  }
+  .dash-card-container {
+    height: 100px;
+    width: 100%;
+  }
+  .tot-cus-agt span {
+    font-size: 12px;
+  }
+  .per-mont {
+    font-size: 12px;
+  }
 }

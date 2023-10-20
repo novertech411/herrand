@@ -122,7 +122,9 @@
   margin-top: 20px;
   margin-right: 10px;
 }
-
+.arr-lf {
+  color: #000;
+}
 @media only screen and (max-width: 1150px) {
   .become-ag-cus-container {
     height: 40px;
