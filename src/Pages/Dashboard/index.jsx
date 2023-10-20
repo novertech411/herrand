@@ -17,7 +17,7 @@ const Dashboard = () => {
   };
   return (
     <>
-      <MainLayout>
+      <MainLayout pname={"Dashboard"}>
         <div className="dashboard-container">
           <div className="dash-card-row flex justify">
             <DashCard
