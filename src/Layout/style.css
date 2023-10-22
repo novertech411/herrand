@@ -1,7 +1,8 @@
 .header {
-  position: relative;
+  position: fixed;
   z-index: 100001;
   margin-bottom: 80px;
+  width: 100%;
 }
 .navbar {
   position: fixed;
@@ -227,6 +228,9 @@
   }
   .the-all-footer-txt {
     width: 65%;
+  }
+  .header {
+    padding: 0 20px;
   }
 }
 
