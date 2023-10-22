@@ -1,71 +1,70 @@
 import MainLayout from "../../Layout/MainLayout";
 import { BiSearch, BiDotsHorizontalRounded } from "react-icons/bi";
-import "./style.css";
 import Pagination from "react-bootstrap/Pagination";
 import { useState } from "react";
+import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AddPreferenceCos from "../../Modals/AddPreferenceCos";
 import ViewPreferenceCos from "../../Modals/ViewPreferenceCos";
 import SmallModal from "../../Modals/SmallModal";
-import DeleteModal from "../../Modals/DeleteModal";
 
-const Customer = () => {
+const Errand = () => {
   const data = [
     {
       firstName: "Sophia",
       lastName: "Lopez",
       phoneNumber: "09199990000",
       email: "sophialopez@example.com",
-      status: "Active",
+      status: "Completed",
     },
     {
       firstName: "Logan",
       lastName: "Gonzalez",
       phoneNumber: "09211112222",
       email: "logangonzalez@example.com",
-      status: "Suspended",
+      status: "Cancelled",
     },
     {
       firstName: "Kenneth",
       lastName: "Francis",
       phoneNumber: "090324554332",
       email: "Knfrancis@gmail.com",
-      status: "Active",
+      status: "In Progress",
     },
     {
       firstName: "Kenneth",
       lastName: "Francis",
       phoneNumber: "090324554332",
       email: "Knfrancis@gmail.com",
-      status: "Suspended",
+      status: "Cancelled",
     },
     {
       firstName: "John",
       lastName: "Doe",
       phoneNumber: "090123456789",
       email: "johndoe@example.com",
-      status: "Active",
+      status: "In Progress",
     },
     {
       firstName: "Jane",
       lastName: "Doe",
       phoneNumber: "090987654321",
       email: "janedoe@example.com",
-      status: "Suspended",
+      status: "Cancelled",
     },
     {
       firstName: "Sophia",
       lastName: "Lopez",
       phoneNumber: "09199990000",
       email: "sophialopez@example.com",
-      status: "Active",
+      status: "In Progress",
     },
     {
       firstName: "Logan",
       lastName: "Gonzalez",
       phoneNumber: "09211112222",
       email: "logangonzalez@example.com",
-      status: "Suspended",
+      status: "Cancelled",
     },
 
     {
@@ -73,21 +72,21 @@ const Customer = () => {
       lastName: "Smith",
       phoneNumber: "09011112222",
       email: "michaelsmith@example.com",
-      status: "Active",
+      status: "In Progress",
     },
     {
       firstName: "Emily",
       lastName: "Johnson",
       phoneNumber: "09033334444",
       email: "emilyjohnson@example.com",
-      status: "Active",
+      status: "In Progress",
     },
     {
       firstName: "Daniel",
       lastName: "Williams",
       phoneNumber: "09055556666",
       email: "danielwilliams@example.com",
-      status: "Suspended",
+      status: "Cancelled",
     },
     {
       firstName: "Olivia",
@@ -108,14 +107,14 @@ const Customer = () => {
       lastName: "Gonzalez",
       phoneNumber: "09211112222",
       email: "logangonzalez@example.com",
-      status: "Suspended",
+      status: "Cancelled",
     },
     {
       firstName: "Liam",
       lastName: "Jones",
       phoneNumber: "09099990000",
       email: "liamjones@example.com",
-      status: "Suspended",
+      status: "Cancelled",
     },
     {
       firstName: "Ava",
@@ -136,14 +135,14 @@ const Customer = () => {
       lastName: "Gonzalez",
       phoneNumber: "09211112222",
       email: "logangonzalez@example.com",
-      status: "Suspended",
+      status: "Cancelled",
     },
     {
       firstName: "Noah",
       lastName: "Rodriguez",
       phoneNumber: "09133334444",
       email: "noahrodriguez@example.com",
-      status: "Suspended",
+      status: "Cancelled",
     },
     {
       firstName: "Isabella",
@@ -157,7 +156,7 @@ const Customer = () => {
       lastName: "Hernandez",
       phoneNumber: "09177778888",
       email: "jameshernandez@example.com",
-      status: "Suspended",
+      status: "Cancelled",
     },
     {
       firstName: "Sophia",
@@ -171,7 +170,7 @@ const Customer = () => {
       lastName: "Gonzalez",
       phoneNumber: "09211112222",
       email: "logangonzalez@example.com",
-      status: "Suspended",
+      status: "Cancelled",
     },
     {
       firstName: "Sophia",
@@ -185,7 +184,7 @@ const Customer = () => {
       lastName: "Gonzalez",
       phoneNumber: "09211112222",
       email: "logangonzalez@example.com",
-      status: "Suspended",
+      status: "Cancelled",
     },
     {
       firstName: "Kenneth",
@@ -199,7 +198,7 @@ const Customer = () => {
       lastName: "Francis",
       phoneNumber: "090324554332",
       email: "Knfrancis@gmail.com",
-      status: "Suspended",
+      status: "Cancelled",
     },
     {
       firstName: "John",
@@ -213,7 +212,7 @@ const Customer = () => {
       lastName: "Doe",
       phoneNumber: "090987654321",
       email: "janedoe@example.com",
-      status: "Suspended",
+      status: "Cancelled",
     },
     {
       firstName: "Sophia",
@@ -227,14 +226,14 @@ const Customer = () => {
       lastName: "Gonzalez",
       phoneNumber: "09211112222",
       email: "logangonzalez@example.com",
-      status: "Suspended",
+      status: "Cancelled",
     },
     {
       firstName: "Logan",
       lastName: "Gonzalez",
       phoneNumber: "09211112222",
       email: "logangonzalez@example.com",
-      status: "Suspended",
+      status: "Cancelled",
     },
     {
       firstName: "Kenneth",
@@ -248,7 +247,7 @@ const Customer = () => {
       lastName: "Francis",
       phoneNumber: "090324554332",
       email: "Knfrancis@gmail.com",
-      status: "Suspended",
+      status: "Cancelled",
     },
     {
       firstName: "John",
@@ -262,7 +261,7 @@ const Customer = () => {
       lastName: "Doe",
       phoneNumber: "090987654321",
       email: "janedoe@example.com",
-      status: "Suspended",
+      status: "Cancelled",
     },
     {
       firstName: "Sophia",
@@ -276,7 +275,7 @@ const Customer = () => {
       lastName: "Gonzalez",
       phoneNumber: "09211112222",
       email: "logangonzalez@example.com",
-      status: "Suspended",
+      status: "Cancelled",
     },
 
     {
@@ -298,7 +297,7 @@ const Customer = () => {
       lastName: "Williams",
       phoneNumber: "09055556666",
       email: "danielwilliams@example.com",
-      status: "Suspended",
+      status: "Cancelled",
     },
     {
       firstName: "Olivia",
@@ -319,7 +318,7 @@ const Customer = () => {
       lastName: "Gonzalez",
       phoneNumber: "09211112222",
       email: "logangonzalez@example.com",
-      status: "Suspended",
+      status: "Cancelled",
     },
 
     {
@@ -331,8 +330,8 @@ const Customer = () => {
     },
   ];
   const [activePage, setActivePage] = useState(1);
-  const [isPreOpen, setIsPreOpen] = useState(false);
   const [isDelOpen, setIsDelOpen] = useState(false);
+  const [isPreOpen, setIsPreOpen] = useState(false);
   const [isEditPreOpen, setIsEditPreOpen] = useState(false);
   const dataPerPage = 8;
   const totalPages = Math.ceil(data.length / dataPerPage);
@@ -340,10 +339,6 @@ const Customer = () => {
   const indexOfFirstData = indexOfLastData - dataPerPage;
   const currentData = data.slice(indexOfFirstData, indexOfLastData);
   const [activeRowIndex, setActiveRowIndex] = useState(null);
-
-  const handleActionClick = (index) => {
-    setActiveRowIndex((prevIndex) => (prevIndex === index ? null : index));
-  };
 
   const handlePageChange = (pageNumber) => {
     setActivePage(pageNumber);
@@ -404,20 +399,15 @@ const Customer = () => {
       paginationItems.push(<Pagination.Ellipsis key="ellipsis-end" />);
     }
   }
-
+  const handleSmallOpenClick = (index) => {
+    setActiveRowIndex(index);
+  };
   const handlePreOpenClick = () => {
     setIsPreOpen(true);
     setIsEditPreOpen(false);
   };
   const handlePreCloseClick = () => {
     setIsPreOpen(false);
-  };
-  const handleDelopenClick = (index) => {
-    setIsDelOpen(true);
-    setActiveRowIndex((prevIndex) => (prevIndex === index ? null : index));
-  };
-  const handleDelCloseClick = () => {
-    setIsDelOpen(false);
   };
   const handleEditPreOpenClick = () => {
     setIsEditPreOpen(true);
@@ -443,15 +433,10 @@ const Customer = () => {
           />
         </div>
       )}
-      {isDelOpen && (
-        <div className="main-modal-overlay">
-          <DeleteModal handleDelCloseClick={handleDelCloseClick} />
-        </div>
-      )}
-      <MainLayout pname={"Customer"}>
+      <MainLayout pname={"Errands"}>
         <div className="dashboard-container">
           <div className="customer-page-toper flex">
-            <div className="add-pre-btn flex" onClick={handlePreOpenClick}>
+            <div className="add-pre-btn flex nonn" onClick={handlePreOpenClick}>
               Add preferences
             </div>
             <div className="filter-search flex">
@@ -471,10 +456,12 @@ const Customer = () => {
             <table>
               <thead>
                 <tr>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Phone Number</th>
-                  <th>Email</th>
+                  <th>Agent name</th>
+                  <th>Customer name</th>
+                  <th>Errand</th>
+                  <th>Fee</th>
+                  <th>Location</th>
+                  <th>Destination</th>
                   <th>Status</th>
                   <th>Action</th>
                 </tr>
@@ -482,14 +469,20 @@ const Customer = () => {
               <tbody>
                 {currentData.map((item, index) => (
                   <tr key={index} className="tb-row">
-                    <td>{item.firstName}</td>
-                    <td>{item.lastName}</td>
-                    <td>{item.phoneNumber}</td>
-                    <td>{item.email}</td>
+                    <td>Kenneth Francis</td>
+                    <td>Paul George</td>
+                    <td>Plan and arrange travel</td>
+                    <td>2,500</td>
+                    <td>Tickles garden Abuja</td>
+                    <td>Wuse Market rd 2</td>
                     <td>
                       <div
                         className={`actt ${
-                          item.status === "Suspended" ? "susp" : ""
+                          item.status === "Cancelled"
+                            ? "susp"
+                            : item.status === "In Progress"
+                            ? "pross"
+                            : ""
                         }`}
                       >
                         {item.status}
@@ -498,19 +491,17 @@ const Customer = () => {
                     <td>
                       <div
                         className="action-men"
-                        onClick={() => handleActionClick(index)}
+                        onClick={handleSmallOpenClick}
                       >
                         <BiDotsHorizontalRounded />
                       </div>
-                      {activeRowIndex === index && (
-                        <SmallModal handleDelopenClick={handleDelopenClick} />
-                      )}
+
+                      {activeRowIndex === index && <SmallModal />}
                     </td>
                   </tr>
                 ))}
               </tbody>
             </table>
-
             <div className="pagin-sow-cont flex">
               <div className="show-counter">
                 Showing {indexOfFirstData + 1} to {indexOfLastData} of{" "}
@@ -537,4 +528,4 @@ const Customer = () => {
   );
 };
 
-export default Customer;
+export default Errand;

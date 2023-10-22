@@ -3,6 +3,8 @@ import "./App.css";
 import LandingPage from "./Pages/LandingPage";
 import Dashboard from "./Pages/Dashboard";
 import Customer from "./Pages/Customer";
+import Agent from "./Pages/Agent";
+import Errand from "./Pages/Errand";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
         <Route index path="/" element={<LandingPage />} />
         <Route index path="/dashboard" element={<Dashboard />} />
         <Route index path="/customer" element={<Customer />} />
+        <Route index path="/agent" element={<Agent />} />
+        <Route index path="/errand" element={<Errand />} />
       </Routes>
     </div>
   );

@@ -1,15 +1,14 @@
 import MainLayout from "../../Layout/MainLayout";
 import { BiSearch, BiDotsHorizontalRounded } from "react-icons/bi";
-import "./style.css";
 import Pagination from "react-bootstrap/Pagination";
 import { useState } from "react";
+import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AddPreferenceCos from "../../Modals/AddPreferenceCos";
 import ViewPreferenceCos from "../../Modals/ViewPreferenceCos";
-import SmallModal from "../../Modals/SmallModal";
-import DeleteModal from "../../Modals/DeleteModal";
+import AgentSmallModal from "../../Modals/AgentSmallModal";
 
-const Customer = () => {
+const Agent = () => {
   const data = [
     {
       firstName: "Sophia",
@@ -332,7 +331,6 @@ const Customer = () => {
   ];
   const [activePage, setActivePage] = useState(1);
   const [isPreOpen, setIsPreOpen] = useState(false);
-  const [isDelOpen, setIsDelOpen] = useState(false);
   const [isEditPreOpen, setIsEditPreOpen] = useState(false);
   const dataPerPage = 8;
   const totalPages = Math.ceil(data.length / dataPerPage);
@@ -344,7 +342,6 @@ const Customer = () => {
   const handleActionClick = (index) => {
     setActiveRowIndex((prevIndex) => (prevIndex === index ? null : index));
   };
-
   const handlePageChange = (pageNumber) => {
     setActivePage(pageNumber);
   };
@@ -404,20 +401,15 @@ const Customer = () => {
       paginationItems.push(<Pagination.Ellipsis key="ellipsis-end" />);
     }
   }
-
+  const handleSmallOpenClick = (index) => {
+    setActiveRowIndex(index);
+  };
   const handlePreOpenClick = () => {
     setIsPreOpen(true);
     setIsEditPreOpen(false);
   };
   const handlePreCloseClick = () => {
     setIsPreOpen(false);
-  };
-  const handleDelopenClick = (index) => {
-    setIsDelOpen(true);
-    setActiveRowIndex((prevIndex) => (prevIndex === index ? null : index));
-  };
-  const handleDelCloseClick = () => {
-    setIsDelOpen(false);
   };
   const handleEditPreOpenClick = () => {
     setIsEditPreOpen(true);
@@ -443,12 +435,7 @@ const Customer = () => {
           />
         </div>
       )}
-      {isDelOpen && (
-        <div className="main-modal-overlay">
-          <DeleteModal handleDelCloseClick={handleDelCloseClick} />
-        </div>
-      )}
-      <MainLayout pname={"Customer"}>
+      <MainLayout pname={"Agent"}>
         <div className="dashboard-container">
           <div className="customer-page-toper flex">
             <div className="add-pre-btn flex" onClick={handlePreOpenClick}>
@@ -471,6 +458,7 @@ const Customer = () => {
             <table>
               <thead>
                 <tr>
+                  <th>Agent Image</th>
                   <th>First Name</th>
                   <th>Last Name</th>
                   <th>Phone Number</th>
@@ -482,6 +470,9 @@ const Customer = () => {
               <tbody>
                 {currentData.map((item, index) => (
                   <tr key={index} className="tb-row">
+                    <td>
+                      <img src="images/alo.jpg" alt="" />
+                    </td>
                     <td>{item.firstName}</td>
                     <td>{item.lastName}</td>
                     <td>{item.phoneNumber}</td>
@@ -502,15 +493,13 @@ const Customer = () => {
                       >
                         <BiDotsHorizontalRounded />
                       </div>
-                      {activeRowIndex === index && (
-                        <SmallModal handleDelopenClick={handleDelopenClick} />
-                      )}
+
+                      {activeRowIndex === index && <AgentSmallModal />}
                     </td>
                   </tr>
                 ))}
               </tbody>
             </table>
-
             <div className="pagin-sow-cont flex">
               <div className="show-counter">
                 Showing {indexOfFirstData + 1} to {indexOfLastData} of{" "}
@@ -537,4 +526,4 @@ const Customer = () => {
   );
 };
 
-export default Customer;
+export default Agent;

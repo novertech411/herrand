@@ -88,11 +88,16 @@ li {
   align-items: center;
   padding: 10px 40px;
   background: #fff;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 80%;
   z-index: 1;
   border-bottom: 1px solid #e8e8e8;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  background: #fff;
 }
 .logo-container {
   display: flex;
@@ -256,6 +261,9 @@ li {
 @media only screen and (max-width: 1000px) {
   .side-item {
     width: 235px;
+  }
+  .header {
+    padding: 0 20px;
   }
 }
 
