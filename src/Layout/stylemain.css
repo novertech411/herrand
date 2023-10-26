@@ -185,6 +185,23 @@ li {
 .dww {
   font-size: 20px;
 }
+.manage-admin {
+  color: #fff;
+  gap: 5px;
+  border-radius: 4px;
+  background: #082552;
+  height: 50px;
+  cursor: pointer;
+  justify-content: center;
+  width: 80%;
+  margin: 50px 10px;
+}
+.mana-text {
+  font-size: 18px;
+}
+.mana-icon {
+  font-size: 25px;
+}
 @media only screen and (max-width: 1300px) {
   .sidebar-container {
     background: #1a1c1e;

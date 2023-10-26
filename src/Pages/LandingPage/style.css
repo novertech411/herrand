@@ -6,6 +6,9 @@
   justify-content: space-between;
   overflow-x: hidden;
 }
+.landing-page-container {
+  padding-top: 8em;
+}
 .left-side-hero {
   width: 50%;
   padding-left: 80px;

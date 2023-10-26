@@ -24,20 +24,25 @@ const AddPreferenceCos = ({ handleEditPreCloseClick, handlePreOpenClick }) => {
       </div>
       <div className="form-container-pre">
         <div className="inpu-lab">
-          <label htmlFor="">Where are you going?</label>
-          <input
-            type="text"
-            className="inp-pre"
-            placeholder="Where are you going?"
-          />
+          <div className="inpu-sm-bx">
+            <label htmlFor="">Where are you going?</label>
+            <input
+              type="text"
+              className="inp-pre"
+              placeholder="Where are you going?"
+            />
+          </div>
         </div>
+
         <div className="inpu-lab">
-          <label htmlFor="">What errand are you running today?</label>
-          <input
-            type="text"
-            className="inp-pre"
-            placeholder="What errand are you running today??"
-          />
+          <div className="inpu-sm-bx">
+            <label htmlFor="">What errand are you running today?</label>
+            <input
+              type="text"
+              className="inp-pre"
+              placeholder="What errand are you running today??"
+            />
+          </div>
         </div>
         <div className="inpu-lab">
           <label htmlFor="">Search by category</label>
