@@ -5,6 +5,7 @@ import Dashboard from "./Pages/Dashboard";
 import Customer from "./Pages/Customer";
 import Agent from "./Pages/Agent";
 import Errand from "./Pages/Errand";
+import Payout from "./Pages/Payout";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route index path="/customer" element={<Customer />} />
         <Route index path="/agent" element={<Agent />} />
         <Route index path="/errand" element={<Errand />} />
+        <Route index path="/payout" element={<Payout />} />
       </Routes>
     </div>
   );

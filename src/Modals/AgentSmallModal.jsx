@@ -3,7 +3,11 @@ import { AiOutlineStop, AiOutlineCheckCircle, AiFillEye } from "react-icons/ai";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { LuPencilLine } from "react-icons/lu";
 
-const AgentSmallModal = ({ handleDelopenClick }) => {
+const AgentSmallModal = ({
+  handleDelopenClick,
+  handlePreviewOpenClick,
+  handleViewDetOpenClick,
+}) => {
   const [isActivated, setIsActivated] = useState(false);
 
   const handleToggle = () => {
@@ -12,11 +16,11 @@ const AgentSmallModal = ({ handleDelopenClick }) => {
   return (
     <>
       <div className="small-modal-container">
-        <div className="view-dit flex">
+        <div className="view-dit flex" onClick={handleViewDetOpenClick}>
           <AiFillEye />
           <div className="ed-vid">View</div>
         </div>
-        <div className="view-dit flex">
+        <div className="view-dit flex" onClick={handlePreviewOpenClick}>
           <LuPencilLine />
           <div className="ed-vid">Edit</div>
         </div>

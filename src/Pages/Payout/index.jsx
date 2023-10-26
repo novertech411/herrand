@@ -9,63 +9,63 @@ import ViewPreferenceCos from "../../Modals/ViewPreferenceCos";
 import SmallModalErrand from "../../Modals/SmallModalErrand";
 import DeleteModal from "../../Modals/DeleteModal";
 
-const Errand = () => {
+const Payout = () => {
   const data = [
     {
       firstName: "Sophia",
       lastName: "Lopez",
       phoneNumber: "09199990000",
       email: "sophialopez@example.com",
-      status: "Completed",
+      status: "Credited",
     },
     {
       firstName: "Logan",
       lastName: "Gonzalez",
       phoneNumber: "09211112222",
       email: "logangonzalez@example.com",
-      status: "Cancelled",
+      status: "Failed",
     },
     {
       firstName: "Kenneth",
       lastName: "Francis",
       phoneNumber: "090324554332",
       email: "Knfrancis@gmail.com",
-      status: "In Progress",
+      status: "Credited",
     },
     {
       firstName: "Kenneth",
       lastName: "Francis",
       phoneNumber: "090324554332",
       email: "Knfrancis@gmail.com",
-      status: "Cancelled",
+      status: "Failed",
     },
     {
       firstName: "John",
       lastName: "Doe",
       phoneNumber: "090123456789",
       email: "johndoe@example.com",
-      status: "In Progress",
+      status: "Pending",
     },
     {
       firstName: "Jane",
       lastName: "Doe",
       phoneNumber: "090987654321",
       email: "janedoe@example.com",
-      status: "Cancelled",
+      status: "Failed",
     },
     {
       firstName: "Sophia",
       lastName: "Lopez",
       phoneNumber: "09199990000",
       email: "sophialopez@example.com",
-      status: "In Progress",
+      status: "Pending",
     },
     {
       firstName: "Logan",
       lastName: "Gonzalez",
       phoneNumber: "09211112222",
       email: "logangonzalez@example.com",
-      status: "Cancelled",
+      status: "Failed",
     },
 
     {
@@ -73,21 +73,21 @@ const Errand = () => {
       lastName: "Smith",
       phoneNumber: "09011112222",
       email: "michaelsmith@example.com",
-      status: "In Progress",
+      status: "Pending",
     },
     {
       firstName: "Emily",
       lastName: "Johnson",
       phoneNumber: "09033334444",
       email: "emilyjohnson@example.com",
-      status: "In Progress",
+      status: "Pending",
     },
     {
       firstName: "Daniel",
       lastName: "Williams",
       phoneNumber: "09055556666",
       email: "danielwilliams@example.com",
-      status: "Cancelled",
+      status: "Failed",
     },
     {
       firstName: "Olivia",
@@ -108,14 +108,14 @@ const Errand = () => {
       lastName: "Gonzalez",
       phoneNumber: "09211112222",
       email: "logangonzalez@example.com",
-      status: "Cancelled",
+      status: "Failed",
     },
     {
       firstName: "Liam",
       lastName: "Jones",
       phoneNumber: "09099990000",
       email: "liamjones@example.com",
-      status: "Cancelled",
+      status: "Failed",
     },
     {
       firstName: "Ava",
@@ -136,14 +136,14 @@ const Errand = () => {
       lastName: "Gonzalez",
       phoneNumber: "09211112222",
       email: "logangonzalez@example.com",
-      status: "Cancelled",
+      status: "Failed",
     },
     {
       firstName: "Noah",
       lastName: "Rodriguez",
       phoneNumber: "09133334444",
       email: "noahrodriguez@example.com",
-      status: "Cancelled",
+      status: "Failed",
     },
     {
       firstName: "Isabella",
@@ -157,7 +157,7 @@ const Errand = () => {
       lastName: "Hernandez",
       phoneNumber: "09177778888",
       email: "jameshernandez@example.com",
-      status: "Cancelled",
+      status: "Failed",
     },
     {
       firstName: "Sophia",
@@ -171,7 +171,7 @@ const Errand = () => {
       lastName: "Gonzalez",
       phoneNumber: "09211112222",
       email: "logangonzalez@example.com",
-      status: "Cancelled",
+      status: "Failed",
     },
     {
       firstName: "Sophia",
@@ -185,7 +185,7 @@ const Errand = () => {
       lastName: "Gonzalez",
       phoneNumber: "09211112222",
       email: "logangonzalez@example.com",
-      status: "Cancelled",
+      status: "Failed",
     },
     {
       firstName: "Kenneth",
@@ -199,7 +199,7 @@ const Errand = () => {
       lastName: "Francis",
       phoneNumber: "090324554332",
       email: "Knfrancis@gmail.com",
-      status: "Cancelled",
+      status: "Failed",
     },
     {
       firstName: "John",
@@ -213,7 +213,7 @@ const Errand = () => {
       lastName: "Doe",
       phoneNumber: "090987654321",
       email: "janedoe@example.com",
-      status: "Cancelled",
+      status: "Failed",
     },
     {
       firstName: "Sophia",
@@ -227,14 +227,14 @@ const Errand = () => {
       lastName: "Gonzalez",
       phoneNumber: "09211112222",
       email: "logangonzalez@example.com",
-      status: "Cancelled",
+      status: "Failed",
     },
     {
       firstName: "Logan",
       lastName: "Gonzalez",
       phoneNumber: "09211112222",
       email: "logangonzalez@example.com",
-      status: "Cancelled",
+      status: "Failed",
     },
     {
       firstName: "Kenneth",
@@ -248,7 +248,7 @@ const Errand = () => {
       lastName: "Francis",
       phoneNumber: "090324554332",
       email: "Knfrancis@gmail.com",
-      status: "Cancelled",
+      status: "Failed",
     },
     {
       firstName: "John",
@@ -262,7 +262,7 @@ const Errand = () => {
       lastName: "Doe",
       phoneNumber: "090987654321",
       email: "janedoe@example.com",
-      status: "Cancelled",
+      status: "Failed",
     },
     {
       firstName: "Sophia",
@@ -276,7 +276,7 @@ const Errand = () => {
       lastName: "Gonzalez",
       phoneNumber: "09211112222",
       email: "logangonzalez@example.com",
-      status: "Cancelled",
+      status: "Failed",
     },
 
     {
@@ -298,7 +298,7 @@ const Errand = () => {
       lastName: "Williams",
       phoneNumber: "09055556666",
       email: "danielwilliams@example.com",
-      status: "Cancelled",
+      status: "Failed",
     },
     {
       firstName: "Olivia",
@@ -319,7 +319,7 @@ const Errand = () => {
       lastName: "Gonzalez",
       phoneNumber: "09211112222",
       email: "logangonzalez@example.com",
-      status: "Cancelled",
+      status: "Failed",
     },
 
     {
@@ -448,7 +448,7 @@ const Errand = () => {
           <DeleteModal handleDelCloseClick={handleDelCloseClick} />
         </div>
       )}
-      <MainLayout pname={"Errands"}>
+      <MainLayout pname={"Payout"}>
         <div className="dashboard-container">
           <div className="customer-page-toper flex">
             <div className="add-pre-btn flex nonn" onClick={handlePreOpenClick}>
@@ -473,10 +473,8 @@ const Errand = () => {
                 <tr>
                   <th>Agent name</th>
                   <th>Customer name</th>
-                  <th>Errand</th>
-                  <th>Fee</th>
-                  <th>Location</th>
-                  <th>Destination</th>
+                  <th>Payment</th>
+                  <th>Date</th>
                   <th>Status</th>
                   <th>Action</th>
                 </tr>
@@ -486,16 +484,15 @@ const Errand = () => {
                   <tr key={index} className="tb-row">
                     <td>Kenneth Francis</td>
                     <td>Paul George</td>
-                    <td>Plan and arrange travel</td>
                     <td>2,500</td>
-                    <td>Tickles garden Abuja</td>
-                    <td>Wuse Market rd 2</td>
+                    <td>11-12-2023</td>
+
                     <td>
                       <div
                         className={`actt ${
-                          item.status === "Cancelled"
+                          item.status === "Failed"
                             ? "susp"
-                            : item.status === "In Progress"
+                            : item.status === "Pending"
                             ? "pross"
                             : ""
                         }`}
@@ -547,4 +544,4 @@ const Errand = () => {
   );
 };
 
-export default Errand;
+export default Payout;

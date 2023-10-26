@@ -4,9 +4,12 @@ import Pagination from "react-bootstrap/Pagination";
 import { useState } from "react";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import AddPreferenceCos from "../../Modals/AddPreferenceCos";
-import ViewPreferenceCos from "../../Modals/ViewPreferenceCos";
 import AgentSmallModal from "../../Modals/AgentSmallModal";
+import ViewPreferenceAgent from "../../Modals/ViewPreferenceAgent";
+import AddPreferenceAgent from "../../Modals/AddPreferenceAgent";
+import PreviewAgentDetails from "../../Modals/PreviewAgentDetails";
+import PreviewAgentDetailsView from "../../Modals/PreviewAgentDetailsView";
+import DeleteModal from "../../Modals/DeleteModal";
 
 const Agent = () => {
   const data = [
@@ -330,9 +333,12 @@ const Agent = () => {
     },
   ];
   const [activePage, setActivePage] = useState(1);
+  const [isViewDetOpen, setIsViewDetOpen] = useState(false);
+  const [isDelOpen, setIsDelOpen] = useState(false);
+  const [isPreviewOpen, setIsPreviewOpen] = useState(false);
   const [isPreOpen, setIsPreOpen] = useState(false);
   const [isEditPreOpen, setIsEditPreOpen] = useState(false);
-  const dataPerPage = 8;
+  const dataPerPage = 5;
   const totalPages = Math.ceil(data.length / dataPerPage);
   const indexOfLastData = activePage * dataPerPage;
   const indexOfFirstData = indexOfLastData - dataPerPage;
@@ -401,8 +407,26 @@ const Agent = () => {
       paginationItems.push(<Pagination.Ellipsis key="ellipsis-end" />);
     }
   }
-  const handleSmallOpenClick = (index) => {
-    setActiveRowIndex(index);
+
+  const handleViewDetOpenClick = () => {
+    setIsPreviewOpen(false);
+    setIsViewDetOpen(true);
+    setIsEditPreOpen(false);
+    setIsPreOpen(false);
+    setActiveRowIndex(false);
+  };
+  const handleViewDetCloseClick = () => {
+    setIsViewDetOpen(false);
+  };
+  const handlePreviewOpenClick = () => {
+    setIsPreviewOpen(true);
+    setIsEditPreOpen(false);
+    setIsPreOpen(false);
+    setIsViewDetOpen(false);
+    setActiveRowIndex(false);
+  };
+  const handlePreviewCloseClick = () => {
+    setIsPreviewOpen(false);
   };
   const handlePreOpenClick = () => {
     setIsPreOpen(true);
@@ -417,11 +441,18 @@ const Agent = () => {
   const handleEditPreCloseClick = () => {
     setIsEditPreOpen(false);
   };
+  const handleDelopenClick = (index) => {
+    setIsDelOpen(true);
+    setActiveRowIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
+  const handleDelCloseClick = () => {
+    setIsDelOpen(false);
+  };
   return (
     <>
       {isPreOpen && (
         <div className="main-modal-overlay">
-          <ViewPreferenceCos
+          <ViewPreferenceAgent
             handlePreCloseClick={handlePreCloseClick}
             handleEditPreOpenClick={handleEditPreOpenClick}
           />
@@ -429,10 +460,31 @@ const Agent = () => {
       )}
       {isEditPreOpen && (
         <div className="main-modal-overlay">
-          <AddPreferenceCos
+          <AddPreferenceAgent
             handleEditPreCloseClick={handleEditPreCloseClick}
             handlePreOpenClick={handlePreOpenClick}
           />
+        </div>
+      )}
+      {isPreviewOpen && (
+        <div className="main-modal-overlay">
+          <PreviewAgentDetails
+            handlePreviewCloseClick={handlePreviewCloseClick}
+            handleViewDetOpenClick={handleViewDetOpenClick}
+          />
+        </div>
+      )}
+      {isViewDetOpen && (
+        <div className="main-modal-overlay">
+          <PreviewAgentDetailsView
+            handleViewDetCloseClick={handleViewDetCloseClick}
+            handlePreviewOpenClick={handlePreviewOpenClick}
+          />
+        </div>
+      )}
+      {isDelOpen && (
+        <div className="main-modal-overlay">
+          <DeleteModal handleDelCloseClick={handleDelCloseClick} />
         </div>
       )}
       <MainLayout pname={"Agent"}>
@@ -494,7 +546,13 @@ const Agent = () => {
                         <BiDotsHorizontalRounded />
                       </div>
 
-                      {activeRowIndex === index && <AgentSmallModal />}
+                      {activeRowIndex === index && (
+                        <AgentSmallModal
+                          handlePreviewOpenClick={handlePreviewOpenClick}
+                          handleViewDetOpenClick={handleViewDetOpenClick}
+                          handleDelopenClick={handleDelopenClick}
+                        />
+                      )}
                     </td>
                   </tr>
                 ))}
