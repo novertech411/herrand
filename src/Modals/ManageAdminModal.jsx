@@ -7,11 +7,11 @@ import { useState } from "react";
 const ManageAdminModal = ({ handleAdminOpenClose }) => {
   const [addAdmin, setAddAdmin] = useState("");
 
-  const handleAddAdminCOpen = (e) => {
+  const handleAddAdminCOpen = () => {
     setAddAdmin(true);
   };
 
-  const handleAddAdminClose = (e) => {
+  const handleAddAdminClose = () => {
     setAddAdmin(false);
   };
   return (
@@ -21,14 +21,12 @@ const ManageAdminModal = ({ handleAdminOpenClose }) => {
           <div className="dmin">Administrators</div>
         </div>
         <div className="list-all-adm">
-          <AdminCard />
-          <AdminCard />
-          <AdminCard />
-          <AdminCard />
-          <AdminCard />
-          <AdminCard />
-          <AdminCard />
-          <AdminCard />
+          <AdminCard name={"Bukunmi Odetayo"} position={"Owner"} />
+          <AdminCard name={"Oluwatomiwa Awe"} position={"Admin"} />
+          <AdminCard name={"Ibrahim Jamiu"} position={"Admin"} />
+          <AdminCard name={"Tesla Balogun"} position={"Admin"} />
+          <AdminCard name={"Rasheed Badrudeen"} position={"Admin"} />
+          <AdminCard name={"Kelly Balogun"} position={"Admin"} />
         </div>
         {addAdmin && <AddAdmin handleAddAdminClose={handleAddAdminClose} />}
         <div className="bottom-adm-bx flex just-btw">
