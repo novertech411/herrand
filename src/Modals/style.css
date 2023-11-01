@@ -117,6 +117,7 @@
   padding: 10px;
   position: absolute;
   z-index: 1111;
+  /* width: 100%; */
 }
 .vate {
   color: #34a853;
@@ -308,6 +309,7 @@
 .admin-main-bx {
   background: #f7f7f7;
   position: relative;
+  height: 100vh;
 }
 .cent-jxt {
   justify-content: center;
@@ -385,4 +387,175 @@
 }
 .invalid-email {
   border: 1px solid #ff1d1d;
+}
+.icon-ddot-bx {
+  position: relative;
+}
+.admin-small-md {
+  position: absolute;
+  left: -150px;
+  z-index: 1;
+  background: yellowgreen;
+}
+.cincr {
+  width: 180px;
+}
+.adm-ttst {
+  font-size: 14px;
+}
+.adm-smm {
+  font-size: 20px;
+}
+.chg {
+  color: #000;
+}
+.admin-right-container {
+  background: #00000064;
+  width: 40%;
+  height: 100%;
+  padding: 20px 15px;
+}
+.am-profil {
+  gap: 15px;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 10px;
+  font-size: 16px;
+}
+.am-profil img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.admin-rigt-box {
+  background: #fff;
+  border-radius: 5px;
+  width: 70%;
+  padding-bottom: 20px;
+}
+.top-adm-rit {
+  border-bottom: 0.8px solid #d9d9d9;
+  background: #0066f5;
+  color: #fff;
+  font-size: 18px;
+  gap: 20px;
+  padding: 5px;
+  border-radius: 5px 5px 0 0px;
+}
+.perm-txt {
+  font-size: 17px;
+  font-weight: 600;
+  color: #0066f5;
+  margin: 5px;
+}
+
+/* SwitchToggle.css */
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ff1d1d;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: none;
+}
+
+.slider:before {
+  font-family: "Font Awesome 6 free";
+  position: absolute;
+  content: "\f00d";
+  height: 30px;
+  width: 30px;
+  left: -1px;
+  bottom: -2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #34a853;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+  font-family: "Font Awesome 6 free";
+  font-weight: 900;
+  content: "\f00d";
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 2px solid #ff1d1d;
+  color: #ff1d1d;
+}
+.slider.round.checked:before {
+  font-family: "Font Awesome 6 free";
+  font-weight: 900;
+  content: "\f00c";
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #34a853;
+  border: 2px solid #34a853;
+  margin-left: 8px;
+}
+.contro-title-bx {
+  justify-content: space-between;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 0 5px;
+  font-size: 15px;
+}
+.sv-btn {
+  width: 30%;
+  border: none;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #0066f5;
+  height: 35px;
+  font-size: 16px;
+}
+.save-btn {
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+}
+.backcls {
+  cursor: pointer;
 }

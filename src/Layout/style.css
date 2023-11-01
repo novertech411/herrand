@@ -125,6 +125,19 @@
   display: flex;
   justify-content: space-between;
 }
+.social-mdia {
+  font-size: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.social-mdia img {
+  width: 30px;
+  height: 30px;
+}
 
 @media only screen and (max-width: 1150px) {
   #ul {
@@ -151,7 +164,7 @@
     padding: 40px;
   }
   .navbar_container {
-    padding: 0 0px;
+    padding: 0 20px;
   }
   #ul {
     display: flex;
@@ -178,7 +191,7 @@
     display: block;
     cursor: pointer;
     color: #0066f5;
-    padding-right: 2px;
+    padding-right: 20px;
   }
   .active {
     background: #0066f5;
@@ -230,7 +243,14 @@
     width: 65%;
   }
   .header {
-    padding: 0 20px;
+    /* padding: 0 20px; */
+  }
+  .social-mdia {
+    width: 100px;
+  }
+  .social-mdia img {
+    width: 20px;
+    height: 20px;
   }
 }
 

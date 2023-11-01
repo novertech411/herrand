@@ -1,3 +1,7 @@
+// import { AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
+// import { BsFacebook, BsTiktok } from "react-icons/bs";
+// import { FaYoutube } from "react-icons/fa";
+// import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <div className="footer-container" id="footer">
@@ -18,14 +22,38 @@ const Footer = () => {
           </div>
           <div className="each-col-cont">
             <div className="txt-foot chg-wd">
-              Beside Wema bank <br /> 23rd saint marcus Street <br />
-              90001 Abuja
+              Gwarimpa, 900108, FCT, <br /> Nigeria
             </div>
           </div>
           <div className="each-col-cont ">
-            <div className="txt-foot">090343474859</div>
-            <div className="txt-foot">090473484656</div>
-            <div className="txt-foot">Herrands@gmail.com</div>
+            <div className="txt-foot">0704 418 4306</div>
+            <div className="txt-foot">send@herrands.com </div>
+            <div className="social-mdia">
+              {/* <BsFacebook className="face" />
+              <AiFillInstagram />
+              <BsTiktok />
+              <FaYoutube />
+              <FaXTwitter />
+              <AiFillLinkedin /> */}
+              <a href="https://web.facebook.com/sendherrands">
+                <img src="/images/fa.png" alt="" />
+              </a>
+              <a href="https://www.instagram.com/sendherrands/">
+                <img src="/images/insta.png" alt="" />
+              </a>
+              <a href="https://www.tiktok.com/@sendherrands">
+                <img src="/images/tik.png" alt="" />
+              </a>
+              <a href="https://www.youtube.com/@sendherrands">
+                <img src="/images/tube.png" alt="" />
+              </a>
+              <a href="https://twitter.com/sendherrands">
+                <img src="/images/x.png" alt="" />
+              </a>
+              <a href="https://www.linkedin.com/company/sendherrands/">
+                <img src="/images/in.png" alt="" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
