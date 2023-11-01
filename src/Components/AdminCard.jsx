@@ -1,6 +1,19 @@
 import { BiDotsVerticalRounded } from "react-icons/bi";
+import SmallModalAdmin from "../Modals/SmallModalAdmin";
+import { useState } from "react";
 
-const AdminCard = ({ name, position }) => {
+const AdminCard = ({
+  name,
+  position,
+  handleWhatAdminCOpen,
+  handleAdminDismissCOpen,
+}) => {
+  const [isAdminMdOpen, setIsAdminMdOpen] = useState(false);
+
+  const handleAdmiMdClick = () => {
+    setIsAdminMdOpen(!isAdminMdOpen);
+  };
+
   return (
     <div className="admin-card-cont flex">
       <div className="image-details-admin flex">
@@ -10,7 +23,25 @@ const AdminCard = ({ name, position }) => {
           <div className="position-admin">{position}</div>
         </div>
       </div>
-      <BiDotsVerticalRounded className="dot-adm" />
+      <div className="icon-ddot-bx">
+        {position !== "Owner" && (
+          <BiDotsVerticalRounded
+            className="dot-adm"
+            onClick={handleAdmiMdClick}
+          />
+        )}
+        {isAdminMdOpen && (
+          <div className="admin-small-md">
+            <SmallModalAdmin
+              handleWhatAdminCOpen={() => {
+                handleWhatAdminCOpen();
+                setIsAdminMdOpen(false);
+              }}
+              handleAdminDismissCOpen={handleAdminDismissCOpen}
+            />
+          </div>
+        )}
+      </div>
     </div>
   );
 };

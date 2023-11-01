@@ -15,7 +15,7 @@ const HowCompSecond = () => {
           agent take care of your errands while you enjoy more free time.
         </div>
         <div className="button-cont">
-          <button className="down-btn">Download the App</button>
+          {/* <button className="down-btn">Download the App</button> */}
         </div>
       </div>
       <div className="right-side-about samm">

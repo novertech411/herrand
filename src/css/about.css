@@ -39,7 +39,7 @@
 .left-side-about img {
   width: 70%;
   border-radius: 20px;
-  height: 400px;
+  /* height: 400px; */
   object-fit: cover;
 }
 .right-side-about {

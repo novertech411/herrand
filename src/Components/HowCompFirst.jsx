@@ -17,7 +17,7 @@ const HowCompFirst = () => {
           way to managing your time more efficiently.
         </div>
         <div className="button-cont">
-          <button className="down-btn">Download the App</button>
+          {/* <button className="down-btn">Download the App</button> */}
         </div>
       </div>
     </div>
