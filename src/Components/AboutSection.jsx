@@ -1,5 +1,7 @@
+import { Link as ScrollLink } from "react-scroll";
 import "../css/about.css";
 const AboutSection = () => {
+  const scrollOffset = -90;
   return (
     <div className="about-section-container" id="about-section">
       <div className="left-side-about">
@@ -20,9 +22,16 @@ const AboutSection = () => {
           with more than just time – we give you freedom, peace of mind, and the
           opportunity to lead a more fulfilling life.
         </div>
-        <div className="button-cont">
-          <button className="down-btn">Download the App</button>
-        </div>
+        <ScrollLink
+          to="download-section"
+          smooth={true}
+          duration={500}
+          offset={scrollOffset}
+        >
+          <div className="button-cont">
+            <button className="down-btn">Download the App</button>
+          </div>
+        </ScrollLink>
       </div>
     </div>
   );

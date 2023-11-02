@@ -47,6 +47,71 @@
 .right-side-containe img {
   width: 80%;
 }
+.terms-privacy-container {
+  border-radius: 10px;
+  background: #fff;
+  width: 60%;
+}
+.land-lay {
+  background: rgba(66, 66, 66, 0.242);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 111115;
+  justify-content: center;
+}
+.top-box-cont {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  padding: 5px 0;
+}
+.main-txt-ed {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+.main-content-bx {
+  padding: 20px;
+  height: 70vh;
+  overflow-y: auto;
+  scrollbar-width: normal;
+  border: none;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+.main-content-bx::-webkit-scrollbar {
+  width: 0.5vw;
+  background: #0066f5;
+  border-radius: 20px;
+}
+.main-content-bx::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: #0066f5;
+}
+.main-bdy-txt {
+  font-size: 14px;
+}
+.main-bdy-txt a {
+  color: #0066f5;
+}
+.main-bdy-txt li {
+  list-style: disc;
+}
+.close-bbtn {
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: #0066f5;
+  font-size: 14px;
+  height: 35px;
+  color: #fff;
+}
+.rght {
+  justify-content: right;
+  padding: 10px 20px;
+}
 
 @media only screen and (max-width: 1150px) {
   .head-line-box {
@@ -79,6 +144,9 @@
   }
   .hero-simple {
     font-size: 14px;
+  }
+  .terms-privacy-container {
+    width: 80%;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -118,6 +186,9 @@
     width: 50%;
     height: 30px;
   }
+  .terms-privacy-container {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -141,6 +212,9 @@
 
   .hero-section-container {
     padding-left: 25px;
+  }
+  .terms-privacy-container {
+    width: 97%;
   }
 }
 @media only screen and (max-width: 370px) {

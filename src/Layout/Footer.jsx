@@ -2,7 +2,7 @@
 // import { BsFacebook, BsTiktok } from "react-icons/bs";
 // import { FaYoutube } from "react-icons/fa";
 // import { FaXTwitter } from "react-icons/fa6";
-const Footer = () => {
+const Footer = ({ handleTermsOpenClick }) => {
   return (
     <div className="footer-container" id="footer">
       <div className="footer-main-container">
@@ -15,14 +15,17 @@ const Footer = () => {
         </div>
         <div className="the-all-footer-txt">
           <div className="each-col-cont">
-            <div className="txt-foot">Terms of Service</div>
+            <div className="txt-foot" onClick={handleTermsOpenClick}>
+              Terms of Service
+            </div>
             <div className="txt-foot">Privacy Policy</div>
             <div className="txt-foot">Guides for Agents</div>
             <div className="txt-foot">Safety for Customers</div>
           </div>
           <div className="each-col-cont">
             <div className="txt-foot chg-wd">
-              Gwarimpa, 900108, FCT, <br /> Nigeria
+              Gwarimpa, 900108 <br />
+              FCT, Nigeria
             </div>
           </div>
           <div className="each-col-cont ">
