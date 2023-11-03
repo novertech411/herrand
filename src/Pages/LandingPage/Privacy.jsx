@@ -269,7 +269,6 @@ const Privacy = ({ handleTermsCloseClick }) => {
               us), and;
             </li>
           </ol>
-          <br />
           We will actively review the personal data we hold and delete it
           securely, or in some cases anonymise it, when there is no longer a
           legal, business or consumer need for it to be retained.
