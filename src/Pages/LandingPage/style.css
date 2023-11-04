@@ -112,7 +112,9 @@
   justify-content: right;
   padding: 10px 20px;
 }
-
+.weinfo li {
+  list-style-type: square;
+}
 @media only screen and (max-width: 1150px) {
   .head-line-box {
     width: 85%;

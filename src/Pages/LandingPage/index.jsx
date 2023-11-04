@@ -14,6 +14,13 @@ import Privacy from "./Privacy";
 
 const LandingPage = () => {
   const [isTermsOpen, setIsTermsOpen] = useState(false);
+  const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
+  const handlePrivacyOpenClick = () => {
+    setIsPrivacyOpen(true);
+  };
+  const handlePrivacyCloseClick = () => {
+    setIsPrivacyOpen(false);
+  };
   const handleTermsOpenClick = () => {
     setIsTermsOpen(true);
   };
@@ -27,9 +34,11 @@ const LandingPage = () => {
           <Terms handleTermsCloseClick={handleTermsCloseClick} />
         </div>
       )}
-      <div className="land-lay flex">
-        <Privacy handleTermsCloseClick={handleTermsCloseClick} />
-      </div>
+      {isPrivacyOpen && (
+        <div className="land-lay flex">
+          <Privacy handlePrivacyCloseClick={handlePrivacyCloseClick} />
+        </div>
+      )}
       <Navbar />
       <div className="landing-page-container">
         <HeroSection />
@@ -44,7 +53,10 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <Footer handleTermsOpenClick={handleTermsOpenClick} />
+      <Footer
+        handleTermsOpenClick={handleTermsOpenClick}
+        handlePrivacyOpenClick={handlePrivacyOpenClick}
+      />
     </div>
   );
 };

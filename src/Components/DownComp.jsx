@@ -17,6 +17,7 @@ const DownComp = () => {
             <img src="images/bad1.png" alt="" />
 
             <img src="images/bad2.png" alt="" />
+            {/* <img src="images/qr.png" alt="" className="qr-ma" /> */}
           </div>{" "}
         </div>
         <div className="download-ri">

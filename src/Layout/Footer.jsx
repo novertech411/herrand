@@ -2,7 +2,7 @@
 // import { BsFacebook, BsTiktok } from "react-icons/bs";
 // import { FaYoutube } from "react-icons/fa";
 // import { FaXTwitter } from "react-icons/fa6";
-const Footer = ({ handleTermsOpenClick }) => {
+const Footer = ({ handleTermsOpenClick, handlePrivacyOpenClick }) => {
   return (
     <div className="footer-container" id="footer">
       <div className="footer-main-container">
@@ -18,7 +18,9 @@ const Footer = ({ handleTermsOpenClick }) => {
             <div className="txt-foot" onClick={handleTermsOpenClick}>
               Terms of Service
             </div>
-            <div className="txt-foot">Privacy Policy</div>
+            <div className="txt-foot" onClick={handlePrivacyOpenClick}>
+              Privacy Policy
+            </div>
             <div className="txt-foot">Guides for Agents</div>
             <div className="txt-foot">Safety for Customers</div>
           </div>

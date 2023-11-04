@@ -1,4 +1,4 @@
-const Privacy = ({ handleTermsCloseClick }) => {
+const Privacy = ({ handlePrivacyCloseClick }) => {
   return (
     <div className="terms-privacy-container">
       <div className="top-box-cont">PRIVACY POLICY</div>
@@ -273,88 +273,106 @@ const Privacy = ({ handleTermsCloseClick }) => {
           securely, or in some cases anonymise it, when there is no longer a
           legal, business or consumer need for it to be retained.
         </div>
-        <div className="main-txt-ed">Confidentiality</div>
+        <div className="main-txt-ed">Introduction</div>
         <div className="main-bdy-txt">
-          The parties to these Terms agree that each shall treat as confidential
-          all information provided by a party to the others regarding such
-          parties’ business and operations.
-          <br />
-          <br /> All confidential information provided by a prospective user
-          hereto shall be used by the Platform solely for the purpose of
-          rendering services pursuant to these Terms and except as may be
-          required in carrying out the Terms of this Agreement shall not be
-          disclosed to any third party without prior consent of the providing
-          party/Platform. <br />
-          <br />
-          The foregoing shall not be applicable to information that is publicly
-          available when provided or which is required to be disclosed by any
-          regulatory authority in the lawful and appropriate exercise of its
-          jurisdiction over a party or an auditor of the parties hereto, by
-          judicial or administrative process or otherwise by applicable law or
-          regulation.
+          Welcome to Herrands ("we," "us," or "our"), a company registered with
+          the Corporate Affairs Commision with the number RC6927181. We are
+          committed to protecting your privacy and ensuring that your personal
+          information is handled securely and responsibly. This Privacy Policy
+          explains how we collect, use, disclose, and safeguard your information
+          when you use our mobile application ("App"). <br />
+          <br /> By using our App, you consent to the practices described in
+          this Privacy Policy. If you do not agree with the terms herein, please
+          do not use our App.
         </div>
-        <div className="main-txt-ed">Assignment</div>
+        <div className="main-txt-ed">Information We Collect</div>
         <div className="main-bdy-txt">
-          Users hereby agree that the Platform may assign, transfer,
-          sub-contract or otherwise deal with our rights and/or obligations
-          under these Terms.
+          Information You Provide: We may collect information that you
+          voluntarily provide when using our App, including but not limited to:{" "}
           <br />
-          Subcontractors may not without the Platform's prior written consent
-          assign, transfer, sub-contract or otherwise deal with any of its
-          rights and/or obligations under these Terms.
+          <ul className="weinfo">
+            <li>
+              Personal and contact information (e.g., name, email address).
+            </li>
+            <li>User-generated content (e.g., task descriptions, comments).</li>
+            <li>Payment information (if applicable).</li>
+            <li>Communication data (e.g., messages sent through our App).</li>
+            <li>
+              Information provided for account registration and profile
+              creation.
+            </li>
+          </ul>
+          Automatically Collected Information: When you use our App, we may
+          automatically collect certain information, including:
+          <ul className="weinfo">
+            <li>Device information (e.g., device type, operating system).</li>
+            <li>App usage data (e.g., interactions, preferences, errors).</li>
+            <li>
+              Location data (with your consent), including precise and/or
+              approximate geolocation.
+            </li>
+            <li>Analytics and performance data.</li>
+          </ul>
         </div>
-        <div className="main-txt-ed">Third Party Rights</div>
+        <div className="main-txt-ed">How We Use Your Information</div>
         <div className="main-bdy-txt">
-          A contract under these Terms is for our benefit and your benefit and
-          is not intended to benefit or be enforceable by any third party. The
-          exercise of the parties’ rights under a contract under these Terms is
-          not subject to the consent of any third party.
-        </div>
-        <div className="main-txt-ed">Breaches of these Terms of Service</div>
-        <div className="main-bdy-txt">
-          If the Platform permits the registration of an account from a user on
-          its platform, it will remain open indefinitely subject to these Terms.
+          We use the collected information for various purposes, including:{" "}
           <br />
-          If you breach these Terms or if the Platform reasonably suspects that
-          you have breached these Terms or any of its codes, policies or
-          guidelines in any way, the Platform may:
-          <ul>
+          <ul className="weinfo">
+            <li>Providing and improving our App's services and features.</li>
+            <li>
+              Facilitating task assignment and communication between users.
+            </li>
+            <li>Processing payments and managing transactions.</li>
+            <li>Customizing and personalizing your experience.</li>
+            <li>Analyzing and enhancing the performance of our App.</li>
+            <li>Complying with legal requirements and obligations.</li>
+          </ul>
+        </div>
+        <div className="main-txt-ed">Your Choices</div>
+        <div className="main-bdy-txt">
+          You have the following rights regarding your personal information:
+          <ul className="weinfo">
             <br />
-            <li>temporarily suspend your access to its platform;</li>
-            <li>permanently prohibit you from accessing its platform;</li>
             <li>
-              block computers using your IP address from accessing its platform;
+              Access: You can request access to your personal data and receive a
+              copy.
             </li>
             <li>
-              contact any or all of your internet service providers and request
-              that they block your access to its platform;
+              Rectification: You can correct inaccuracies in your personal data.
             </li>
             <li>
-              commence legal action against you whether for breach of contract
-              or otherwise.
+              Deletion: You can request the deletion of your personal data,
+              subject to legal limitations.
+            </li>
+            <li>
+              Object: You can object to the processing of your personal data.
             </li>
           </ul>
         </div>
-        <div className="main-txt-ed">Changes to Terms</div>
+        <div className="main-txt-ed">Security</div>
         <div className="main-bdy-txt">
-          We may update these Terms from time to time. We will notify you of
-          significant changes, and your continued use of our Platform after such
-          changes constitutes your acceptance of the revised Terms.
+          We implement reasonable measures to protect your information from
+          unauthorized access, disclosure, alteration, or destruction. However,
+          please note that no method of transmission over the internet or
+          electronic storage is entirely secure.
         </div>
-        <div className="main-txt-ed">Contact Information</div>
+        <div className="main-txt-ed">Changes to This Privacy Policy</div>
         <div className="main-bdy-txt">
-          For questions or concerns about these Terms, please contact us at [
-          <a href="send@herrands.com">send@herrands.com</a>].
+          We may update this Privacy Policy from time to time. You will be
+          notified of any changes either through the App or via email. Your
+          continued use of our App following any changes constitutes acceptance
+          of those changes.
         </div>
-        <div className="main-txt-ed">Conclusion</div>
+        <div className="main-txt-ed">Contact Us</div>
         <div className="main-bdy-txt">
-          All parties confirm that by clicking a button confirming acceptance
-          hereof, the parties accept the terms of service as if it were signed
-          on paper and they shall be bound by same.
+          If you have questions, concerns, or requests related to this Privacy
+          Policy or your personal data, please contact us at: [
+          <a href="send@herrands.com">send@herrands.com</a>]
         </div>
       </div>
       <div className="top-box-cont rght flex">
-        <button className="close-bbtn" onClick={handleTermsCloseClick}>
+        <button className="close-bbtn" onClick={handlePrivacyCloseClick}>
           Ok
         </button>
       </div>
