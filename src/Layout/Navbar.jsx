@@ -40,7 +40,7 @@ const Navbar = () => {
           <ScrollLink
             to="hero-section"
             smooth={true}
-            duration={500}
+            duration={5}
             onClick={handleToggleItem}
             offset={scrollOffset}
           >
@@ -59,7 +59,7 @@ const Navbar = () => {
                 <ScrollLink
                   to="hero-section"
                   smooth={true}
-                  duration={500}
+                  duration={5}
                   onClick={handleToggleItem}
                   offset={scrollOffset}
                 >
@@ -69,7 +69,7 @@ const Navbar = () => {
                 <ScrollLink
                   to="about-section"
                   smooth={true}
-                  duration={500}
+                  duration={5}
                   onClick={handleToggleItem}
                   offset={scrollOffset}
                 >
@@ -79,7 +79,7 @@ const Navbar = () => {
                 <ScrollLink
                   to="our-feature-section"
                   smooth={true}
-                  duration={500}
+                  duration={5}
                   onClick={handleToggleItem}
                   offset={scrollOffset}
                 >
@@ -89,7 +89,7 @@ const Navbar = () => {
                 <ScrollLink
                   to="how-it-works-section"
                   smooth={true}
-                  duration={500}
+                  duration={5}
                   onClick={handleToggleItem}
                   offset={scrollOffset}
                 >
@@ -99,7 +99,7 @@ const Navbar = () => {
                 <ScrollLink
                   to="footer"
                   smooth={true}
-                  duration={500}
+                  duration={5}
                   onClick={handleToggleItem}
                   offset={scrollOffset}
                 >
@@ -120,7 +120,7 @@ const Navbar = () => {
           <ScrollLink
             to="download-section"
             smooth={true}
-            duration={500}
+            duration={5}
             onClick={handleToggleItem}
             offset={scrollOffset}
           >
@@ -132,7 +132,7 @@ const Navbar = () => {
         <ScrollLink
           to="download-section"
           smooth={true}
-          duration={500}
+          duration={5}
           onClick={handleToggleItem}
           offset={scrollOffset}
         >

@@ -8,10 +8,41 @@ import Navbar from "../../Layout/Navbar";
 import Footer from "../../Layout/Footer";
 
 import "./style.css";
+import Terms from "./Terms";
+import { useEffect, useState } from "react";
+import Privacy from "./Privacy";
 
 const LandingPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [isTermsOpen, setIsTermsOpen] = useState(false);
+  const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
+  const handlePrivacyOpenClick = () => {
+    setIsPrivacyOpen(true);
+  };
+  const handlePrivacyCloseClick = () => {
+    setIsPrivacyOpen(false);
+  };
+  const handleTermsOpenClick = () => {
+    setIsTermsOpen(true);
+  };
+  const handleTermsCloseClick = () => {
+    setIsTermsOpen(false);
+  };
   return (
-    <>
+    <div className="land-relat">
+      {isTermsOpen && (
+        <div className="land-lay flex">
+          <Terms handleTermsCloseClick={handleTermsCloseClick} />
+        </div>
+      )}
+      {isPrivacyOpen && (
+        <div className="land-lay flex">
+          <Privacy handlePrivacyCloseClick={handlePrivacyCloseClick} />
+        </div>
+      )}
       <Navbar />
       <div className="landing-page-container">
         <HeroSection />
@@ -26,8 +57,11 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <Footer />
-    </>
+      <Footer
+        handleTermsOpenClick={handleTermsOpenClick}
+        handlePrivacyOpenClick={handlePrivacyOpenClick}
+      />
+    </div>
   );
 };
 
