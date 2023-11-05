@@ -9,10 +9,14 @@ import Footer from "../../Layout/Footer";
 
 import "./style.css";
 import Terms from "./Terms";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Privacy from "./Privacy";
 
 const LandingPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [isTermsOpen, setIsTermsOpen] = useState(false);
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
   const handlePrivacyOpenClick = () => {

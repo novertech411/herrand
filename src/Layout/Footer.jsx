@@ -1,13 +1,13 @@
-// import { AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
-// import { BsFacebook, BsTiktok } from "react-icons/bs";
-// import { FaYoutube } from "react-icons/fa";
-// import { FaXTwitter } from "react-icons/fa6";
+import { AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
+import { BsFacebook, BsTiktok } from "react-icons/bs";
+import { FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 const Footer = ({ handleTermsOpenClick, handlePrivacyOpenClick }) => {
   return (
     <div className="footer-container" id="footer">
       <div className="footer-main-container">
         <div className="footer-logo-bx">
-          <img src="images/logo.png" alt="" className="one-mg" />
+          <img src="images/alof.jpg" alt="" className="one-mg" />
           <div className="badge-app-cont">
             <img src="images/bad1.png" alt="" />
             <img src="images/bad2.png" alt="" />
@@ -34,13 +34,25 @@ const Footer = ({ handleTermsOpenClick, handlePrivacyOpenClick }) => {
             <div className="txt-foot">0704 418 4306</div>
             <div className="txt-foot">send@herrands.com </div>
             <div className="social-mdia">
-              {/* <BsFacebook className="face" />
-              <AiFillInstagram />
-              <BsTiktok />
-              <FaYoutube />
-              <FaXTwitter />
-              <AiFillLinkedin /> */}
               <a href="https://web.facebook.com/sendherrands">
+                <BsFacebook className="face" />
+              </a>
+              <a href="https://www.instagram.com/sendherrands/">
+                <AiFillInstagram className="instam" />
+              </a>
+              <a href="https://www.tiktok.com/@sendherrands">
+                <BsTiktok className="" />
+              </a>
+              <a href="https://www.youtube.com/@sendherrands">
+                <FaYoutube className="tube" />
+              </a>
+              <a href="https://twitter.com/sendherrands">
+                <FaXTwitter className="" />
+              </a>
+              <a href="https://www.linkedin.com/company/sendherrands/">
+                <AiFillLinkedin className="lin" />
+              </a>
+              {/* <a href="https://web.facebook.com/sendherrands">
                 <img src="/images/fa.png" alt="" />
               </a>
               <a href="https://www.instagram.com/sendherrands/">
@@ -57,7 +69,7 @@ const Footer = ({ handleTermsOpenClick, handlePrivacyOpenClick }) => {
               </a>
               <a href="https://www.linkedin.com/company/sendherrands/">
                 <img src="/images/in.png" alt="" />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

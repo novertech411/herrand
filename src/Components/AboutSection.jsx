@@ -5,7 +5,7 @@ const AboutSection = () => {
   return (
     <div className="about-section-container" id="about-section">
       <div className="left-side-about">
-        <img src="images/lan2.jpeg" alt="" />
+        <img src="images/lagif.gif" alt="" />
       </div>
       <div className="right-side-about">
         <div className="advice-txt">Save Time, Stay Organised, Live Better</div>
