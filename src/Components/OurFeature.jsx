@@ -6,12 +6,9 @@ const OurFeature = () => {
   const [isAgent, setIsAgent] = useState(false);
 
   const handleAgentClick = () => {
-    setIsAgent(true);
+    setIsAgent(!isAgent);
   };
 
-  const handleCustomerClick = () => {
-    setIsAgent(false);
-  };
   return (
     <div className="our-feature-container">
       <div className="our-feature-head">
@@ -22,7 +19,7 @@ const OurFeature = () => {
         <div className="become-ag-cus-container">
           <div
             className={
-              !isAgent ? "become-ae-cus-bx act-tab" : "become-ae-cus-bx"
+              isAgent ? "become-ae-cus-bx act-tab" : "become-ae-cus-bx"
             }
             onClick={handleAgentClick}
           >
@@ -30,15 +27,15 @@ const OurFeature = () => {
           </div>
           <div
             className={
-              isAgent ? "become-ae-cus-bx act-tab" : "become-ae-cus-bx"
+              isAgent ? "become-ae-cus-bx " : "become-ae-cus-bx act-tab"
             }
-            onClick={handleCustomerClick}
+            onClick={handleAgentClick}
           >
             Become a Customer
           </div>
         </div>
       </div>
-      {!isAgent ? <AgentComp /> : <CustomerComp />}
+      {isAgent ? <AgentComp /> : <CustomerComp />}
     </div>
   );
 };
