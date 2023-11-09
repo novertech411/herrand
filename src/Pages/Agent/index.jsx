@@ -434,11 +434,13 @@ const Agent = () => {
   };
   const handlePreCloseClick = () => {
     setIsPreOpen(false);
+    setIsEditPreOpen(false);
   };
   const handleEditPreOpenClick = () => {
     setIsEditPreOpen(true);
   };
   const handleEditPreCloseClick = () => {
+    setIsPreOpen(false);
     setIsEditPreOpen(false);
   };
   const handleDelopenClick = (index) => {

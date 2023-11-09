@@ -3,8 +3,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const AgentComp = () => {
   return (
     <div className="about-section-container">
-      <div className="left-side-about">
-        <img src="images/land6.png" alt="" />
+      <div className="left-side-about ant">
+        <img src="images/ant1.jpg" alt="" />
       </div>
       <div className="right-side-about">
         <div className="advice-txt">MAKE MONEY WITH YOUR FREE TIME</div>

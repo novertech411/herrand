@@ -410,6 +410,7 @@ const Customer = () => {
     setIsEditPreOpen(false);
   };
   const handlePreCloseClick = () => {
+    setIsEditPreOpen(false);
     setIsPreOpen(false);
   };
   const handleDelopenClick = (index) => {
@@ -423,6 +424,7 @@ const Customer = () => {
     setIsEditPreOpen(true);
   };
   const handleEditPreCloseClick = () => {
+    setIsPreOpen(false);
     setIsEditPreOpen(false);
   };
   return (

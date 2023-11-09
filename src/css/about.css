@@ -42,6 +42,7 @@
   /* height: 400px; */
   object-fit: cover;
 }
+
 .right-side-about {
   width: 50%;
 }
@@ -264,6 +265,9 @@
     width: 40%;
     height: 40px;
     margin-top: 30px;
+  }
+  .ant {
+    margin-left: 30px;
   }
 }
 @media only screen and (max-width: 370px) {

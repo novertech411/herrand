@@ -4,7 +4,28 @@ import { GiOfficeChair, GiPostOffice } from "react-icons/gi";
 import { RiEBike2Fill } from "react-icons/ri";
 
 import "./style.css";
+import { useState } from "react";
+import Going from "./Going";
+import WhatErrand from "./WhatErrand";
 const AddPreferenceCos = ({ handleEditPreCloseClick, handlePreOpenClick }) => {
+  const [isSuggOpen, setIsSuggOpen] = useState(false);
+  const [isCanOpen, setIsCanOpen] = useState(false);
+  const [isWhatOpen, setIsWhatOpen] = useState(false);
+  const handleSuggOpenClick = () => {
+    setIsCanOpen(false);
+    setIsWhatOpen(false);
+    setIsSuggOpen(!isSuggOpen);
+  };
+  const handleCanClick = () => {
+    setIsSuggOpen(false);
+    setIsWhatOpen(false);
+    setIsCanOpen(!isCanOpen);
+  };
+  const handlWhatClick = () => {
+    setIsCanOpen(false);
+    setIsSuggOpen(false);
+    setIsWhatOpen(!isWhatOpen);
+  };
   return (
     <div className="pre-container-bx">
       <div className="pre-eit-view-bx">
@@ -24,7 +45,7 @@ const AddPreferenceCos = ({ handleEditPreCloseClick, handlePreOpenClick }) => {
       </div>
       <div className="form-container-pre">
         <div className="inpu-lab">
-          <div className="inpu-sm-bx">
+          <div className="inpu-sm-bx" onClick={handleSuggOpenClick}>
             <label htmlFor="">Where are you going?</label>
             <input
               type="text"
@@ -32,10 +53,11 @@ const AddPreferenceCos = ({ handleEditPreCloseClick, handlePreOpenClick }) => {
               placeholder="Where are you going?"
             />
           </div>
+          {isSuggOpen && <Going />}
         </div>
 
         <div className="inpu-lab">
-          <div className="inpu-sm-bx">
+          <div className="inpu-sm-bx" onClick={handlWhatClick}>
             <label htmlFor="">What errand are you running today?</label>
             <input
               type="text"
@@ -43,6 +65,7 @@ const AddPreferenceCos = ({ handleEditPreCloseClick, handlePreOpenClick }) => {
               placeholder="What errand are you running today??"
             />
           </div>
+          {isWhatOpen && <WhatErrand />}
         </div>
         <div className="inpu-lab">
           <label htmlFor="">Search by category</label>
