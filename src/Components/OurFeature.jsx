@@ -19,7 +19,7 @@ const OurFeature = () => {
         <div className="become-ag-cus-container">
           <div
             className={
-              isAgent ? "become-ae-cus-bx act-tab" : "become-ae-cus-bx"
+              isAgent ? "become-ae-cus-bx " : "become-ae-cus-bx act-tab"
             }
             onClick={handleAgentClick}
           >
@@ -27,7 +27,7 @@ const OurFeature = () => {
           </div>
           <div
             className={
-              isAgent ? "become-ae-cus-bx " : "become-ae-cus-bx act-tab"
+              isAgent ? "become-ae-cus-bx act-tab " : "become-ae-cus-bx "
             }
             onClick={handleAgentClick}
           >
@@ -35,7 +35,7 @@ const OurFeature = () => {
           </div>
         </div>
       </div>
-      {isAgent ? <AgentComp /> : <CustomerComp />}
+      {isAgent ? <CustomerComp /> : <AgentComp />}
     </div>
   );
 };
