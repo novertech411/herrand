@@ -30,7 +30,7 @@
   width: 90%;
 }
 .hero-simple {
-  font-size: 15px;
+  font-size: 17px;
   margin: 20px 0;
   color: #686868;
 }
@@ -203,7 +203,7 @@
     margin-top: 20px;
   }
   .hero-simple {
-    font-size: 10px;
+    font-size: 12px;
   }
   .app-badge-box img {
     width: 45%;
@@ -225,7 +225,7 @@
     line-height: 20px;
   }
   .hero-simple {
-    font-size: 9px;
+    font-size: 11px;
   }
   .app-badge-box {
     margin-top: 10px;
