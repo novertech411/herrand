@@ -2,7 +2,7 @@ const HowCompFirst = () => {
   return (
     <div className="about-section-container works">
       <div className="left-side-about famh">
-        <img src="images/fam3.png" alt="" />
+        <img src="images/let.png" alt="" />
       </div>
       <div className="right-side-about">
         <h1 className="abt-h1 fnt incrc-head">Getting Started</h1>

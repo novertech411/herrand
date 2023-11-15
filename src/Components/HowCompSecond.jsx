@@ -19,7 +19,7 @@ const HowCompSecond = () => {
         </div>
       </div>
       <div className="right-side-about samm">
-        <img src="images/fam4.png" alt="" />
+        <img src="images/err2.png" alt="" />
       </div>
     </div>
   );

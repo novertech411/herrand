@@ -50,7 +50,11 @@ const Navbar = () => {
           </ScrollLink>
         </div>
         <div className="nav-icon" onClick={handleToggleIcon}>
-          {toggleIcon ? <HiX size={30} /> : <FaBars size={30} />}
+          {toggleIcon ? (
+            <HiX size={30} />
+          ) : (
+            <FaBars size={30} className="bars" />
+          )}
         </div>
         <ul id="ul" className={toggleIcon ? "active" : ""}>
           {data.map((item, key) => (

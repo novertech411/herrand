@@ -191,12 +191,12 @@
     justify-content: flex-start;
     width: 50%;
     position: absolute;
-    top: 100%;
+    top: 0;
     right: 110%;
     opacity: 1;
     transition: all 0.5s ease;
-    height: 90vh;
-    padding-top: 10px;
+    height: 100vh;
+    padding-top: 90px;
     align-items: flex-start;
     padding-left: 15px;
   }
@@ -209,12 +209,16 @@
   .nav-icon {
     display: block;
     cursor: pointer;
-    color: #0066f5;
     padding-right: 20px;
+    z-index: 1113;
+    color: #fff;
+  }
+  .bars {
+    color: #0066f5;
   }
   .active {
     background: #0066f5;
-    left: 50%;
+    left: 65%;
     opacity: 1;
     z-index: 999;
   }
@@ -285,10 +289,16 @@
   .the-all-footer-txt {
     width: 100%;
   }
+  .active {
+    background: #0066f5;
+    left: 50%;
+    opacity: 1;
+    z-index: 999;
+  }
 }
 @media only screen and (max-width: 500px) {
   .nav-login {
-    width: 90%;
+    width: 100%;
     height: 35px;
   }
   .login-up {
@@ -315,14 +325,24 @@
   }
 }
 @media only screen and (max-width: 350px) {
+  #ul {
+    width: 70%;
+  }
   #ul li {
-    font-size: 18px;
+    font-size: 14px;
+  }
+  .active {
+    left: 35%;
   }
   .login-up {
-    font-size: 12px;
+    font-size: 13px;
+    padding: 5px;
   }
   .navbar {
     padding: 20px;
+  }
+  .nav-login {
+    width: 100%;
   }
   .logo img {
     width: 50px;

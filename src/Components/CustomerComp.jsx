@@ -4,7 +4,7 @@ const CustomerComp = () => {
   return (
     <div className="about-section-container">
       <div className="left-side-about">
-        <img src="images/fam5.png" alt="" />
+        <img src="images/cus2.png" alt="" />
       </div>
       <div className="right-side-about">
         <div className="advice-txt">FOCUS ON YOUR PRIORITY</div>
