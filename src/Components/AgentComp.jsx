@@ -3,7 +3,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const AgentComp = () => {
   return (
     <div className="about-section-container">
-      <div className="left-side-about ant">
+      <div className="left-side-about ant redddu">
         <img src="images/ant2.jpg" alt="" />
       </div>
       <div className="right-side-about">
