@@ -338,8 +338,35 @@ const Payout = () => {
   const totalPages = Math.ceil(data.length / dataPerPage);
   const indexOfLastData = activePage * dataPerPage;
   const indexOfFirstData = indexOfLastData - dataPerPage;
-  const currentData = data.slice(indexOfFirstData, indexOfLastData);
+  // const currentData = data.slice(indexOfFirstData, indexOfLastData);
   const [activeRowIndex, setActiveRowIndex] = useState(null);
+  const [searchInput, setSearchInput] = useState("");
+  const [selectedStatus, setSelectedStatus] = useState("");
+
+  const currentData = data
+    .filter((item) => {
+      const searchValue = searchInput.toLowerCase();
+      const statusFilter =
+        selectedStatus === "" ||
+        item.status.toLowerCase() === selectedStatus.toLowerCase();
+      return (
+        statusFilter &&
+        (item.firstName.toLowerCase().includes(searchValue) ||
+          item.lastName.toLowerCase().includes(searchValue) ||
+          item.phoneNumber.includes(searchInput) ||
+          item.email.toLowerCase().includes(searchValue) ||
+          item.status.toLowerCase().includes(searchValue))
+      );
+    })
+    .slice(indexOfFirstData, indexOfLastData);
+  const handleSearchChange = (e) => {
+    setSearchInput(e.target.value);
+    setActivePage(1); // Reset page to 1 when search input changes
+  };
+  const handleStatusChange = (e) => {
+    setSelectedStatus(e.target.value);
+    setActivePage(1); // Reset page to 1 when status filter changes
+  };
 
   const handleActionClick = (index) => {
     setActiveRowIndex((prevIndex) => (prevIndex === index ? null : index));
@@ -456,14 +483,27 @@ const Payout = () => {
             </div>
             <div className="filter-search flex">
               <div className="searc-bx flex">
-                <input type="text" className="sear-inp" placeholder="Search " />
+                <input
+                  type="text"
+                  className="sear-inp"
+                  placeholder="Search "
+                  value={searchInput}
+                  onChange={handleSearchChange}
+                />
                 <BiSearch />
               </div>
 
-              <select name="" id="" className="sel-filter">
+              <select
+                name=""
+                id=""
+                className="sel-filter"
+                value={selectedStatus}
+                onChange={handleStatusChange}
+              >
                 <option value="">Filter</option>
-                <option value="">1</option>
-                <option value="">3</option>
+                <option value="Credited">Credited</option>
+                <option value="Failed">Failed</option>
+                <option value="Pending">Pending</option>
               </select>
             </div>
           </div>

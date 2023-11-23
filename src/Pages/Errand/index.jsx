@@ -338,8 +338,35 @@ const Errand = () => {
   const totalPages = Math.ceil(data.length / dataPerPage);
   const indexOfLastData = activePage * dataPerPage;
   const indexOfFirstData = indexOfLastData - dataPerPage;
-  const currentData = data.slice(indexOfFirstData, indexOfLastData);
+  // const currentData = data.slice(indexOfFirstData, indexOfLastData);
   const [activeRowIndex, setActiveRowIndex] = useState(null);
+  const [searchInput, setSearchInput] = useState("");
+  const [selectedStatus, setSelectedStatus] = useState("");
+
+  const currentData = data
+    .filter((item) => {
+      const searchValue = searchInput.toLowerCase();
+      const statusFilter =
+        selectedStatus === "" ||
+        item.status.toLowerCase() === selectedStatus.toLowerCase();
+      return (
+        statusFilter &&
+        (item.firstName.toLowerCase().includes(searchValue) ||
+          item.lastName.toLowerCase().includes(searchValue) ||
+          item.phoneNumber.includes(searchInput) ||
+          item.email.toLowerCase().includes(searchValue) ||
+          item.status.toLowerCase().includes(searchValue))
+      );
+    })
+    .slice(indexOfFirstData, indexOfLastData);
+  const handleSearchChange = (e) => {
+    setSearchInput(e.target.value);
+    setActivePage(1); // Reset page to 1 when search input changes
+  };
+  const handleStatusChange = (e) => {
+    setSelectedStatus(e.target.value);
+    setActivePage(1); // Reset page to 1 when status filter changes
+  };
 
   const handleActionClick = (index) => {
     setActiveRowIndex((prevIndex) => (prevIndex === index ? null : index));
@@ -456,14 +483,27 @@ const Errand = () => {
             </div>
             <div className="filter-search flex">
               <div className="searc-bx flex">
-                <input type="text" className="sear-inp" placeholder="Search " />
+                <input
+                  type="text"
+                  className="sear-inp"
+                  placeholder="Search "
+                  value={searchInput}
+                  onChange={handleSearchChange}
+                />
                 <BiSearch />
               </div>
 
-              <select name="" id="" className="sel-filter">
+              <select
+                name=""
+                id=""
+                className="sel-filter"
+                value={selectedStatus}
+                onChange={handleStatusChange}
+              >
                 <option value="">Filter</option>
-                <option value="">1</option>
-                <option value="">3</option>
+                <option value="Completed">Completed</option>
+                <option value="Cancelled">Cancelled</option>
+                <option value="In Progress">In Progress</option>
               </select>
             </div>
           </div>
@@ -482,43 +522,47 @@ const Errand = () => {
                 </tr>
               </thead>
               <tbody>
-                {currentData.map((item, index) => (
-                  <tr key={index} className="tb-row">
-                    <td>Kenneth Francis</td>
-                    <td>Paul George</td>
-                    <td>Plan and arrange travel</td>
-                    <td>2,500</td>
-                    <td>Tickles garden Abuja</td>
-                    <td>Wuse Market rd 2</td>
-                    <td>
-                      <div
-                        className={`actt ${
-                          item.status === "Cancelled"
-                            ? "susp"
-                            : item.status === "In Progress"
-                            ? "pross"
-                            : ""
-                        }`}
-                      >
-                        {item.status}
-                      </div>
-                    </td>
-                    <td>
-                      <div
-                        className="action-men"
-                        onClick={() => handleActionClick(index)}
-                      >
-                        <BiDotsHorizontalRounded />
-                      </div>
+                {currentData.length === 0 ? (
+                  <div className="not-found-message">Not Found</div>
+                ) : (
+                  currentData.map((item, index) => (
+                    <tr key={index} className="tb-row">
+                      <td>Kenneth Francis</td>
+                      <td>Paul George</td>
+                      <td>Plan and arrange travel</td>
+                      <td>2,500</td>
+                      <td>Tickles garden Abuja</td>
+                      <td>Wuse Market rd 2</td>
+                      <td>
+                        <div
+                          className={`actt ${
+                            item.status === "Cancelled"
+                              ? "susp"
+                              : item.status === "In Progress"
+                              ? "pross"
+                              : ""
+                          }`}
+                        >
+                          {item.status}
+                        </div>
+                      </td>
+                      <td>
+                        <div
+                          className="action-men"
+                          onClick={() => handleActionClick(index)}
+                        >
+                          <BiDotsHorizontalRounded />
+                        </div>
 
-                      {activeRowIndex === index && (
-                        <SmallModalErrand
-                          handleDelopenClick={handleDelopenClick}
-                        />
-                      )}
-                    </td>
-                  </tr>
-                ))}
+                        {activeRowIndex === index && (
+                          <SmallModalErrand
+                            handleDelopenClick={handleDelopenClick}
+                          />
+                        )}
+                      </td>
+                    </tr>
+                  ))
+                )}
               </tbody>
             </table>
             <div className="pagin-sow-cont flex">
