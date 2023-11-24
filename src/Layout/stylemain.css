@@ -142,6 +142,7 @@ li {
   align-items: center;
   gap: 5px;
   cursor: pointer;
+  position: relative;
 }
 .profile-container img {
   width: 40px;
