@@ -2,9 +2,15 @@ import { PiBellSimpleLight } from "react-icons/pi";
 import { BiChevronDown } from "react-icons/bi";
 import LogModal from "../Modals/LogModal";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const NavBarDas = ({ pname }) => {
   const [isLogOpen, setIsLogOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const gotoLog = () => {
+    navigate("/admin/login");
+  };
 
   const handlePreOpenClick = () => {
     setIsLogOpen(!isLogOpen);
@@ -34,7 +40,7 @@ const NavBarDas = ({ pname }) => {
             <div className="adm-tst">Admin</div>
           </div>
 
-          {isLogOpen && <LogModal />}
+          {isLogOpen && <LogModal gotoLog={gotoLog} />}
         </div>
       </div>
     </div>
