@@ -25,16 +25,6 @@ const ViewPreferenceCos = ({ handlePreCloseClick, handleEditPreOpenClick }) => {
       </div>
       <div className="form-container-pre">
         <div className="inpu-lab">
-          <label htmlFor="">Where are you going?</label>
-          <div
-            type="text"
-            className="inp-pre flex  coll"
-            placeholder="Where are you going?"
-          >
-            Where are you going?
-          </div>
-        </div>
-        <div className="inpu-lab">
           <label htmlFor="">What errand are you running today?</label>
           <div type="text" className="inp-pre flex coll" placeholder="">
             What errand are you running today??

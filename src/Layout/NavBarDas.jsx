@@ -23,10 +23,10 @@ const NavBarDas = ({ pname }) => {
         <div className="logo-text">{pname}</div>
       </div>
       <div className="searc-profile">
-        <div className="notif-cont">
+        {/* <div className="notif-cont">
           <div className="bell-count"></div>
           <PiBellSimpleLight className="bell" />
-        </div>
+        </div> */}
         <div className="profile-container" onClick={handlePreOpenClick}>
           <img
             src="https://image.cnbcfm.com/api/v1/image/107228941-1682027700192-_DSC5658.jpg?v=1682427601&w=1920&h=1080"

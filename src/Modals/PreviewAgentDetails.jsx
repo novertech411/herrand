@@ -214,7 +214,7 @@ const PreviewAgentDetails = ({
               </div>
             </div>
             <div className="inpu-lab">
-              <label htmlFor="">Search by category</label>
+              <label htmlFor="">Which of these can you do</label>
               <div className="cat-sear-pref flex">
                 <div className="cat-box-sear flex">
                   <div className="txt-err">Pick up an item</div>

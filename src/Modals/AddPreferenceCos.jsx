@@ -45,18 +45,6 @@ const AddPreferenceCos = ({ handleEditPreCloseClick, handlePreOpenClick }) => {
       </div>
       <div className="form-container-pre">
         <div className="inpu-lab">
-          <div className="inpu-sm-bx" onClick={handleSuggOpenClick}>
-            <label htmlFor="">Where are you going?</label>
-            <input
-              type="text"
-              className="inp-pre"
-              placeholder="Where are you going?"
-            />
-          </div>
-          {isSuggOpen && <Going />}
-        </div>
-
-        <div className="inpu-lab">
           <div className="inpu-sm-bx" onClick={handlWhatClick}>
             <label htmlFor="">What errand are you running today?</label>
             <input

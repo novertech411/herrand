@@ -25,14 +25,14 @@ const Dashboard = () => {
               cardName={"New Agents"}
               user={"564"}
               profit="+3.35%"
-              info={"Users this month"}
+              info={"Agents this month"}
             />
             <DashCard
               card={"customer"}
               cardName={"New Customers"}
               user={"143"}
               profit="-3.35%"
-              info={"Agents this month"}
+              info={"customer this month"}
             />
             <DashCard
               card={"errand"}
@@ -49,6 +49,13 @@ const Dashboard = () => {
               info={"Payouts this month"}
             />
           </div>
+
+          {/* <div className="">
+            <select className="bbb">
+              <option value="value1">Month</option>
+              <option value="value2">Option 2</option>
+            </select>
+          </div> */}
           <div className="chart-top-cus-row">
             <ChartComp />
             <div className="right-side-cont">

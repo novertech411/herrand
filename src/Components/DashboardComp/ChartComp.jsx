@@ -74,12 +74,14 @@ const ChartComp = () => {
       <div className="button-container">
         <div className="select-buttons">
           <select className="bbb">
-            <option value="value1">Month</option>
-            <option value="value2">Option 2</option>
-          </select>
-          <select className="bbb">
-            <option value="value1">Date</option>
-            <option value="value2">Option 2</option>
+            <option value="">Month</option>
+            <option value="Jan">Jan</option>
+            <option value="Feb">Feb</option>
+            <option value="Mar">Mar</option>
+            <option value="Apr">Apr</option>
+            <option value="May">May</option>
+            <option value="Jun">Jun</option>
+            <option value="Jul">Jul</option>
           </select>
         </div>
       </div>
