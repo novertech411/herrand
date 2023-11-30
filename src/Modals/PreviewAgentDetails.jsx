@@ -205,7 +205,7 @@ const PreviewAgentDetails = ({
             </div>
             <div className="inpu-lab">
               <div className="inpu-sm-bx">
-                <label htmlFor="">Which of this applies to you</label>
+                <label htmlFor="">Which of this applies to you?</label>
                 <input
                   type="text"
                   className="inp-pre"
@@ -214,7 +214,7 @@ const PreviewAgentDetails = ({
               </div>
             </div>
             <div className="inpu-lab">
-              <label htmlFor="">Which of these can you do</label>
+              <label htmlFor="">Which of these can you do?</label>
               <div className="cat-sear-pref flex">
                 <div className="cat-box-sear flex">
                   <div className="txt-err">Pick up an item</div>
@@ -236,7 +236,7 @@ const PreviewAgentDetails = ({
             </div>
             <div className="inpu-lab">
               <div className="inpu-sm-bx">
-                <label htmlFor="">What is your pay per hour</label>
+                <label htmlFor="">Select your hourly rate</label>
                 <input type="text" className="inp-pre" placeholder="N2500/hr" />
               </div>
             </div>
@@ -248,7 +248,7 @@ const PreviewAgentDetails = ({
             </div>
             <div className="inpu-lab">
               <div className="inpu-sm-bx">
-                <label htmlFor="">How fast can you deliver</label>
+                <label htmlFor="">How fast can you deliver?</label>
                 <input type="text" className="inp-pre" placeholder="30mins" />
               </div>
             </div>

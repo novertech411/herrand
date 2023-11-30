@@ -520,42 +520,50 @@ const Payout = () => {
                 </tr>
               </thead>
               <tbody>
-                {currentData.map((item, index) => (
-                  <tr key={index} className="tb-row">
-                    <td>Kenneth Francis</td>
-                    <td>Paul George</td>
-                    <td>2,500</td>
-                    <td>11-12-2023</td>
+                {currentData.length === 0 ? (
+                  <div className="sw-bx">
+                    <div className="not-found-message">
+                      Nothing matches <br /> the current filter
+                    </div>
+                  </div>
+                ) : (
+                  currentData.map((item, index) => (
+                    <tr key={index} className="tb-row">
+                      <td>Kenneth Francis</td>
+                      <td>Paul George</td>
+                      <td>2,500</td>
+                      <td>11-12-2023</td>
 
-                    <td>
-                      <div
-                        className={`actt ${
-                          item.status === "Failed"
-                            ? "susp"
-                            : item.status === "Pending"
-                            ? "pross"
-                            : ""
-                        }`}
-                      >
-                        {item.status}
-                      </div>
-                    </td>
-                    <td>
-                      <div
-                        className="action-men"
-                        onClick={() => handleActionClick(index)}
-                      >
-                        <BiDotsHorizontalRounded />
-                      </div>
+                      <td>
+                        <div
+                          className={`actt ${
+                            item.status === "Failed"
+                              ? "susp"
+                              : item.status === "Pending"
+                              ? "pross"
+                              : ""
+                          }`}
+                        >
+                          {item.status}
+                        </div>
+                      </td>
+                      <td>
+                        <div
+                          className="action-men"
+                          onClick={() => handleActionClick(index)}
+                        >
+                          <BiDotsHorizontalRounded />
+                        </div>
 
-                      {activeRowIndex === index && (
-                        <SmallModalErrand
-                          handleDelopenClick={handleDelopenClick}
-                        />
-                      )}
-                    </td>
-                  </tr>
-                ))}
+                        {activeRowIndex === index && (
+                          <SmallModalErrand
+                            handleDelopenClick={handleDelopenClick}
+                          />
+                        )}
+                      </td>
+                    </tr>
+                  ))
+                )}
               </tbody>
             </table>
             <div className="pagin-sow-cont flex">

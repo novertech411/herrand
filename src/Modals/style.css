@@ -582,3 +582,6 @@ input:checked + .slider:before {
   height: 40px;
   margin: 15px 0;
 }
+.cls-cn {
+  cursor: pointer;
+}

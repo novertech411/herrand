@@ -55,7 +55,7 @@ const AddPreferenceCos = ({ handleEditPreCloseClick, handlePreOpenClick }) => {
           </div>
           {isWhatOpen && <WhatErrand />}
         </div>
-        <div className="inpu-lab">
+        {/* <div className="inpu-lab">
           <label htmlFor="">Search by category</label>
           <div className="cat-sear-pref flex">
             <div className="cat-box-sear flex">
@@ -79,7 +79,7 @@ const AddPreferenceCos = ({ handleEditPreCloseClick, handlePreOpenClick }) => {
               <div className="txt-err">Household chores</div>
             </div>
           </div>
-        </div>
+        </div> */}
         <button className="per-btn bbl">Save changes</button>
       </div>
     </div>

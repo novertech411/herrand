@@ -33,7 +33,7 @@ const WhatErrand = () => {
         {Data.map((data, index) => (
           <div className="each-bx-loc flex" key={index}>
             <div className="each-loc">{data.task}</div>
-            <AiOutlineClose />
+            <AiOutlineClose className="cls-cn" />
           </div>
         ))}
       </div>

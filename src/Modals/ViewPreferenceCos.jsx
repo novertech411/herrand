@@ -30,7 +30,7 @@ const ViewPreferenceCos = ({ handlePreCloseClick, handleEditPreOpenClick }) => {
             What errand are you running today??
           </div>
         </div>
-        <div className="inpu-lab">
+        {/* <div className="inpu-lab">
           <label htmlFor="">Search by category</label>
           <div className="cat-sear-pref flex">
             <div className="cat-box-sear flex">
@@ -54,7 +54,7 @@ const ViewPreferenceCos = ({ handlePreCloseClick, handleEditPreOpenClick }) => {
               <div className="txt-err">Household chores</div>
             </div>
           </div>
-        </div>
+        </div> */}
         <button className="per-btn">Save changes</button>
       </div>
     </div>

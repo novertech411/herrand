@@ -1,8 +1,8 @@
 import "../../css/DashCss/DashBoardComp.css";
 import { HiUsers } from "react-icons/hi2";
 import { FaUserAlt } from "react-icons/fa";
-import { RiArrowGoBackFill } from "react-icons/ri";
 import { FaHandHoldingUsd } from "react-icons/fa";
+import { LiaHandsHelpingSolid } from "react-icons/lia";
 
 const DashCard = ({ card, cardName, user, profit, info }) => {
   // agent, customer, errand, Payout;
@@ -16,7 +16,7 @@ const DashCard = ({ card, cardName, user, profit, info }) => {
       iconToDisplay = <FaUserAlt />;
       break;
     case "errand":
-      iconToDisplay = <RiArrowGoBackFill />;
+      iconToDisplay = <LiaHandsHelpingSolid />;
       break;
     case "payout":
       iconToDisplay = <FaHandHoldingUsd />;

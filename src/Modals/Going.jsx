@@ -45,7 +45,7 @@ const Going = () => {
         {locations.map((location, index) => (
           <div className="each-bx-loc flex" key={index}>
             <div className="each-loc">{location.loc}</div>
-            <AiOutlineClose />
+            <AiOutlineClose className="cls-cn" />
           </div>
         ))}
       </div>

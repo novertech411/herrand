@@ -522,7 +522,11 @@ const Customer = () => {
               </thead>
               <tbody>
                 {currentData.length === 0 ? (
-                  <div className="not-found-message">Not Found</div>
+                  <div className="sw-bx">
+                    <div className="not-found-message">
+                      Nothing matches <br /> the current filter
+                    </div>
+                  </div>
                 ) : (
                   currentData.map((item, index) => (
                     <tr key={index} className="tb-row">

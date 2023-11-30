@@ -1,7 +1,8 @@
 import { RxDashboard } from "react-icons/rx";
 import { BsPeople } from "react-icons/bs";
 import { MdOutlinePersonOutline } from "react-icons/md";
-import { RiArrowGoBackFill, RiAdminFill } from "react-icons/ri";
+import { RiAdminFill } from "react-icons/ri";
+import { LiaHandsHelpingSolid } from "react-icons/lia";
 import { FaHandHoldingUsd } from "react-icons/fa";
 import "./stylemain.css";
 import { NavLink } from "react-router-dom";
@@ -66,7 +67,7 @@ const Sidebar = ({ isCollapsed }) => {
                 isActive ? "active_link side-item" : "side-item"
               }
             >
-              <RiArrowGoBackFill className="side-icon " />
+              <LiaHandsHelpingSolid className="side-icon " />
               <div className="sidebar-text">Errands</div>
             </NavLink>
 

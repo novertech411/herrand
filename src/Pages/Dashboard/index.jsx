@@ -32,7 +32,7 @@ const Dashboard = () => {
               cardName={"New Customers"}
               user={"143"}
               profit="-3.35%"
-              info={"customer this month"}
+              info={"Customers this month"}
             />
             <DashCard
               card={"errand"}

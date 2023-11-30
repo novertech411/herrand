@@ -521,11 +521,16 @@ const Errand = () => {
                   <th>Action</th>
                 </tr>
               </thead>
-              <tbody>
-                {currentData.length === 0 ? (
-                  <div className="not-found-message">Not Found</div>
-                ) : (
-                  currentData.map((item, index) => (
+
+              {currentData.length === 0 ? (
+                <div className="sw-bx">
+                  <div className="not-found-message">
+                    Nothing matches <br /> the current filter
+                  </div>
+                </div>
+              ) : (
+                currentData.map((item, index) => (
+                  <tbody>
                     <tr key={index} className="tb-row">
                       <td>Kenneth Francis</td>
                       <td>Paul George</td>
@@ -561,9 +566,9 @@ const Errand = () => {
                         )}
                       </td>
                     </tr>
-                  ))
-                )}
-              </tbody>
+                  </tbody>
+                ))
+              )}
             </table>
             <div className="pagin-sow-cont flex">
               <div className="show-counter">
