@@ -223,7 +223,7 @@ const PreviewAgentDetailsView = ({
             </div>
           </div>
           {/* <div className="add-pre-edit-view flex dwn"></div> */}
-          <button className="per-btn bbl red-margn">Save changes</button>
+          {/* <button className="per-btn bbl red-margn">Save changes</button> */}
         </div>
       </div>
     </div>
