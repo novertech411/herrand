@@ -7,6 +7,7 @@ import Agent from "./Pages/Agent";
 import Errand from "./Pages/Errand";
 import Payout from "./Pages/Payout";
 import AdminLogin from "./Pages/AdminLogin";
+import Password from "./Pages/Password";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/agent" element={<Agent />} />
         <Route path="/errand" element={<Errand />} />
         <Route path="/payout" element={<Payout />} />
+        <Route path="/setpass" element={<Password />} />
         <Route path="/admin/login" element={<AdminLogin />} />
       </Routes>
     </div>
