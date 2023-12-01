@@ -41,13 +41,13 @@ const Dashboard = () => {
               profit="-3.35%"
               info={"Errands this month"}
             />
-            <DashCard
+            {/* <DashCard
               card={"payout"}
               cardName={"Payouts"}
               user={"143"}
               profit="+3.35%"
               info={"Payouts this month"}
-            />
+            /> */}
           </div>
 
           {/* <div className="">

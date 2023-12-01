@@ -71,7 +71,7 @@ const Sidebar = ({ isCollapsed }) => {
               <div className="sidebar-text">Errands</div>
             </NavLink>
 
-            <NavLink
+            {/* <NavLink
               to="/payout"
               className={({ isActive }) =>
                 isActive ? "active_link side-item" : "side-item"
@@ -79,7 +79,7 @@ const Sidebar = ({ isCollapsed }) => {
             >
               <FaHandHoldingUsd className="side-icon " />
               <div className="sidebar-text">Payouts</div>
-            </NavLink>
+            </NavLink> */}
             {/* <NavLink
             to="/people"
             className={({ isActive }) =>
