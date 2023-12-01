@@ -367,6 +367,7 @@ const Agent = () => {
     setSearchInput(e.target.value);
     setActivePage(1); // Reset page to 1 when search input changes
   };
+
   const handleStatusChange = (e) => {
     setSelectedStatus(e.target.value);
     setActivePage(1); // Reset page to 1 when status filter changes
@@ -477,6 +478,20 @@ const Agent = () => {
   const handleDelCloseClick = () => {
     setIsDelOpen(false);
   };
+
+  const totalActive = data.filter((item) => item.status === "Active").length;
+
+  const totalSuspended = data.filter(
+    (item) => item.status === "Suspended"
+  ).length;
+
+  const total_data = data.length;
+  const tot_user =
+    selectedStatus === ""
+      ? total_data
+      : selectedStatus === "Active"
+      ? totalActive
+      : totalSuspended;
   return (
     <>
       {isPreOpen && (
@@ -516,7 +531,7 @@ const Agent = () => {
           <DeleteModal handleDelCloseClick={handleDelCloseClick} />
         </div>
       )}
-      <MainLayout pname={"Agent"}>
+      <MainLayout pname={"Agent"} tot_user={tot_user}>
         <div className="dashboard-container">
           <div className="customer-page-toper flex">
             <div className="add-pre-btn flex" onClick={handlePreOpenClick}>

@@ -4,7 +4,7 @@ import LogModal from "../Modals/LogModal";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const NavBarDas = ({ pname }) => {
+const NavBarDas = ({ pname, tot_user }) => {
   const [isLogOpen, setIsLogOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -19,8 +19,11 @@ const NavBarDas = ({ pname }) => {
   return (
     <div className="navbar-container">
       <div className="logo-container">
-        <img src="images/logo.png" alt="" className="logo-img" />
+        {/* <img src="images/logo.png" alt="" className="logo-img" /> */}
         <div className="logo-text">{pname}</div>
+        <div className="total-user-txt">
+          {tot_user} {pname}
+        </div>
       </div>
       <div className="searc-profile">
         {/* <div className="notif-cont">

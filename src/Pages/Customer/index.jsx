@@ -363,6 +363,7 @@ const Customer = () => {
     setSearchInput(e.target.value);
     setActivePage(1); // Reset page to 1 when search input changes
   };
+
   const handleStatusChange = (e) => {
     setSelectedStatus(e.target.value);
     setActivePage(1); // Reset page to 1 when status filter changes
@@ -454,6 +455,20 @@ const Customer = () => {
     setIsPreOpen(false);
     setIsEditPreOpen(false);
   };
+
+  const totalActive = data.filter((item) => item.status === "Active").length;
+
+  const totalSuspended = data.filter(
+    (item) => item.status === "Suspended"
+  ).length;
+
+  const total_data = data.length;
+  const tot_user =
+    selectedStatus === ""
+      ? total_data
+      : selectedStatus === "Active"
+      ? totalActive
+      : totalSuspended;
   return (
     <>
       {isPreOpen && (
@@ -477,7 +492,7 @@ const Customer = () => {
           <DeleteModal handleDelCloseClick={handleDelCloseClick} />
         </div>
       )}
-      <MainLayout pname={"Customer"}>
+      <MainLayout pname={"Customer"} tot_user={tot_user}>
         <div className="dashboard-container">
           <div className="customer-page-toper flex">
             <div className="add-pre-btn flex" onClick={handlePreOpenClick}>

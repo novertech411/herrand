@@ -3,7 +3,7 @@ import Sidebar from "./Sidebar";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import NavBarDas from "./NavBarDas";
 
-const MainLayout = ({ children, pname }) => {
+const MainLayout = ({ children, pname, tot_user }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   const handleCollapseIcon = () => {
@@ -21,7 +21,7 @@ const MainLayout = ({ children, pname }) => {
         <Sidebar isCollapsed={isCollapsed} />
       </div>
       <div className="nav-cild">
-        <NavBarDas pname={pname} />
+        <NavBarDas pname={pname} tot_user={tot_user} />
         {children}
       </div>
     </div>

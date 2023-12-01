@@ -94,14 +94,14 @@ const Errand = () => {
       lastName: "Brown",
       phoneNumber: "09077778888",
       email: "oliviabrown@example.com",
-      status: "Active",
+      status: "In Progress",
     },
     {
       firstName: "Sophia",
       lastName: "Lopez",
       phoneNumber: "09199990000",
       email: "sophialopez@example.com",
-      status: "Active",
+      status: "In Progress",
     },
     {
       firstName: "Logan",
@@ -122,14 +122,14 @@ const Errand = () => {
       lastName: "Garcia",
       phoneNumber: "09111112222",
       email: "avagarcia@example.com",
-      status: "Active",
+      status: "In Progress",
     },
     {
       firstName: "Sophia",
       lastName: "Lopez",
       phoneNumber: "09199990000",
       email: "sophialopez@example.com",
-      status: "Active",
+      status: "Completed",
     },
     {
       firstName: "Logan",
@@ -150,7 +150,7 @@ const Errand = () => {
       lastName: "Martinez",
       phoneNumber: "09155556666",
       email: "isabellamartinez@example.com",
-      status: "Active",
+      status: "Completed",
     },
     {
       firstName: "James",
@@ -164,7 +164,7 @@ const Errand = () => {
       lastName: "Lopez",
       phoneNumber: "09199990000",
       email: "sophialopez@example.com",
-      status: "Active",
+      status: "Completed",
     },
     {
       firstName: "Logan",
@@ -178,7 +178,7 @@ const Errand = () => {
       lastName: "Lopez",
       phoneNumber: "09199990000",
       email: "sophialopez@example.com",
-      status: "Active",
+      status: "Completed",
     },
     {
       firstName: "Logan",
@@ -192,7 +192,7 @@ const Errand = () => {
       lastName: "Francis",
       phoneNumber: "090324554332",
       email: "Knfrancis@gmail.com",
-      status: "Active",
+      status: "Completed",
     },
     {
       firstName: "Kenneth",
@@ -206,7 +206,7 @@ const Errand = () => {
       lastName: "Doe",
       phoneNumber: "090123456789",
       email: "johndoe@example.com",
-      status: "Active",
+      status: "Completed",
     },
     {
       firstName: "Jane",
@@ -220,7 +220,7 @@ const Errand = () => {
       lastName: "Lopez",
       phoneNumber: "09199990000",
       email: "sophialopez@example.com",
-      status: "Active",
+      status: "Completed",
     },
     {
       firstName: "Logan",
@@ -241,7 +241,7 @@ const Errand = () => {
       lastName: "Francis",
       phoneNumber: "090324554332",
       email: "Knfrancis@gmail.com",
-      status: "Active",
+      status: "Completed",
     },
     {
       firstName: "Kenneth",
@@ -255,7 +255,7 @@ const Errand = () => {
       lastName: "Doe",
       phoneNumber: "090123456789",
       email: "johndoe@example.com",
-      status: "Active",
+      status: "Completed",
     },
     {
       firstName: "Jane",
@@ -269,7 +269,7 @@ const Errand = () => {
       lastName: "Lopez",
       phoneNumber: "09199990000",
       email: "sophialopez@example.com",
-      status: "Active",
+      status: "Completed",
     },
     {
       firstName: "Logan",
@@ -284,14 +284,14 @@ const Errand = () => {
       lastName: "Smith",
       phoneNumber: "09011112222",
       email: "michaelsmith@example.com",
-      status: "Active",
+      status: "Completed",
     },
     {
       firstName: "Emily",
       lastName: "Johnson",
       phoneNumber: "09033334444",
       email: "emilyjohnson@example.com",
-      status: "Active",
+      status: "Completed",
     },
     {
       firstName: "Daniel",
@@ -305,14 +305,14 @@ const Errand = () => {
       lastName: "Brown",
       phoneNumber: "09077778888",
       email: "oliviabrown@example.com",
-      status: "Active",
+      status: "Completed",
     },
     {
       firstName: "Sophia",
       lastName: "Lopez",
       phoneNumber: "09199990000",
       email: "sophialopez@example.com",
-      status: "Active",
+      status: "Completed",
     },
     {
       firstName: "Logan",
@@ -327,7 +327,7 @@ const Errand = () => {
       lastName: "Smith",
       phoneNumber: "09011112222",
       email: "michaelsmith@example.com",
-      status: "Active",
+      status: "Completed",
     },
   ];
   const [activePage, setActivePage] = useState(1);
@@ -363,6 +363,7 @@ const Errand = () => {
     setSearchInput(e.target.value);
     setActivePage(1); // Reset page to 1 when search input changes
   };
+
   const handleStatusChange = (e) => {
     setSelectedStatus(e.target.value);
     setActivePage(1); // Reset page to 1 when status filter changes
@@ -451,7 +452,25 @@ const Errand = () => {
   const handleDelCloseClick = () => {
     setIsDelOpen(false);
   };
+  const totalCompleted = data.filter(
+    (item) => item.status === "Completed"
+  ).length;
 
+  const totalCancelled = data.filter(
+    (item) => item.status === "Cancelled"
+  ).length;
+  const totalInProgress = data.filter(
+    (item) => item.status === "In Progress"
+  ).length;
+  const total_data = data.length;
+  const tot_user =
+    selectedStatus === ""
+      ? total_data
+      : selectedStatus === "Completed"
+      ? totalCompleted
+      : selectedStatus === "Cancelled"
+      ? totalCancelled
+      : totalInProgress;
   return (
     <>
       {isPreOpen && (
@@ -475,7 +494,7 @@ const Errand = () => {
           <DeleteModal handleDelCloseClick={handleDelCloseClick} />
         </div>
       )}
-      <MainLayout pname={"Errands"}>
+      <MainLayout pname={"Errands"} tot_user={tot_user}>
         <div className="dashboard-container">
           <div className="customer-page-toper flex">
             <div className="add-pre-btn flex nonn" onClick={handlePreOpenClick}>
