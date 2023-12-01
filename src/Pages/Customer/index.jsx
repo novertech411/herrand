@@ -492,7 +492,7 @@ const Customer = () => {
           <DeleteModal handleDelCloseClick={handleDelCloseClick} />
         </div>
       )}
-      <MainLayout pname={"Customer"} tot_user={tot_user}>
+      <MainLayout pname={"Customers"} tot_user={tot_user}>
         <div className="dashboard-container">
           <div className="customer-page-toper flex">
             <div className="add-pre-btn flex" onClick={handlePreOpenClick}>

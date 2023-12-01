@@ -531,7 +531,7 @@ const Agent = () => {
           <DeleteModal handleDelCloseClick={handleDelCloseClick} />
         </div>
       )}
-      <MainLayout pname={"Agent"} tot_user={tot_user}>
+      <MainLayout pname={"Agents"} tot_user={tot_user}>
         <div className="dashboard-container">
           <div className="customer-page-toper flex">
             <div className="add-pre-btn flex" onClick={handlePreOpenClick}>
