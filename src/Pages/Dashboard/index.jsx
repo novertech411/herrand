@@ -5,6 +5,7 @@ import MainLayout from "../../Layout/MainLayout";
 import TopCustomerAll from "../../Components/DashboardComp/TopCustomerAll";
 import TopAgentAll from "../../Components/DashboardComp/TopAgentAll";
 import { useState } from "react";
+import PriceControl from "./PriceControl";
 const Dashboard = () => {
   const [displayedComponent, setDisplayedComponent] = useState("customer");
 

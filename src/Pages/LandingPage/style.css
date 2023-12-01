@@ -108,9 +108,15 @@
   height: 35px;
   color: #fff;
 }
+.close-bbtn:hover {
+  background: #fff;
+  border: 1px solid #0066f5;
+  color: #0066f5;
+}
 .rght {
   justify-content: right;
   padding: 10px 20px;
+  gap: 30px;
 }
 .weinfo li {
   list-style-type: square;

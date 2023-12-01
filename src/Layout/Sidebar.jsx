@@ -1,15 +1,15 @@
 import { RxDashboard } from "react-icons/rx";
 import { BsPeople } from "react-icons/bs";
-import { MdOutlinePersonOutline } from "react-icons/md";
+import { MdOutlinePersonOutline, MdPriceChange } from "react-icons/md";
 import { RiAdminFill } from "react-icons/ri";
 import { LiaHandsHelpingSolid } from "react-icons/lia";
-import { FaHandHoldingUsd } from "react-icons/fa";
+// import { FaHandHoldingUsd } from "react-icons/fa";
 import "./stylemain.css";
 import { NavLink } from "react-router-dom";
 import ManageAdminModal from "../Modals/ManageAdminModal";
 import { useState } from "react";
 
-const Sidebar = ({ isCollapsed }) => {
+const Sidebar = ({ isCollapsed, handlePriceOpenClick }) => {
   const [isAdminOpen, setIsAdminOpen] = useState("");
 
   const handleAdminOpen = (e) => {
@@ -69,6 +69,15 @@ const Sidebar = ({ isCollapsed }) => {
             >
               <LiaHandsHelpingSolid className="side-icon " />
               <div className="sidebar-text">Errands</div>
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "side-item" : "side-item"
+              }
+              onClick={handlePriceOpenClick}
+            >
+              <MdPriceChange className="side-icon " />
+              <div className="sidebar-text">Price control</div>
             </NavLink>
 
             {/* <NavLink

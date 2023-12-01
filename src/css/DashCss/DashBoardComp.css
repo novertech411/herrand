@@ -138,6 +138,33 @@
   justify-content: space-between;
   margin: 10px 0;
 }
+.lab-inp-container {
+  width: 100%;
+  margin: 10px 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.lab-inp-container label {
+  font-size: 16px;
+}
+.lab-inp-container .pri-con {
+  width: 20%;
+  outline: none;
+  height: 25px;
+  border: 1px solid #898989;
+  padding: 0 10px;
+  font-size: 14px;
+}
+.nobg {
+  background: #fff;
+  border: 1px solid #0066f5;
+  color: #0066f5;
+}
+.nobg:hover {
+  background: #0066f5;
+  color: #fff;
+}
 @media only screen and (max-width: 1150px) {
   .dashboard-container {
     width: 120%;
