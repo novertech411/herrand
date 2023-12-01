@@ -47,10 +47,10 @@ const PreviewAgentDetailsView = ({
           </div>
           <div className="add-pre-edit-view flex">
             <div className="pre-add-txt">A full preview of Agent details </div>
-            <div className="edit-view flex" onClick={handlePreviewOpenClick}>
+            {/* <div className="edit-view flex" onClick={handlePreviewOpenClick}>
               <LuPencilLine />
               <div className="ed-vi">Edit</div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="form-container-pre ndn">

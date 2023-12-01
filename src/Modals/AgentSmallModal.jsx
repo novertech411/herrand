@@ -20,10 +20,10 @@ const AgentSmallModal = ({
           <AiFillEye />
           <div className="ed-vid">View</div>
         </div>
-        <div className="view-dit flex" onClick={handlePreviewOpenClick}>
+        {/* <div className="view-dit flex" onClick={handlePreviewOpenClick}>
           <LuPencilLine />
           <div className="ed-vid">Edit</div>
-        </div>
+        </div> */}
         <div
           className={`sus-act-bx flex ${isActivated ? "vate" : ""}`}
           onClick={handleToggle}
