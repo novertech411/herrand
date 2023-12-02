@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { AiOutlineClose, AiOutlinePlus } from "react-icons/ai";
+import AddMore from "./AddMore";
 
 const Data = [
   { task: "clean up my house" },
@@ -27,21 +29,30 @@ const Data = [
 ];
 
 const YouCanModal = () => {
+  const [isInpOpen, setIsInpOpen] = useState(false);
+
+  const handleInpClick = () => {
+    setIsInpOpen(!isInpOpen);
+  };
   return (
-    <div className="loca-modal-container">
-      <div className="list-items-box">
-        {Data.map((data, index) => (
-          <div className="each-bx-loc flex" key={index}>
-            <div className="each-loc">{data.task}</div>
-            <AiOutlineClose className="cls-cn" />
-          </div>
-        ))}
+    <>
+      {" "}
+      {isInpOpen && <AddMore />}
+      <div className="loca-modal-container">
+        <div className="list-items-box">
+          {Data.map((data, index) => (
+            <div className="each-bx-loc flex" key={index}>
+              <div className="each-loc">{data.task}</div>
+              <AiOutlineClose className="cls-cn" />
+            </div>
+          ))}
+        </div>
+        <div className="cat-box-sear flex red-wd" onClick={handleInpClick}>
+          <div className="txt-err">Add more</div>
+          <AiOutlinePlus />
+        </div>
       </div>
-      <div className="cat-box-sear flex red-wd">
-        <div className="txt-err">Add more</div>
-        <AiOutlinePlus />
-      </div>
-    </div>
+    </>
   );
 };
 

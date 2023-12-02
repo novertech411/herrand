@@ -1,4 +1,6 @@
 import { AiOutlineClose, AiOutlinePlus } from "react-icons/ai";
+import AddMore from "./AddMore";
+import { useState } from "react";
 
 const locations = [
   { loc: "Lagos" },
@@ -39,21 +41,29 @@ const locations = [
 ];
 
 const LocatedModal = () => {
+  const [isInpOpen, setIsInpOpen] = useState(false);
+
+  const handleInpClick = () => {
+    setIsInpOpen(!isInpOpen);
+  };
   return (
-    <div className="loca-modal-container">
-      <div className="list-items-box">
-        {locations.map((location, index) => (
-          <div className="each-bx-loc flex" key={index}>
-            <div className="each-loc">{location.loc}</div>
-            <AiOutlineClose />
-          </div>
-        ))}
+    <>
+      {isInpOpen && <AddMore />}
+      <div className="loca-modal-container">
+        <div className="list-items-box">
+          {locations.map((location, index) => (
+            <div className="each-bx-loc flex" key={index}>
+              <div className="each-loc">{location.loc}</div>
+              <AiOutlineClose />
+            </div>
+          ))}
+        </div>
+        <div className="cat-box-sear flex red-wd" onClick={handleInpClick}>
+          <div className="txt-err">Add more</div>
+          <AiOutlinePlus />
+        </div>
       </div>
-      <div className="cat-box-sear flex red-wd">
-        <div className="txt-err">Add more</div>
-        <AiOutlinePlus />
-      </div>
-    </div>
+    </>
   );
 };
 

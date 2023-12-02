@@ -344,6 +344,7 @@
   top: 40%;
   left: 10%;
   padding: 10px;
+  z-index: 1234;
 }
 .all-inp-admin-bx {
   border-radius: 3px;
@@ -584,4 +585,10 @@ input:checked + .slider:before {
 }
 .cls-cn {
   cursor: pointer;
+}
+.red-tj {
+  max-height: 200px;
+}
+.max-fd {
+  max-height: 300px;
 }
