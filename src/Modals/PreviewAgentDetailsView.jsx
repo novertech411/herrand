@@ -5,10 +5,11 @@ import { LuPencilLine } from "react-icons/lu";
 import { IoIosCall, IoMdMail } from "react-icons/io";
 
 import "./style.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const PreviewAgentDetailsView = ({
   handleViewDetCloseClick,
   handlePreviewOpenClick,
+  selectedUserId,
 }) => {
   const [isSuggOpen, setIsSuggOpen] = useState(false);
   const [isCanOpen, setIsCanOpen] = useState(false);
@@ -16,10 +17,14 @@ const PreviewAgentDetailsView = ({
   const [isSuspended, setIsSuspended] = useState(false);
   const [imageName, setImageName] = useState("");
   const [imageMean, setImageMean] = useState("");
+  const [adata, setAdata] = useState([]);
+  const token = localStorage.getItem("authToken");
 
+  const data = adata;
   // const toggleStatus = () => {
   //   setIsSuspended(!isSuspended); // toggle the status
   // };
+
   const handleSuggOpenClick = () => {
     setIsCanOpen(false);
     setIsWhatOpen(false);
@@ -35,12 +40,35 @@ const PreviewAgentDetailsView = ({
     setIsSuggOpen(false);
     setIsWhatOpen(!isWhatOpen);
   };
+  const aData = async () => {
+    try {
+      const response = await fetch(
+        `https://herrand-backend-5a39ee15054e.herokuapp.com/accounts/agent/${selectedUserId}/`,
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+      const result = await response.json();
+      setAdata(result);
+      // Assuming 10 items per page, adjust accordingly
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    aData();
+  }, []);
   return (
     <div className="vi-edi-pre-det flex">
       <div className="pre-container-bx ">
         <div className="pre-eit-view-bx">
           <div className="ead-cls flex">
-            <div className="head-pre">Agent</div>
+            <div className="head-pre">Agent </div>
             <div className="cls-btn flex" onClick={handleViewDetCloseClick}>
               <AiOutlineClose />
             </div>
@@ -63,7 +91,7 @@ const PreviewAgentDetailsView = ({
                   </label>
                 </td>
                 <td>
-                  <div className="inp-preview">Kenneth</div>
+                  <div className="inp-preview">{data?.user?.first_name}</div>
                 </td>
               </div>
             </tr>
@@ -75,7 +103,7 @@ const PreviewAgentDetailsView = ({
                   </label>
                 </td>
                 <td>
-                  <div className="inp-preview">Francis</div>
+                  <div className="inp-preview">{data?.user?.last_name}</div>
                 </td>
               </div>
             </tr>
@@ -87,7 +115,7 @@ const PreviewAgentDetailsView = ({
                   </label>
                 </td>
                 <td>
-                  <div className="inp-preview">090324554332</div>
+                  <div className="inp-preview">{data?.user?.phone_number}</div>
                 </td>
               </div>
             </tr>
@@ -99,7 +127,7 @@ const PreviewAgentDetailsView = ({
                   </label>
                 </td>
                 <td>
-                  <div className="inp-preview">Knfrancis@gmail.com</div>
+                  <div className="inp-preview">{data?.user?.email}</div>
                 </td>
               </div>
             </tr>
@@ -111,7 +139,7 @@ const PreviewAgentDetailsView = ({
                   </label>
                 </td>
                 <td>
-                  <div className="inp-preview">Kaduna</div>
+                  <div className="inp-preview">{data?.state}</div>
                 </td>
               </div>
             </tr>
@@ -126,7 +154,7 @@ const PreviewAgentDetailsView = ({
                   <div
                     className={`actt ${isSuspended ? "susp point" : "point"}`}
                   >
-                    {isSuspended ? "Suspended" : "Active"}
+                    {isSuspended ? data?.user?.status : data?.user?.status}
                   </div>
                 </td>
               </div>
@@ -141,7 +169,7 @@ const PreviewAgentDetailsView = ({
                 <label htmlFor="">Agent Image</label>
                 <div className="image-inp-bx flex">
                   <div className="inp-pre mage-ct flex">
-                    {imageName || "IMG_65363727218.jpg"}
+                    {data?.photo || "IMG_65363727218.jpg"}
                   </div>
                   <label htmlFor="imageUpload" className="inpu-pic flex">
                     Browse
@@ -154,7 +182,7 @@ const PreviewAgentDetailsView = ({
                 <label htmlFor="">Means of Identification</label>
                 <div className="image-inp-bx flex">
                   <div className="inp-pre mage-ct flex">
-                    {imageMean || "IMG_65363727218.jpg"}
+                    {data.id_file || "IMG_65363727218.jpg"}
                   </div>
                   <label htmlFor="imageUploadMean" className="inpu-pic flex">
                     Browse
@@ -188,37 +216,37 @@ const PreviewAgentDetailsView = ({
             <div className="inpu-lab">
               <div className="inpu-sm-bx">
                 <label htmlFor="">Select your hourly rate</label>
-                <div className="inp-pre flex">N2500/hr</div>
+                <div className="inp-pre flex">{data?.pay_per_hour}/hr</div>
               </div>
             </div>
             <div className="inpu-lab">
               <div className="inpu-sm-bx">
                 <label htmlFor="">Fastest time to a delivery location</label>
-                <div className="inp-pre flex">1hr</div>
+                <div className="inp-pre flex">{data?.arrival_speed}</div>
               </div>
             </div>
             <div className="inpu-lab">
               <div className="inpu-sm-bx">
                 <label htmlFor="">How fast can you deliver?</label>
-                <div className="inp-pre flex">30mins</div>
+                <div className="inp-pre flex">{data?.delivery_speed}</div>
               </div>
             </div>
             <div className="inpu-lab">
               <div className="inpu-sm-bx">
                 <label htmlFor="">Bank Name</label>
-                <div className="inp-pre flex">Sterling bank</div>
+                <div className="inp-pre flex">{data?.bank_name} bank</div>
               </div>
             </div>
             <div className="inpu-lab">
               <div className="inpu-sm-bx">
                 <label htmlFor="">Bank Account Number</label>
-                <div className="inp-pre flex">003848389439</div>
+                <div className="inp-pre flex">{data?.account_number}</div>
               </div>
             </div>
             <div className="inpu-lab">
               <div className="inpu-sm-bx">
                 <label htmlFor="">Beneficiary Name</label>
-                <div className="inp-pre flex">Kenneth Francis</div>
+                <div className="inp-pre flex">{data?.beneficiary_name}</div>
               </div>
             </div>
           </div>

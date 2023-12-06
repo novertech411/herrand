@@ -22,25 +22,25 @@ function ScrollToTop() {
 }
 function App() {
   return (
-    <ClearLocalStorageOnInactivity>
-      <div className="App">
-        <ScrollToTop />
-        <Routes>
-          <Route index path="/" element={<LandingPage />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          {/* <Route
+    // <ClearLocalStorageOnInactivity>
+    <div className="App">
+      <ScrollToTop />
+      <Routes>
+        <Route index path="/" element={<LandingPage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        {/* <Route
             path="/dashboard"
             element={<ProtectedRoute element={<Dashboard />} />}
           /> */}
-          <Route path="/customer" element={<Customer />} />
-          <Route path="/agent" element={<Agent />} />
-          <Route path="/errand" element={<Errand />} />
-          <Route path="/payout" element={<Payout />} />
-          <Route path="/setpass" element={<Password />} />
-          <Route path="/admin/login" element={<AdminLogin />} />
-        </Routes>
-      </div>
-    </ClearLocalStorageOnInactivity>
+        <Route path="/customer" element={<Customer />} />
+        <Route path="/agent" element={<Agent />} />
+        <Route path="/errand" element={<Errand />} />
+        <Route path="/payout" element={<Payout />} />
+        <Route path="/setpass" element={<Password />} />
+        <Route path="/admin/login" element={<AdminLogin />} />
+      </Routes>
+    </div>
+    // </ClearLocalStorageOnInactivity>
   );
 }
 

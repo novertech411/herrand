@@ -31,6 +31,7 @@ const Agent = () => {
   const [filteredData, setFilteredData] = useState([]);
   const token = localStorage.getItem("authToken");
   const navigate = useNavigate();
+  const [selectedUserId, setSelectedUserId] = useState(null);
 
   if (token === null) {
     navigate("/admin/login");
@@ -99,6 +100,7 @@ const Agent = () => {
 
   const handleActionClick = (index) => {
     setActiveRowIndex((prevIndex) => (prevIndex === index ? null : index));
+    setSelectedUserId(index);
   };
 
   const paginationItems = [];
@@ -215,6 +217,7 @@ const Agent = () => {
       : selectedStatus === "Active"
       ? totalActive
       : totalSuspended;
+
   return (
     <>
       {isPreOpen && (
@@ -246,6 +249,7 @@ const Agent = () => {
           <PreviewAgentDetailsView
             handleViewDetCloseClick={handleViewDetCloseClick}
             handlePreviewOpenClick={handlePreviewOpenClick}
+            selectedUserId={selectedUserId}
           />
         </div>
       )}
@@ -331,7 +335,6 @@ const Agent = () => {
                         >
                           <BiDotsHorizontalRounded />
                         </div>
-
                         {activeRowIndex === item.user.id && (
                           <AgentSmallModal
                             handlePreviewOpenClick={handlePreviewOpenClick}
