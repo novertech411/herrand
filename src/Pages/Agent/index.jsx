@@ -1,7 +1,7 @@
 import MainLayout from "../../Layout/MainLayout";
 import { BiSearch, BiDotsHorizontalRounded } from "react-icons/bi";
 import Pagination from "react-bootstrap/Pagination";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AgentSmallModal from "../../Modals/AgentSmallModal";
@@ -10,359 +10,83 @@ import AddPreferenceAgent from "../../Modals/AddPreferenceAgent";
 import PreviewAgentDetails from "../../Modals/PreviewAgentDetails";
 import PreviewAgentDetailsView from "../../Modals/PreviewAgentDetailsView";
 import DeleteModal from "../../Modals/DeleteModal";
+import { useNavigate } from "react-router-dom";
 
 const Agent = () => {
-  const data = [
-    {
-      firstName: "Sophia",
-      lastName: "Lopez",
-      phoneNumber: "09199990000",
-      email: "sophialopez@example.com",
-      status: "Active",
-    },
-    {
-      firstName: "Logan",
-      lastName: "Gonzalez",
-      phoneNumber: "09211112222",
-      email: "logangonzalez@example.com",
-      status: "Suspended",
-    },
-    {
-      firstName: "Kenneth",
-      lastName: "Francis",
-      phoneNumber: "090324554332",
-      email: "Knfrancis@gmail.com",
-      status: "Active",
-    },
-    {
-      firstName: "Kenneth",
-      lastName: "Francis",
-      phoneNumber: "090324554332",
-      email: "Knfrancis@gmail.com",
-      status: "Suspended",
-    },
-    {
-      firstName: "John",
-      lastName: "Doe",
-      phoneNumber: "090123456789",
-      email: "johndoe@example.com",
-      status: "Active",
-    },
-    {
-      firstName: "Jane",
-      lastName: "Doe",
-      phoneNumber: "090987654321",
-      email: "janedoe@example.com",
-      status: "Suspended",
-    },
-    {
-      firstName: "Sophia",
-      lastName: "Lopez",
-      phoneNumber: "09199990000",
-      email: "sophialopez@example.com",
-      status: "Active",
-    },
-    {
-      firstName: "Logan",
-      lastName: "Gonzalez",
-      phoneNumber: "09211112222",
-      email: "logangonzalez@example.com",
-      status: "Suspended",
-    },
-
-    {
-      firstName: "Michael",
-      lastName: "Smith",
-      phoneNumber: "09011112222",
-      email: "michaelsmith@example.com",
-      status: "Active",
-    },
-    {
-      firstName: "Emily",
-      lastName: "Johnson",
-      phoneNumber: "09033334444",
-      email: "emilyjohnson@example.com",
-      status: "Active",
-    },
-    {
-      firstName: "Daniel",
-      lastName: "Williams",
-      phoneNumber: "09055556666",
-      email: "danielwilliams@example.com",
-      status: "Suspended",
-    },
-    {
-      firstName: "Olivia",
-      lastName: "Brown",
-      phoneNumber: "09077778888",
-      email: "oliviabrown@example.com",
-      status: "Active",
-    },
-    {
-      firstName: "Sophia",
-      lastName: "Lopez",
-      phoneNumber: "09199990000",
-      email: "sophialopez@example.com",
-      status: "Active",
-    },
-    {
-      firstName: "Logan",
-      lastName: "Gonzalez",
-      phoneNumber: "09211112222",
-      email: "logangonzalez@example.com",
-      status: "Suspended",
-    },
-    {
-      firstName: "Liam",
-      lastName: "Jones",
-      phoneNumber: "09099990000",
-      email: "liamjones@example.com",
-      status: "Suspended",
-    },
-    {
-      firstName: "Ava",
-      lastName: "Garcia",
-      phoneNumber: "09111112222",
-      email: "avagarcia@example.com",
-      status: "Active",
-    },
-    {
-      firstName: "Sophia",
-      lastName: "Lopez",
-      phoneNumber: "09199990000",
-      email: "sophialopez@example.com",
-      status: "Active",
-    },
-    {
-      firstName: "Logan",
-      lastName: "Gonzalez",
-      phoneNumber: "09211112222",
-      email: "logangonzalez@example.com",
-      status: "Suspended",
-    },
-    {
-      firstName: "Noah",
-      lastName: "Rodriguez",
-      phoneNumber: "09133334444",
-      email: "noahrodriguez@example.com",
-      status: "Suspended",
-    },
-    {
-      firstName: "Isabella",
-      lastName: "Martinez",
-      phoneNumber: "09155556666",
-      email: "isabellamartinez@example.com",
-      status: "Active",
-    },
-    {
-      firstName: "James",
-      lastName: "Hernandez",
-      phoneNumber: "09177778888",
-      email: "jameshernandez@example.com",
-      status: "Suspended",
-    },
-    {
-      firstName: "Sophia",
-      lastName: "Lopez",
-      phoneNumber: "09199990000",
-      email: "sophialopez@example.com",
-      status: "Active",
-    },
-    {
-      firstName: "Logan",
-      lastName: "Gonzalez",
-      phoneNumber: "09211112222",
-      email: "logangonzalez@example.com",
-      status: "Suspended",
-    },
-    {
-      firstName: "Sophia",
-      lastName: "Lopez",
-      phoneNumber: "09199990000",
-      email: "sophialopez@example.com",
-      status: "Active",
-    },
-    {
-      firstName: "Logan",
-      lastName: "Gonzalez",
-      phoneNumber: "09211112222",
-      email: "logangonzalez@example.com",
-      status: "Suspended",
-    },
-    {
-      firstName: "Kenneth",
-      lastName: "Francis",
-      phoneNumber: "090324554332",
-      email: "Knfrancis@gmail.com",
-      status: "Active",
-    },
-    {
-      firstName: "Kenneth",
-      lastName: "Francis",
-      phoneNumber: "090324554332",
-      email: "Knfrancis@gmail.com",
-      status: "Suspended",
-    },
-    {
-      firstName: "John",
-      lastName: "Doe",
-      phoneNumber: "090123456789",
-      email: "johndoe@example.com",
-      status: "Active",
-    },
-    {
-      firstName: "Jane",
-      lastName: "Doe",
-      phoneNumber: "090987654321",
-      email: "janedoe@example.com",
-      status: "Suspended",
-    },
-    {
-      firstName: "Sophia",
-      lastName: "Lopez",
-      phoneNumber: "09199990000",
-      email: "sophialopez@example.com",
-      status: "Active",
-    },
-    {
-      firstName: "Logan",
-      lastName: "Gonzalez",
-      phoneNumber: "09211112222",
-      email: "logangonzalez@example.com",
-      status: "Suspended",
-    },
-    {
-      firstName: "Logan",
-      lastName: "Gonzalez",
-      phoneNumber: "09211112222",
-      email: "logangonzalez@example.com",
-      status: "Suspended",
-    },
-    {
-      firstName: "Kenneth",
-      lastName: "Francis",
-      phoneNumber: "090324554332",
-      email: "Knfrancis@gmail.com",
-      status: "Active",
-    },
-    {
-      firstName: "Kenneth",
-      lastName: "Francis",
-      phoneNumber: "090324554332",
-      email: "Knfrancis@gmail.com",
-      status: "Suspended",
-    },
-    {
-      firstName: "John",
-      lastName: "Doe",
-      phoneNumber: "090123456789",
-      email: "johndoe@example.com",
-      status: "Active",
-    },
-    {
-      firstName: "Jane",
-      lastName: "Doe",
-      phoneNumber: "090987654321",
-      email: "janedoe@example.com",
-      status: "Suspended",
-    },
-    {
-      firstName: "Sophia",
-      lastName: "Lopez",
-      phoneNumber: "09199990000",
-      email: "sophialopez@example.com",
-      status: "Active",
-    },
-    {
-      firstName: "Logan",
-      lastName: "Gonzalez",
-      phoneNumber: "09211112222",
-      email: "logangonzalez@example.com",
-      status: "Suspended",
-    },
-
-    {
-      firstName: "Michael",
-      lastName: "Smith",
-      phoneNumber: "09011112222",
-      email: "michaelsmith@example.com",
-      status: "Active",
-    },
-    {
-      firstName: "Emily",
-      lastName: "Johnson",
-      phoneNumber: "09033334444",
-      email: "emilyjohnson@example.com",
-      status: "Active",
-    },
-    {
-      firstName: "Daniel",
-      lastName: "Williams",
-      phoneNumber: "09055556666",
-      email: "danielwilliams@example.com",
-      status: "Suspended",
-    },
-    {
-      firstName: "Olivia",
-      lastName: "Brown",
-      phoneNumber: "09077778888",
-      email: "oliviabrown@example.com",
-      status: "Active",
-    },
-    {
-      firstName: "Sophia",
-      lastName: "Lopez",
-      phoneNumber: "09199990000",
-      email: "sophialopez@example.com",
-      status: "Active",
-    },
-    {
-      firstName: "Logan",
-      lastName: "Gonzalez",
-      phoneNumber: "09211112222",
-      email: "logangonzalez@example.com",
-      status: "Suspended",
-    },
-
-    {
-      firstName: "Michael",
-      lastName: "Smith",
-      phoneNumber: "09011112222",
-      email: "michaelsmith@example.com",
-      status: "Active",
-    },
-  ];
   const [activePage, setActivePage] = useState(1);
   const [isViewDetOpen, setIsViewDetOpen] = useState(false);
   const [isDelOpen, setIsDelOpen] = useState(false);
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
   const [isPreOpen, setIsPreOpen] = useState(false);
   const [isEditPreOpen, setIsEditPreOpen] = useState(false);
-  const dataPerPage = 5;
-  const totalPages = Math.ceil(data.length / dataPerPage);
-  const indexOfLastData = activePage * dataPerPage;
-  const indexOfFirstData = indexOfLastData - dataPerPage;
-  // const currentData = data.slice(indexOfFirstData, indexOfLastData);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [count, setCount] = useState("");
+  const indexOfLastData = currentPage * 10;
+  // const indexOfFirstData = indexOfLastData - 10;
   const [activeRowIndex, setActiveRowIndex] = useState(null);
   const [searchInput, setSearchInput] = useState("");
   const [selectedStatus, setSelectedStatus] = useState("");
+  const [totalPages, setTotalPages] = useState(1);
+  const [data, setData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
+  const token = localStorage.getItem("authToken");
+  const navigate = useNavigate();
 
-  const currentData = data
-    .filter((item) => {
-      const searchValue = searchInput.toLowerCase();
-      const statusFilter =
-        selectedStatus === "" ||
-        item.status.toLowerCase() === selectedStatus.toLowerCase();
-      return (
-        statusFilter &&
-        (item.firstName.toLowerCase().includes(searchValue) ||
-          item.lastName.toLowerCase().includes(searchValue) ||
-          item.phoneNumber.includes(searchInput) ||
-          item.email.toLowerCase().includes(searchValue) ||
-          item.status.toLowerCase().includes(searchValue))
+  if (token === null) {
+    navigate("/admin/login");
+  }
+  const fetchData = async (page) => {
+    try {
+      const response = await fetch(
+        `https://herrand-backend-5a39ee15054e.herokuapp.com/accounts/agents/?page=${page}`,
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        }
       );
-    })
-    .slice(indexOfFirstData, indexOfLastData);
+      const result = await response.json();
+
+      setData(result.results);
+      setCount(result.count);
+      setTotalPages(Math.ceil(result.count / 10)); // Assuming 10 items per page, adjust accordingly
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData(currentPage);
+  }, [currentPage]);
+
+  useEffect(() => {
+    // Apply filter based on searchInput and selectedStatus
+    let filtered = data;
+
+    if (searchInput) {
+      const searchLower = searchInput.toLowerCase();
+      filtered = filtered.filter(
+        (item) =>
+          item.user.first_name.toLowerCase().includes(searchLower) ||
+          item.user.last_name.toLowerCase().includes(searchLower) ||
+          item.user.phone_number.toLowerCase().includes(searchLower) ||
+          item.user.email.toLowerCase().includes(searchLower)
+      );
+    }
+
+    if (selectedStatus) {
+      filtered = filtered.filter((item) => item.user.status === selectedStatus);
+    }
+
+    setFilteredData(filtered);
+  }, [data, searchInput, selectedStatus]);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
   const handleSearchChange = (e) => {
     setSearchInput(e.target.value);
     setActivePage(1); // Reset page to 1 when search input changes
@@ -376,9 +100,7 @@ const Agent = () => {
   const handleActionClick = (index) => {
     setActiveRowIndex((prevIndex) => (prevIndex === index ? null : index));
   };
-  const handlePageChange = (pageNumber) => {
-    setActivePage(pageNumber);
-  };
+
   const paginationItems = [];
   if (totalPages <= 6) {
     for (let i = 1; i <= totalPages; i++) {
@@ -479,13 +201,14 @@ const Agent = () => {
     setIsDelOpen(false);
   };
 
-  const totalActive = data.filter((item) => item.status === "Active").length;
-
-  const totalSuspended = data.filter(
-    (item) => item.status === "Suspended"
+  const totalActive = data.filter(
+    (item) => item.user.status === "Active"
   ).length;
 
-  const total_data = data.length;
+  const totalSuspended = data.filter(
+    (item) => item.user.status === "Suspended"
+  ).length;
+  const total_data = count;
   const tot_user =
     selectedStatus === ""
       ? total_data
@@ -576,40 +299,40 @@ const Agent = () => {
                 </tr>
               </thead>
               <tbody>
-                {currentData.length === 0 ? (
+                {filteredData?.length === 0 ? (
                   <div className="sw-bx">
                     <div className="not-found-message">
                       Nothing matches <br /> the current filter
                     </div>
                   </div>
                 ) : (
-                  currentData.map((item, index) => (
-                    <tr key={index} className="tb-row">
+                  filteredData?.map((item) => (
+                    <tr key={item.user.id} className="tb-row">
                       <td>
-                        <img src="images/alo.jpg" alt="" />
+                        <img src={item.photo} alt="" />
                       </td>
-                      <td>{item.firstName}</td>
-                      <td>{item.lastName}</td>
-                      <td>{item.phoneNumber}</td>
-                      <td>{item.email}</td>
+                      <td>{item.user.first_name}</td>
+                      <td>{item.user.last_name}</td>
+                      <td>{item.user.phone_number}</td>
+                      <td>{item.user.email}</td>
                       <td>
                         <div
                           className={`actt ${
-                            item.status === "Suspended" ? "susp" : ""
+                            item.user.status === "Suspended" ? "susp" : ""
                           }`}
                         >
-                          {item.status}
+                          {item.user.status}
                         </div>
                       </td>
                       <td>
                         <div
                           className="action-men"
-                          onClick={() => handleActionClick(index)}
+                          onClick={() => handleActionClick(item.user.id)}
                         >
                           <BiDotsHorizontalRounded />
                         </div>
 
-                        {activeRowIndex === index && (
+                        {activeRowIndex === item.user.id && (
                           <AgentSmallModal
                             handlePreviewOpenClick={handlePreviewOpenClick}
                             handleViewDetOpenClick={handleViewDetOpenClick}
@@ -622,21 +345,31 @@ const Agent = () => {
                 )}
               </tbody>
             </table>
+
             <div className="pagin-sow-cont flex">
               <div className="show-counter">
-                Showing {indexOfFirstData + 1} to {indexOfLastData} of{" "}
-                {data.length} entries
+                Showing {/* {indexOfFirstData + 1} to */}
+                {Math.min(indexOfLastData, filteredData.length)} of {count}{" "}
+                entries
               </div>
               <Pagination>
-                {activePage !== 1 && (
+                {currentPage !== 1 && (
                   <Pagination.Prev
-                    onClick={() => handlePageChange(activePage - 1)}
+                    onClick={() => handlePageChange(currentPage - 1)}
                   />
                 )}
-                {paginationItems}
-                {activePage !== totalPages && (
+                {[...Array(totalPages)].map((_, index) => (
+                  <Pagination.Item
+                    key={index + 1}
+                    active={index + 1 === currentPage}
+                    onClick={() => handlePageChange(index + 1)}
+                  >
+                    {index + 1}
+                  </Pagination.Item>
+                ))}
+                {currentPage !== totalPages && (
                   <Pagination.Next
-                    onClick={() => handlePageChange(activePage + 1)}
+                    onClick={() => handlePageChange(currentPage + 1)}
                   />
                 )}
               </Pagination>

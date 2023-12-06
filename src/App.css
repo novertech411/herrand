@@ -1,5 +1,7 @@
 /* ?login */
-
+.admin-login-container {
+  max-height: 100vh;
+}
 .tit-top {
   font-size: 30px;
   font-weight: 600;
@@ -45,4 +47,9 @@
 }
 .pass-con {
   position: relative;
+}
+.mess {
+  font-size: 20px;
+  text-align: center;
+  color: red;
 }

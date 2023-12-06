@@ -4,10 +4,18 @@ import DashCard from "../../Components/DashboardComp/DashCard";
 import MainLayout from "../../Layout/MainLayout";
 import TopCustomerAll from "../../Components/DashboardComp/TopCustomerAll";
 import TopAgentAll from "../../Components/DashboardComp/TopAgentAll";
-import { useState } from "react";
-import PriceControl from "./PriceControl";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 const Dashboard = () => {
   const [displayedComponent, setDisplayedComponent] = useState("customer");
+  const token = localStorage.getItem("authToken");
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (token === null) {
+      navigate("/admin/login");
+    }
+  }, [token, navigate]);
 
   const handleArrowClick = (direction) => {
     if (direction === "left") {
