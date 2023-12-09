@@ -6,6 +6,7 @@
   font-size: 30px;
   font-weight: 600;
   text-align: center;
+  margin-top: 40px;
 }
 .adm-inp {
   width: 100%;
@@ -52,4 +53,24 @@
   font-size: 20px;
   text-align: center;
   color: red;
+}
+.admin-top {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: -140px;
+}
+.small-ad-tst {
+  font-size: 16px;
+  font-weight: 400;
+}
+.cls-sap {
+  font-size: 25px;
+  cursor: pointer;
+}
+.ead-box-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
 }

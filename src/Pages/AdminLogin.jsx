@@ -45,6 +45,10 @@ const AdminLogin = () => {
   return (
     <div className="admin-login-container">
       <div className="log-bx-cont">
+        <div className="admin-top">
+          <div className="admin-top-txt">Welcome</div>
+          <div className="small-ad-tst">Login to resume your session...</div>
+        </div>
         <div className="mess">{message}</div>
         <div className="tit-top">Admin Login</div>
         <form action="" onSubmit={handleLogin}>

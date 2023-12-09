@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { IoCloseSharp } from "react-icons/io5";
 
 const PriceControl = ({ handlePriceCloseClick }) => {
   const [data, setData] = useState([]);
@@ -68,7 +69,11 @@ const PriceControl = ({ handlePriceCloseClick }) => {
   }, []);
   return (
     <div className="terms-privacy-container">
-      <div className="top-box-cont">PRICE CONTROL</div>
+      <div className="ead-box-price">
+        <div></div>
+        <div className="top-box-cont">PRICE CONTROL</div>
+        <IoCloseSharp className="cls-sap" onClick={handlePriceCloseClick} />
+      </div>
       <form action="">
         {data.map((item) => (
           <div className="top-box-cont rght flex" key={item.id}>
@@ -101,11 +106,11 @@ const PriceControl = ({ handlePriceCloseClick }) => {
           </div>
         ))}
       </form>
-      <div className="top-box-cont rght flex">
+      {/* <div className="top-box-cont rght flex">
         <button className="close-bbtn" onClick={handlePriceCloseClick}>
           Close
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -1,364 +1,84 @@
 import MainLayout from "../../Layout/MainLayout";
 import { BiSearch, BiDotsHorizontalRounded } from "react-icons/bi";
 import Pagination from "react-bootstrap/Pagination";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AddPreferenceCos from "../../Modals/AddPreferenceCos";
 import ViewPreferenceCos from "../../Modals/ViewPreferenceCos";
 import SmallModalErrand from "../../Modals/SmallModalErrand";
 import DeleteModal from "../../Modals/DeleteModal";
+import { useNavigate } from "react-router-dom";
 
 const Errand = () => {
-  const data = [
-    {
-      firstName: "Sophia",
-      lastName: "Lopez",
-      phoneNumber: "09199990000",
-      email: "sophialopez@example.com",
-      status: "Completed",
-    },
-    {
-      firstName: "Logan",
-      lastName: "Gonzalez",
-      phoneNumber: "09211112222",
-      email: "logangonzalez@example.com",
-      status: "Cancelled",
-    },
-    {
-      firstName: "Kenneth",
-      lastName: "Francis",
-      phoneNumber: "090324554332",
-      email: "Knfrancis@gmail.com",
-      status: "In Progress",
-    },
-    {
-      firstName: "Kenneth",
-      lastName: "Francis",
-      phoneNumber: "090324554332",
-      email: "Knfrancis@gmail.com",
-      status: "Cancelled",
-    },
-    {
-      firstName: "John",
-      lastName: "Doe",
-      phoneNumber: "090123456789",
-      email: "johndoe@example.com",
-      status: "In Progress",
-    },
-    {
-      firstName: "Jane",
-      lastName: "Doe",
-      phoneNumber: "090987654321",
-      email: "janedoe@example.com",
-      status: "Cancelled",
-    },
-    {
-      firstName: "Sophia",
-      lastName: "Lopez",
-      phoneNumber: "09199990000",
-      email: "sophialopez@example.com",
-      status: "In Progress",
-    },
-    {
-      firstName: "Logan",
-      lastName: "Gonzalez",
-      phoneNumber: "09211112222",
-      email: "logangonzalez@example.com",
-      status: "Cancelled",
-    },
-
-    {
-      firstName: "Michael",
-      lastName: "Smith",
-      phoneNumber: "09011112222",
-      email: "michaelsmith@example.com",
-      status: "In Progress",
-    },
-    {
-      firstName: "Emily",
-      lastName: "Johnson",
-      phoneNumber: "09033334444",
-      email: "emilyjohnson@example.com",
-      status: "In Progress",
-    },
-    {
-      firstName: "Daniel",
-      lastName: "Williams",
-      phoneNumber: "09055556666",
-      email: "danielwilliams@example.com",
-      status: "Cancelled",
-    },
-    {
-      firstName: "Olivia",
-      lastName: "Brown",
-      phoneNumber: "09077778888",
-      email: "oliviabrown@example.com",
-      status: "In Progress",
-    },
-    {
-      firstName: "Sophia",
-      lastName: "Lopez",
-      phoneNumber: "09199990000",
-      email: "sophialopez@example.com",
-      status: "In Progress",
-    },
-    {
-      firstName: "Logan",
-      lastName: "Gonzalez",
-      phoneNumber: "09211112222",
-      email: "logangonzalez@example.com",
-      status: "Cancelled",
-    },
-    {
-      firstName: "Liam",
-      lastName: "Jones",
-      phoneNumber: "09099990000",
-      email: "liamjones@example.com",
-      status: "Cancelled",
-    },
-    {
-      firstName: "Ava",
-      lastName: "Garcia",
-      phoneNumber: "09111112222",
-      email: "avagarcia@example.com",
-      status: "In Progress",
-    },
-    {
-      firstName: "Sophia",
-      lastName: "Lopez",
-      phoneNumber: "09199990000",
-      email: "sophialopez@example.com",
-      status: "Completed",
-    },
-    {
-      firstName: "Logan",
-      lastName: "Gonzalez",
-      phoneNumber: "09211112222",
-      email: "logangonzalez@example.com",
-      status: "Cancelled",
-    },
-    {
-      firstName: "Noah",
-      lastName: "Rodriguez",
-      phoneNumber: "09133334444",
-      email: "noahrodriguez@example.com",
-      status: "Cancelled",
-    },
-    {
-      firstName: "Isabella",
-      lastName: "Martinez",
-      phoneNumber: "09155556666",
-      email: "isabellamartinez@example.com",
-      status: "Completed",
-    },
-    {
-      firstName: "James",
-      lastName: "Hernandez",
-      phoneNumber: "09177778888",
-      email: "jameshernandez@example.com",
-      status: "Cancelled",
-    },
-    {
-      firstName: "Sophia",
-      lastName: "Lopez",
-      phoneNumber: "09199990000",
-      email: "sophialopez@example.com",
-      status: "Completed",
-    },
-    {
-      firstName: "Logan",
-      lastName: "Gonzalez",
-      phoneNumber: "09211112222",
-      email: "logangonzalez@example.com",
-      status: "Cancelled",
-    },
-    {
-      firstName: "Sophia",
-      lastName: "Lopez",
-      phoneNumber: "09199990000",
-      email: "sophialopez@example.com",
-      status: "Completed",
-    },
-    {
-      firstName: "Logan",
-      lastName: "Gonzalez",
-      phoneNumber: "09211112222",
-      email: "logangonzalez@example.com",
-      status: "Cancelled",
-    },
-    {
-      firstName: "Kenneth",
-      lastName: "Francis",
-      phoneNumber: "090324554332",
-      email: "Knfrancis@gmail.com",
-      status: "Completed",
-    },
-    {
-      firstName: "Kenneth",
-      lastName: "Francis",
-      phoneNumber: "090324554332",
-      email: "Knfrancis@gmail.com",
-      status: "Cancelled",
-    },
-    {
-      firstName: "John",
-      lastName: "Doe",
-      phoneNumber: "090123456789",
-      email: "johndoe@example.com",
-      status: "Completed",
-    },
-    {
-      firstName: "Jane",
-      lastName: "Doe",
-      phoneNumber: "090987654321",
-      email: "janedoe@example.com",
-      status: "Cancelled",
-    },
-    {
-      firstName: "Sophia",
-      lastName: "Lopez",
-      phoneNumber: "09199990000",
-      email: "sophialopez@example.com",
-      status: "Completed",
-    },
-    {
-      firstName: "Logan",
-      lastName: "Gonzalez",
-      phoneNumber: "09211112222",
-      email: "logangonzalez@example.com",
-      status: "Cancelled",
-    },
-    {
-      firstName: "Logan",
-      lastName: "Gonzalez",
-      phoneNumber: "09211112222",
-      email: "logangonzalez@example.com",
-      status: "Cancelled",
-    },
-    {
-      firstName: "Kenneth",
-      lastName: "Francis",
-      phoneNumber: "090324554332",
-      email: "Knfrancis@gmail.com",
-      status: "Completed",
-    },
-    {
-      firstName: "Kenneth",
-      lastName: "Francis",
-      phoneNumber: "090324554332",
-      email: "Knfrancis@gmail.com",
-      status: "Cancelled",
-    },
-    {
-      firstName: "John",
-      lastName: "Doe",
-      phoneNumber: "090123456789",
-      email: "johndoe@example.com",
-      status: "Completed",
-    },
-    {
-      firstName: "Jane",
-      lastName: "Doe",
-      phoneNumber: "090987654321",
-      email: "janedoe@example.com",
-      status: "Cancelled",
-    },
-    {
-      firstName: "Sophia",
-      lastName: "Lopez",
-      phoneNumber: "09199990000",
-      email: "sophialopez@example.com",
-      status: "Completed",
-    },
-    {
-      firstName: "Logan",
-      lastName: "Gonzalez",
-      phoneNumber: "09211112222",
-      email: "logangonzalez@example.com",
-      status: "Cancelled",
-    },
-
-    {
-      firstName: "Michael",
-      lastName: "Smith",
-      phoneNumber: "09011112222",
-      email: "michaelsmith@example.com",
-      status: "Completed",
-    },
-    {
-      firstName: "Emily",
-      lastName: "Johnson",
-      phoneNumber: "09033334444",
-      email: "emilyjohnson@example.com",
-      status: "Completed",
-    },
-    {
-      firstName: "Daniel",
-      lastName: "Williams",
-      phoneNumber: "09055556666",
-      email: "danielwilliams@example.com",
-      status: "Cancelled",
-    },
-    {
-      firstName: "Olivia",
-      lastName: "Brown",
-      phoneNumber: "09077778888",
-      email: "oliviabrown@example.com",
-      status: "Completed",
-    },
-    {
-      firstName: "Sophia",
-      lastName: "Lopez",
-      phoneNumber: "09199990000",
-      email: "sophialopez@example.com",
-      status: "Completed",
-    },
-    {
-      firstName: "Logan",
-      lastName: "Gonzalez",
-      phoneNumber: "09211112222",
-      email: "logangonzalez@example.com",
-      status: "Cancelled",
-    },
-
-    {
-      firstName: "Michael",
-      lastName: "Smith",
-      phoneNumber: "09011112222",
-      email: "michaelsmith@example.com",
-      status: "Completed",
-    },
-  ];
   const [activePage, setActivePage] = useState(1);
   const [isDelOpen, setIsDelOpen] = useState(false);
   const [isPreOpen, setIsPreOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
   const [isEditPreOpen, setIsEditPreOpen] = useState(false);
-  const dataPerPage = 8;
-  const totalPages = Math.ceil(data.length / dataPerPage);
-  const indexOfLastData = activePage * dataPerPage;
-  const indexOfFirstData = indexOfLastData - dataPerPage;
-  // const currentData = data.slice(indexOfFirstData, indexOfLastData);
+  const [count, setCount] = useState("");
+  const indexOfLastData = currentPage * 10;
+  // const indexOfFirstData = indexOfLastData - 10;
   const [activeRowIndex, setActiveRowIndex] = useState(null);
   const [searchInput, setSearchInput] = useState("");
   const [selectedStatus, setSelectedStatus] = useState("");
+  const [totalPages, setTotalPages] = useState(1);
+  const [data, setData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
+  const token = localStorage.getItem("authToken");
+  const navigate = useNavigate();
 
-  const currentData = data
-    .filter((item) => {
-      const searchValue = searchInput.toLowerCase();
-      const statusFilter =
-        selectedStatus === "" ||
-        item.status.toLowerCase() === selectedStatus.toLowerCase();
-      return (
-        statusFilter &&
-        (item.firstName.toLowerCase().includes(searchValue) ||
-          item.lastName.toLowerCase().includes(searchValue) ||
-          item.phoneNumber.includes(searchInput) ||
-          item.email.toLowerCase().includes(searchValue) ||
-          item.status.toLowerCase().includes(searchValue))
+  if (token === null) {
+    navigate("/admin/login");
+  }
+
+  const fetchData = async (page) => {
+    try {
+      const response = await fetch(
+        `https://herrand-backend-5a39ee15054e.herokuapp.com/api/admin-errand-tasks/?page=${page}`,
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        }
       );
-    })
-    .slice(indexOfFirstData, indexOfLastData);
+      const result = await response.json();
+
+      setData(result.results);
+      setCount(result.count);
+      setTotalPages(Math.ceil(result.count / 10)); // Assuming 10 items per page, adjust accordingly
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData(currentPage);
+  }, [currentPage]);
+
+  useEffect(() => {
+    // Apply filter based on searchInput and selectedStatus
+    let filtered = data;
+
+    if (searchInput) {
+      const searchLower = searchInput.toLowerCase();
+      filtered = filtered.filter(
+        (item) =>
+          item.first_name.toLowerCase().includes(searchLower) ||
+          item.last_name.toLowerCase().includes(searchLower) ||
+          item.phone_number.toLowerCase().includes(searchLower) ||
+          item.email.toLowerCase().includes(searchLower)
+      );
+    }
+
+    if (selectedStatus) {
+      filtered = filtered.filter((item) => item.status === selectedStatus);
+    }
+
+    setFilteredData(filtered);
+  }, [data, searchInput, selectedStatus]);
   const handleSearchChange = (e) => {
     setSearchInput(e.target.value);
     setActivePage(1); // Reset page to 1 when search input changes
@@ -541,22 +261,24 @@ const Errand = () => {
                 </tr>
               </thead>
 
-              {currentData.length === 0 ? (
+              {filteredData.length === 0 ? (
                 <div className="sw-bx">
                   <div className="not-found-message">
                     Nothing matches <br /> the current filter
                   </div>
                 </div>
               ) : (
-                currentData.map((item, index) => (
+                filteredData.map((item, index) => (
                   <tbody>
                     <tr key={index} className="tb-row">
-                      <td>Kenneth Francis</td>
-                      <td>Paul George</td>
-                      <td>Plan and arrange travel</td>
-                      <td>2,500</td>
-                      <td>Tickles garden Abuja</td>
-                      <td>Wuse Market rd 2</td>
+                      <td>{item.agent}</td>
+                      <td>
+                        {item.customer.first_name} {item.customer.last_name}
+                      </td>
+                      <td>{item.describe_errand}</td>
+                      <td>{item.total_cost}</td>
+                      <td>{item.pick_up_address}</td>
+                      <td>{item.drop_off_address}</td>
                       <td>
                         <div
                           className={`actt ${
@@ -591,19 +313,28 @@ const Errand = () => {
             </table>
             <div className="pagin-sow-cont flex">
               <div className="show-counter">
-                Showing {indexOfFirstData + 1} to {indexOfLastData} of{" "}
-                {data.length} entries
+                Showing {/* {indexOfFirstData + 1} to */}
+                {Math.min(indexOfLastData, filteredData.length)} of {count}{" "}
+                entries
               </div>
               <Pagination>
-                {activePage !== 1 && (
+                {currentPage !== 1 && (
                   <Pagination.Prev
-                    onClick={() => handlePageChange(activePage - 1)}
+                    onClick={() => handlePageChange(currentPage - 1)}
                   />
                 )}
-                {paginationItems}
-                {activePage !== totalPages && (
+                {[...Array(totalPages)].map((_, index) => (
+                  <Pagination.Item
+                    key={index + 1}
+                    active={index + 1 === currentPage}
+                    onClick={() => handlePageChange(index + 1)}
+                  >
+                    {index + 1}
+                  </Pagination.Item>
+                ))}
+                {currentPage !== totalPages && (
                   <Pagination.Next
-                    onClick={() => handlePageChange(activePage + 1)}
+                    onClick={() => handlePageChange(currentPage + 1)}
                   />
                 )}
               </Pagination>
