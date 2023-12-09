@@ -32,7 +32,7 @@ const Footer = ({ handleTermsOpenClick, handlePrivacyOpenClick }) => {
           </div>
           <div className="each-col-cont ">
             <div className="txt-foot">+234704 418 4306</div>
-            <div className="txt-foot">+2347015263608</div>
+            <div className="txt-foot">+234701 526 3608</div>
             <div className="txt-foot">send@herrands.com </div>
             <div className="social-mdia">
               <a href="https://web.facebook.com/sendherrands">
