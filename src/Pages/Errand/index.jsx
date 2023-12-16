@@ -66,10 +66,13 @@ const Errand = () => {
       const searchLower = searchInput.toLowerCase();
       filtered = filtered.filter(
         (item) =>
-          item.first_name.toLowerCase().includes(searchLower) ||
-          item.last_name.toLowerCase().includes(searchLower) ||
-          item.phone_number.toLowerCase().includes(searchLower) ||
-          item.email.toLowerCase().includes(searchLower)
+          item?.customer?.first_name.toLowerCase().includes(searchLower) ||
+          item?.customer?.last_name.toLowerCase().includes(searchLower) ||
+          item?.agent.toLowerCase().includes(searchLower) ||
+          item?.pick_up_address.toLowerCase().includes(searchLower) ||
+          item?.drop_off_address.toLowerCase().includes(searchLower) ||
+          item?.total_cost.toLowerCase().includes(searchLower) ||
+          item?.describe_errand.toLowerCase().includes(searchLower)
       );
     }
 
@@ -93,7 +96,7 @@ const Errand = () => {
     setActiveRowIndex((prevIndex) => (prevIndex === index ? null : index));
   };
   const handlePageChange = (pageNumber) => {
-    setActivePage(pageNumber);
+    setCurrentPage(pageNumber);
   };
   const paginationItems = [];
   if (totalPages <= 6) {
@@ -273,18 +276,18 @@ const Errand = () => {
                     <tr key={index} className="tb-row">
                       <td>{item.agent}</td>
                       <td>
-                        {item.customer.first_name} {item.customer.last_name}
+                        {item?.customer?.first_name} {item?.customer?.last_name}
                       </td>
-                      <td>{item.describe_errand}</td>
-                      <td>{item.total_cost}</td>
-                      <td>{item.pick_up_address}</td>
-                      <td>{item.drop_off_address}</td>
+                      <td>{item?.describe_errand}</td>
+                      <td>{item?.total_cost}</td>
+                      <td>{item?.pick_up_address}</td>
+                      <td>{item?.drop_off_address}</td>
                       <td>
                         <div
                           className={`actt ${
-                            item.status === "Cancelled"
+                            item?.status === "Cancelled"
                               ? "susp"
-                              : item.status === "In Progress"
+                              : item?.status === "In Progress"
                               ? "pross"
                               : ""
                           }`}

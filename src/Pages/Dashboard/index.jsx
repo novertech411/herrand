@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 const Dashboard = () => {
   const [displayedComponent, setDisplayedComponent] = useState("customer");
+  const [data, setData] = useState([]);
   const token = localStorage.getItem("authToken");
   const navigate = useNavigate();
 
@@ -24,6 +25,30 @@ const Dashboard = () => {
       setDisplayedComponent("agent");
     }
   };
+  const fetchData = async () => {
+    try {
+      const response = await fetch(
+        `https://herrand-backend-5a39ee15054e.herokuapp.com/api/errands-dashboard/`,
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+      const result = await response.json();
+      console.log(result);
+      setData(result);
+      // Assuming 10 items per page, adjust accordingly
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
   return (
     <>
       <MainLayout pname={"Dashboard"}>
