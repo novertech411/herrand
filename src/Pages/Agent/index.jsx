@@ -39,7 +39,7 @@ const Agent = () => {
   const fetchData = async (page) => {
     try {
       const response = await fetch(
-        `https://herrand-backend-5a39ee15054e.herokuapp.com/accounts/agents/?page=${page}`,
+        `https://jellyfish-app-gd9q8.ondigitalocean.app/accounts/agents/?page=${page}`,
         {
           method: "GET",
           headers: {

@@ -28,7 +28,7 @@ const Dashboard = () => {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        `https://herrand-backend-5a39ee15054e.herokuapp.com/api/errands-dashboard/`,
+        `https://jellyfish-app-gd9q8.ondigitalocean.app/api/errands-dashboard/`,
         {
           method: "GET",
           headers: {

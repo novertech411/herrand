@@ -16,7 +16,7 @@ const AdminLogin = () => {
     formData.append("password", password);
     try {
       const response = await axios.post(
-        `https://herrand-backend-5a39ee15054e.herokuapp.com/accounts/token/obtain/`,
+        `https://jellyfish-app-gd9q8.ondigitalocean.app/accounts/token/obtain/`,
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },

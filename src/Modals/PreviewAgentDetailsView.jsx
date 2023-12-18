@@ -43,7 +43,7 @@ const PreviewAgentDetailsView = ({
   const aData = async () => {
     try {
       const response = await fetch(
-        `https://herrand-backend-5a39ee15054e.herokuapp.com/accounts/agent/${selectedUserId}/`,
+        `https://jellyfish-app-gd9q8.ondigitalocean.app/accounts/agent/${selectedUserId}/`,
         {
           method: "GET",
           headers: {

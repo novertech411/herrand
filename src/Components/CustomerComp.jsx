@@ -3,7 +3,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const CustomerComp = () => {
   return (
     <div className="about-section-container">
-      <div className="left-side-about">
+      <div className="left-side-about resdas ">
         <img src="images/cus2.png" alt="" />
       </div>
       <div className="right-side-about">

@@ -4,7 +4,7 @@ const AgentComp = () => {
   return (
     <div className="about-section-container">
       <div className="left-side-about ant redddu">
-        <img src="images/ant2.jpg" alt="" />
+        <img src="images/ant1.jpg" alt="" />
       </div>
       <div className="right-side-about">
         <div className="advice-txt">MAKE MONEY WITH YOUR FREE TIME</div>

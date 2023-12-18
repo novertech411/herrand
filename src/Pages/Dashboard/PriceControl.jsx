@@ -9,7 +9,7 @@ const PriceControl = ({ handlePriceCloseClick }) => {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        `https://herrand-backend-5a39ee15054e.herokuapp.com/api/vehicle-metric/`,
+        `https://jellyfish-app-gd9q8.ondigitalocean.app/api/vehicle-metric/`,
         {
           method: "GET",
           headers: {

@@ -38,7 +38,7 @@ const Customer = () => {
   const fetchData = async (page) => {
     try {
       const response = await fetch(
-        `https://herrand-backend-5a39ee15054e.herokuapp.com/accounts/customers/?page=${page}`,
+        `https://jellyfish-app-gd9q8.ondigitalocean.app/accounts/customers/?page=${page}`,
         {
           method: "GET",
           headers: {

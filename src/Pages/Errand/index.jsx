@@ -35,7 +35,7 @@ const Errand = () => {
   const fetchData = async (page) => {
     try {
       const response = await fetch(
-        `https://herrand-backend-5a39ee15054e.herokuapp.com/api/admin-errand-tasks/?page=${page}`,
+        `https://jellyfish-app-gd9q8.ondigitalocean.app/api/admin-errand-tasks/?page=${page}`,
         {
           method: "GET",
           headers: {
@@ -263,16 +263,15 @@ const Errand = () => {
                   <th>Action</th>
                 </tr>
               </thead>
-
-              {filteredData.length === 0 ? (
-                <div className="sw-bx">
-                  <div className="not-found-message">
-                    Nothing matches <br /> the current filter
+              <tbody>
+                {filteredData.length === 0 ? (
+                  <div className="sw-bx">
+                    <div className="not-found-message">
+                      Nothing matches <br /> the current filter
+                    </div>
                   </div>
-                </div>
-              ) : (
-                filteredData.map((item, index) => (
-                  <tbody>
+                ) : (
+                  filteredData.map((item, index) => (
                     <tr key={index} className="tb-row">
                       <td>{item.agent}</td>
                       <td>
@@ -310,9 +309,9 @@ const Errand = () => {
                         )}
                       </td>
                     </tr>
-                  </tbody>
-                ))
-              )}
+                  ))
+                )}
+              </tbody>
             </table>
             <div className="pagin-sow-cont flex">
               <div className="show-counter">
