@@ -38,7 +38,7 @@ const Dashboard = () => {
         }
       );
       const result = await response.json();
-      console.log(result);
+      // console.log(result);
       setData(result);
       // Assuming 10 items per page, adjust accordingly
     } catch (error) {

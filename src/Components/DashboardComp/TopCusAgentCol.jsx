@@ -1,46 +1,46 @@
-const data = [
-  {
-    name: "John Doe",
-    errands: "123 Errands Requested",
-  },
-  {
-    name: "Jane Smith",
-    errands: "98 Errands Requested",
-  },
-  {
-    name: "Michael Johnson",
-    errands: "150 Errands Requested",
-  },
-  {
-    name: "Sarah Williams",
-    errands: "75 Errands Requested",
-  },
-  {
-    name: "David Brown",
-    errands: "200 Errands Requested",
-  },
-  {
-    name: "Emily Davis",
-    errands: "180 Errands Requested",
-  },
-  {
-    name: "Robert Miller",
-    errands: "50 Errands Requested",
-  },
-  {
-    name: "Olivia Wilson",
-    errands: "300 Errands Requested",
-  },
-  {
-    name: "William Moore",
-    errands: "270 Errands Requested",
-  },
-  {
-    name: "Ava Taylor",
-    errands: "190 Errands Requested",
-  },
-];
-const TopCusAgentCol = () => {
+// const data = [
+//   {
+//     name: "John Doe",
+//     errands: "123 Errands Requested",
+//   },
+//   {
+//     name: "Jane Smith",
+//     errands: "98 Errands Requested",
+//   },
+//   {
+//     name: "Michael Johnson",
+//     errands: "150 Errands Requested",
+//   },
+//   {
+//     name: "Sarah Williams",
+//     errands: "75 Errands Requested",
+//   },
+//   {
+//     name: "David Brown",
+//     errands: "200 Errands Requested",
+//   },
+//   {
+//     name: "Emily Davis",
+//     errands: "180 Errands Requested",
+//   },
+//   {
+//     name: "Robert Miller",
+//     errands: "50 Errands Requested",
+//   },
+//   {
+//     name: "Olivia Wilson",
+//     errands: "300 Errands Requested",
+//   },
+//   {
+//     name: "William Moore",
+//     errands: "270 Errands Requested",
+//   },
+//   {
+//     name: "Ava Taylor",
+//     errands: "190 Errands Requested",
+//   },
+// ];
+const TopCusAgentCol = ({ data }) => {
   return (
     <>
       {data.map((item, index) => (
@@ -53,8 +53,10 @@ const TopCusAgentCol = () => {
             <div className="tag-dd flex">#{index + 1}</div>
           </div>
           <div className="top-details">
-            <div className="name-cus">{item.name}</div>
-            <div className="erand">{item.errands}</div>
+            <div className="name-cus">
+              {item?.last_name} {item?.first_name}
+            </div>
+            <div className="erand">{item?.num_errands}</div>
           </div>
         </div>
       ))}

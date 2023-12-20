@@ -1,30 +1,30 @@
-const data = [
-  {
-    name: "David Brown",
-    errands: "200 Errands completed",
-  },
-  {
-    name: "Emily Davis",
-    errands: "180 Errands completed",
-  },
-  {
-    name: "Robert Miller",
-    errands: "50 Errands completed",
-  },
-  {
-    name: "Olivia Wilson",
-    errands: "300 Errands completed",
-  },
-  {
-    name: "William Moore",
-    errands: "270 Errands completed",
-  },
-  {
-    name: "Ava Taylor",
-    errands: "190 Errands completed",
-  },
-];
-const TopCuAgentCol = () => {
+// const data = [
+//   {
+//     name: "David Brown",
+//     errands: "200 Errands completed",
+//   },
+//   {
+//     name: "Emily Davis",
+//     errands: "180 Errands completed",
+//   },
+//   {
+//     name: "Robert Miller",
+//     errands: "50 Errands completed",
+//   },
+//   {
+//     name: "Olivia Wilson",
+//     errands: "300 Errands completed",
+//   },
+//   {
+//     name: "William Moore",
+//     errands: "270 Errands completed",
+//   },
+//   {
+//     name: "Ava Taylor",
+//     errands: "190 Errands completed",
+//   },
+// ];
+const TopCuAgentCol = ({ data }) => {
   return (
     <>
       {data.map((item, index) => (
@@ -37,8 +37,10 @@ const TopCuAgentCol = () => {
             <div className="tag-dd flex">#{index + 1}</div>
           </div>
           <div className="top-details">
-            <div className="name-cus">{item.name}</div>
-            <div className="erand">{item.errands}</div>
+            <div className="name-cus">
+              {item?.last_name} {item?.first_name}
+            </div>
+            <div className="erand">{item?.num_errands}</div>
           </div>
         </div>
       ))}
