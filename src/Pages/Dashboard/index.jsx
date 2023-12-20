@@ -57,29 +57,29 @@ const Dashboard = () => {
             <DashCard
               card={"agent"}
               cardName={"New Agents"}
-              user={"564"}
-              profit="+3.35%"
+              user={data?.agents?.current_month}
+              profit={data?.errands?.percentage_change}
               info={"Agents this month"}
             />
             <DashCard
               card={"customer"}
               cardName={"New Customers"}
-              user={"143"}
-              profit="-3.35%"
+              user={data?.customers?.current_month}
+              profit={data?.errands?.percentage_change}
               info={"Customers this month"}
             />
             <DashCard
               card={"errand"}
               cardName={"Errands"}
-              user={"143"}
-              profit="-3.35%"
+              user={data?.errands?.current_month}
+              profit={data?.errands?.percentage_change}
               info={"Errands this month"}
             />
             {/* <DashCard
               card={"payout"}
               cardName={"Payouts"}
-              user={"143"}
-              profit="+3.35%"
+              user={data?.agents?.current_month}
+              profit={data?.errands?.percentage_change}
               info={"Payouts this month"}
             /> */}
           </div>

@@ -6,7 +6,7 @@ import { LiaHandsHelpingSolid } from "react-icons/lia";
 
 const DashCard = ({ card, cardName, user, profit, info }) => {
   // agent, customer, errand, Payout;
-  let changePercentageClass = profit.includes("-") ? "negative" : "positive";
+  // let changePercentageClass = profit.includes("-") ? "negative" : "positive";
   let iconToDisplay;
   switch (card) {
     case "agent":
@@ -29,7 +29,7 @@ const DashCard = ({ card, cardName, user, profit, info }) => {
       <div className="left-cont">
         <div className="card-title">{cardName}</div>
         <div className="tot-cus-agt">
-          {user} <span className={changePercentageClass}>{profit}</span>
+          {user} <span className={profit}>{profit}</span>
         </div>
         <div className="per-mont">{info}</div>
       </div>
