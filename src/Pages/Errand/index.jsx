@@ -179,21 +179,21 @@ const Errand = () => {
     (item) => item.status === "Completed"
   ).length;
 
-  const totalCancelled = data.filter(
-    (item) => item.status === "Cancelled"
-  ).length;
-  const totalInProgress = data.filter(
-    (item) => item.status === "In Progress"
-  ).length;
-  const total_data = data.length;
-  const tot_user =
-    selectedStatus === ""
-      ? total_data
-      : selectedStatus === "Completed"
-      ? totalCompleted
-      : selectedStatus === "Cancelled"
-      ? totalCancelled
-      : totalInProgress;
+  // const totalCancelled = data.filter(
+  //   (item) => item.status === "Cancelled"
+  // ).length;
+  // const totalInProgress = data.filter(
+  //   (item) => item.status === "In Progress"
+  // ).length;
+  // const total_data = data.length;
+  // const tot_user =
+  //   selectedStatus === ""
+  //     ? total_data
+  //     : selectedStatus === "Completed"
+  //     ? totalCompleted
+  //     : selectedStatus === "Cancelled"
+  //     ? totalCancelled
+  //     : totalInProgress;
   return (
     <>
       {isPreOpen && (
@@ -217,7 +217,7 @@ const Errand = () => {
           <DeleteModal handleDelCloseClick={handleDelCloseClick} />
         </div>
       )}
-      <MainLayout pname={"Errands"} tot_user={tot_user}>
+      <MainLayout pname={"Errands"} tot_user={"tot_user"}>
         <div className="dashboard-container">
           <div className="customer-page-toper flex">
             <div className="add-pre-btn flex nonn" onClick={handlePreOpenClick}>
@@ -265,15 +265,21 @@ const Errand = () => {
               </thead>
               <tbody>
                 {filteredData.length === 0 ? (
-                  <div className="sw-bx">
-                    <div className="not-found-message">
-                      Nothing matches <br /> the current filter
-                    </div>
-                  </div>
+                  <tr>
+                    <td>
+                      <div className="sw-bx">
+                        <div className="not-found-message">
+                          Nothing matches <br /> the current filter
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
                 ) : (
                   filteredData.map((item, index) => (
                     <tr key={index} className="tb-row">
-                      <td>{item.agent}</td>
+                      <td>
+                        {item?.agent?.first_name} {item?.agent?.last_name}
+                      </td>
                       <td>
                         {item?.customer?.first_name} {item?.customer?.last_name}
                       </td>
