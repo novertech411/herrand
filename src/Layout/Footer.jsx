@@ -26,8 +26,10 @@ const Footer = ({ handleTermsOpenClick, handlePrivacyOpenClick }) => {
           </div>
           <div className="each-col-cont">
             <div className="txt-foot chg-wd">
-              Gwarimpa, 900108 <br />
-              FCT, Nigeria
+              Vibranium Valley, <br />
+              42, Local Airport Road, 
+              <br />
+              Ikeja, Lagos.
             </div>
           </div>
           <div className="each-col-cont ">

@@ -94,6 +94,7 @@
   height: 400px;
   padding: 0 20px;
   justify-content: space-between;
+  gap: 15px;
 }
 .dow-main-box {
   padding: 0px 80px;
@@ -132,7 +133,7 @@
   width: 350px;
 }
 .left-bx-con {
-  width: 40%;
+  width: 50%;
   margin-left: 80px;
 }
 .app-badge-dow img {
@@ -146,6 +147,23 @@
 }
 .arr-lf {
   color: #000;
+}
+.new-downlad-box {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  width: 50% !important;
+}
+.app-badge-download {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.app-badge-download img {
+  width: 60%;
+  margin-top: 10px;
+  cursor: pointer;
 }
 @media only screen and (max-width: 1150px) {
   .become-ag-cus-container {
@@ -195,6 +213,16 @@
   .samm img {
     width: 200px;
     margin: 0 auto;
+  }
+  .fonsx {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .newm {
+    font-size: 13px;
+  }
+  .app-badge-download {
+    font-size: 13px;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -318,10 +346,24 @@
     width: 100%;
     height: 100%;
   }
+  .new-downlad-box {
+    width: 100% !important;
+  }
+  .app-badge-download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .app-badge-download img {
+    width: 90%;
+  }
 }
 @media only screen and (max-width: 400px) {
   .famh {
     width: 70%;
+  }
+  .app-badge-download {
+    font-size: 12px;
   }
 }
 @media only screen and (max-width: 300px) {
