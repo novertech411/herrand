@@ -34,6 +34,9 @@ const DownComp = () => {
             {/* <img src="images/qr.png" alt="" className="qr-ma" /> */}
           </div>
         </div>
+        <div className="trd-side">
+          <img src="/images/trd.png" alt="" />
+        </div>
       </div>
     </div>
   );

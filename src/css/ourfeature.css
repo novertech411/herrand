@@ -156,14 +156,22 @@
 }
 .app-badge-download {
   display: flex;
-  gap: 5px;
+  gap: 10px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 80px;
 }
 .app-badge-download img {
   width: 60%;
   margin-top: 10px;
   cursor: pointer;
+}
+.trd-side {
+  width: 30%;
+}
+.trd-side img {
+  width: 200px;
 }
 @media only screen and (max-width: 1150px) {
   .become-ag-cus-container {
@@ -252,7 +260,7 @@
     padding: 0px 10px;
   }
   .fonsx {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 20px;
   }
   .resdas,
@@ -265,13 +273,19 @@
     width: 90%;
     height: 100%;
   }
+  .trd-side img {
+    width: 150px;
+  }
+  .app-badge-download {
+    margin-left: 20px;
+  }
 }
 @media only screen and (max-width: 700px) {
   .become-ag-cus-container {
     width: 82%;
   }
   .fonsx {
-    font-size: 16px;
+    font-size: 13px;
     line-height: 20px;
   }
   .instruct {
@@ -356,6 +370,11 @@
   }
   .app-badge-download img {
     width: 90%;
+  }
+  .trd-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media only screen and (max-width: 400px) {
