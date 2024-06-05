@@ -2,6 +2,7 @@ import { AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
 import { BsFacebook, BsTiktok } from "react-icons/bs";
 import { FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 const Footer = ({ handleTermsOpenClick, handlePrivacyOpenClick }) => {
   return (
     <div className="footer-container" id="footer">
@@ -15,14 +16,28 @@ const Footer = ({ handleTermsOpenClick, handlePrivacyOpenClick }) => {
         </div>
         <div className="the-all-footer-txt">
           <div className="each-col-cont">
-            <div className="txt-foot" onClick={handleTermsOpenClick}>
-              Terms of Service
+            <div className="txt-foot">
+              <Link to="/terms" className="no-underline text-white">
+                Terms of Service
+              </Link>
             </div>
-            <div className="txt-foot" onClick={handlePrivacyOpenClick}>
-              Privacy Policy
+            <div className="txt-foot">
+              <Link to="/privacy" className="no-underline text-white">
+                Privacy Policy
+              </Link>
             </div>
-            <div className="txt-foot">Guides for Agents</div>
-            <div className="txt-foot">Safety for Customers</div>
+            <div className="txt-foot">
+             
+              <Link to="/guides" className="no-underline text-white">
+                Guides for Agents
+              </Link>
+            </div>
+            <div className="txt-foot">
+              
+              <Link to="/safety" className="no-underline text-white">
+                Safety for Customers
+              </Link>
+            </div>
           </div>
           <div className="each-col-cont">
             <div className="txt-foot chg-wd">

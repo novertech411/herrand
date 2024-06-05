@@ -1,7 +1,11 @@
 import { Link as ScrollLink } from "react-scroll";
 import "../css/about.css";
+
 const AboutSection = () => {
   const scrollOffset = -90;
+
+  
+
   return (
     <div className="about-section-container" id="about-section">
       <div className="left-side-about">

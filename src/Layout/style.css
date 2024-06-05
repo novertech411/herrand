@@ -206,6 +206,14 @@
     text-align: left;
     color: #fff;
   }
+  /* .ludrop  {
+    width: 50%;
+    color: #d82121;
+    background-color: #9e0909;
+  }
+  .ludrop >.lidrop {
+    color: #d82121;
+  } */
   .nav-icon {
     display: block;
     cursor: pointer;
@@ -213,6 +221,8 @@
     z-index: 1113;
     color: #fff;
   }
+
+  
   .bars {
     color: #0066f5;
   }
