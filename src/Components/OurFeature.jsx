@@ -23,7 +23,7 @@ const OurFeature = () => {
             }
             onClick={handleAgentClick}
           >
-            Become an agent
+            Become a Runner
           </div>
           <div
             className={
@@ -31,7 +31,7 @@ const OurFeature = () => {
             }
             onClick={handleAgentClick}
           >
-            Become a Customer
+            Become a Sender
           </div>
         </div>
       </div>

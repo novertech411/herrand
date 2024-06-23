@@ -8,7 +8,7 @@ const CustomerComp = () => {
       </div>
       <div className="right-side-about">
         <div className="advice-txt">FOCUS ON YOUR PRIORITY</div>
-        <h1 className="abt-h1 fnt">Become a Customer</h1>
+        <h1 className="abt-h1 fnt">Become a Sender</h1>
 
         <div className="abt-body">
           <FaArrowRightLong className="arr-lf" /> Unlock Productivity: Imagine

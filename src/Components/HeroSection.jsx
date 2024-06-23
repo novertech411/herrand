@@ -9,7 +9,7 @@ const HeroSection = () => {
           <div className="hero-simple">
             In a fast-paced world where every second counts, the value of your
             time should never be compromised. Herrands connects you with vetted
-            agents who share their time with you and handle your errands
+            runners who share their time with you and handle your errands
             on-demand, giving you the freedom to focus on what truly matters.
             It’s easy, quick and safe!
           </div>

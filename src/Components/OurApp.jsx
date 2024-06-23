@@ -13,10 +13,12 @@ const OurApp = () => {
 
           <div className="abt-body app-bod">
             Our platform is designed to seamlessly connect individuals with
-            varying needs – you, the customer, and our dedicated agents. The
-            result? A win-win partnership where everyone benefits. You gain more
-            time to pursue your passions and achieve your goals. Our agents earn
-            by sharing their time with you and helping you run your errands.
+            varying needs – you, the customer who needs to send someone on
+            errands, and our dedicated agents who are available on-demand to run
+            your errands. The result? A win-win partnership where everyone
+            benefits. You gain more time to pursue your passions and achieve
+            your goals. Our agents earn by sharing their time with you and
+            helping you run your errands.
           </div>
           <div className="app-badge-box indd">
             <img src="images/bad1.png" alt="" />
