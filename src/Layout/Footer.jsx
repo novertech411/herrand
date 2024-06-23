@@ -1,9 +1,17 @@
+import { useState, useEffect } from "react";
 import { AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
 import { BsFacebook, BsTiktok } from "react-icons/bs";
 import { FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+
 const Footer = ({ handleTermsOpenClick, handlePrivacyOpenClick }) => {
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
+
   return (
     <div className="footer-container" id="footer">
       <div className="footer-main-container">
@@ -96,8 +104,8 @@ const Footer = ({ handleTermsOpenClick, handlePrivacyOpenClick }) => {
       <div className="pol-copy">
         <div className="copp"></div>
         <div className="copp">
-          ©2023 Herrands Solutions Limited. All rights reserved
-        </div>
+      ©{currentYear} Herrands Solutions Limited. All rights reserved
+    </div>
         <div className="copp"></div>
       </div>
     </div>

@@ -1,25 +1,32 @@
-import { FaArrowRightLong } from "react-icons/fa6";
+import { FaClockRotateLeft } from "react-icons/fa6";
+import { MdSecurity } from "react-icons/md";
+import { FaPeace } from "react-icons/fa";
 
 const CustomerComp = () => {
   return (
     <div className="about-section-container">
       <div className="left-side-about resdas ">
-        <img src="images/cus2.png" alt="" />
+        <img src="images/Image6.png" alt="" />
       </div>
       <div className="right-side-about">
-        <div className="advice-txt">FOCUS ON YOUR PRIORITY</div>
+        <div className="advice-txt">ENJOY MORE TIME AND CONVENIENCE</div>
         <h1 className="abt-h1 fnt">Become a Customer</h1>
 
         <div className="abt-body">
-          <FaArrowRightLong className="arr-lf" /> Unlock Productivity: Imagine
-          having more hours in your day to concentrate on your passions, career,
-          or family. Our service takes the burdensome tasks off your plate.
+          <FaClockRotateLeft className="arr-lf" />{" "}
+          <span className="font-bold">Get More Time:</span>{" "}
+          Imagine having more hours in your day to concentrate on your passions,
+          career, or family. Our service takes the burdensome tasks off your
+          plate.
           <br />
           <br />
-          <FaArrowRightLong className="arr-lf" /> Convenience: No more juggling
-          hectic schedules to fit in errands. Simply delegate them to our
-          trustworthy agents. <br />
-          <br /> <FaArrowRightLong className="arr-lf" /> Peace of Mind: Rest
+          <MdSecurity className="arr-lf" />{" "}
+          <span className="font-bold">Safe and Secure:</span>{" "}
+          With our real-time tracking and feedback mechanism, you can rely on
+          our platform to provide you with the best experience.
+          <br />
+          <br /> <FaPeace className="arr-lf" />{" "}
+          <span className="font-bold">Peace of Mind:</span> Rest
           easy knowing that our agents are vetted, reliable, and dedicated to
           providing you with top-tier service. Your transactions are secure, and
           your satisfaction is guaranteed.

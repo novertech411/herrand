@@ -5,17 +5,18 @@ const Terms = ({ handleTermsCloseClick }) => {
   return (
     <>
       <Navbar />
-      <div className="container text-[16px] flex justify-center items-center text-justify w-full pt-16">
+
+      <div className="container text-[16px] flex justify-center items-center w-full pt-16">
         <div className="content sm:w-[80%] w-[95%] py-24">
-          <h3 class="text-[40px] font-medium">
+          <h3 className="text-[40px] font-medium">
             Our Terms of Service
-            <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
+            <span className="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
           </h3>
 
-          <div class="py-4">
-            <h4 class="text-[30px] font-medium">
+          <div className="py-4 text-justify">
+            <h4 className="text-[30px] font-medium">
               Introduction and Scope of services
-              <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
+              <span className="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
               Welcome to HERRANDS SOLUTIONS LIMITED's time-sharing platform
@@ -28,16 +29,16 @@ const Terms = ({ handleTermsCloseClick }) => {
               <br />
               <br />
               <ul>
-                <li>
+                <li className="list-disc">
                   Confirm that you have obtained the necessary authority to
                   agree to these Terms;
                 </li>
-                <li>
+                <li className="list-disc">
                   bind both yourself and the person, company or other legal
                   entity that operates that business or organizational project
                   to these Terms; and
                 </li>
-                <li>
+                <li className="list-disc">
                   agree that these Terms shall reference both the individual
                   user and the relevant person, company or legal entity unless
                   the context requires otherwise.
@@ -46,10 +47,10 @@ const Terms = ({ handleTermsCloseClick }) => {
             </p>
           </div>
 
-          <div class="py-4">
-            <h4 class="text-[30px] font-medium">
+          <div className="py-4">
+            <h4 className="text-[30px] font-medium">
               Scope of Services
-              <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
+              <span className="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
               Our Platform facilitates time-sharing services where users can
@@ -62,21 +63,21 @@ const Terms = ({ handleTermsCloseClick }) => {
               <br /> Furthermore, our services include but not limited to;
               <br />
               <ul>
-                <li>
+                <li className="list-disc">
                   Solving the problem of time constraints on the part of
                   business owners and prospective customers
                 </li>
-                <li>
+                <li className="list-disc">
                   Acting as a middleman to connect business owners with
                   ready-to-work assistants and logistics
                   (“Subcontractors/Agents”) as the case may be
                 </li>
-                <li>
+                <li className="list-disc">
                   Creating employment opportunities for drivers, car owners and
                   logistics companies to act as on-site agents in delivering
                   physical assignment
                 </li>
-                <li>
+                <li className="list-disc">
                   Creating employment opportunities for virtual assistants to
                   work as clerical, data entry or support staff to prospective
                   customers and businesses.
@@ -85,10 +86,10 @@ const Terms = ({ handleTermsCloseClick }) => {
             </p>
           </div>
 
-          <div class="py-4">
-            <h4 class="text-[30px] font-medium">
+          <div className="py-4">
+            <h4 className="text-[30px] font-medium">
               Account Registration
-              <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
+              <span className="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
               To use certain features of our Platform, you may need to create an
@@ -102,42 +103,42 @@ const Terms = ({ handleTermsCloseClick }) => {
             </p>
           </div>
 
-          <div class="py-4">
-            <h4 class="text-[30px] font-medium">
+          <div className="py-4">
+            <h4 className="text-[30px] font-medium">
               User Responsibilities
-              <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
+              <span className="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
               You agree to use our Platform in compliance with all applicable
               laws and regulations.
               <br />
               <br />
-              The user: <br />
+              <span className="font-bold">The user:</span> <br />
               <ul>
-                <li>
+                <li className="list-disc">
                   is responsible for all activities occurring under authorized
                   user accounts and for each authorized user’s compliance with
                   the Terms of this agreement.
                 </li>
-                <li>
+                <li className="list-disc">
                   shall have sole responsibility for the accuracy, quality,
                   integrity, legality, reliability and appropriateness of all
                   user data generated, uploaded and transmitted by the user and
                   authorized users.
                 </li>
-                <li>
+                <li className="list-disc">
                   shall prevent unauthorized access or use of the services and
                   notify the Platform promptly of any such unauthorized access
                   or breach of security.
                 </li>
-                <li>
+                <li className="list-disc">
                   shall Use the services in accordance with the applicable laws
                   and regulations.
                 </li>
               </ul>
-              Additionally, the user: <br />
+              <span className="font-bold">Additionally, the user:</span> <br />
               <ul>
-                <li>
+                <li className="list-disc">
                   recognizes that the value and usefulness of the Platform will
                   depend on the information the user provides as it relates to
                   the task in need of completion and the user hereby agrees to
@@ -145,7 +146,7 @@ const Terms = ({ handleTermsCloseClick }) => {
                   documents needed for the proper evaluation and preparation of
                   recommendations for the user.
                 </li>
-                <li>
+                <li className="list-disc">
                   understands that the Platform is not an employee and that this
                   will be a collaborative, professional relationship with mutual
                   professional respect and courtesy. Due to the virtual nature
@@ -154,7 +155,7 @@ const Terms = ({ handleTermsCloseClick }) => {
                   communications from the Platform in a timely manner to enable
                   effective delivery of services.
                 </li>
-                <li>
+                <li className="list-disc">
                   understands that the Platform is in a business to serve and
                   requires a fair and realistic notice in order to attend to
                   projects, this includes a detailed clarification of projects
@@ -165,10 +166,10 @@ const Terms = ({ handleTermsCloseClick }) => {
             </p>
           </div>
 
-          <div class="py-4">
-            <h4 class="text-[30px] font-medium">
+          <div className="py-4">
+            <h4 className="text-[30px] font-medium">
               Subcontractors/Agents and Lessors Obligations
-              <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
+              <span className="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
               The Platform's obligations to users under these Terms shall be
@@ -178,19 +179,19 @@ const Terms = ({ handleTermsCloseClick }) => {
               contract into all sub-delegated responsibilities.
               <ul>
                 <br />
-                <li>
+                <li className="list-disc">
                   The subcontractor shall provide all the services required of
                   the subcontractor during the term of this agreement and in
                   accordance with the Terms of this agreement and any work order
                   from the Platform.
                 </li>
-                <li>
+                <li className="list-disc">
                   Subcontractor shall provide all resources, facility,
                   management, skill, expertise, tools and equipment necessary
                   for the full performance of its obligations under this
                   agreement.
                 </li>
-                <li>
+                <li className="list-disc">
                   The Platform shall ensure that all of its subcontractors and
                   agents are bound by the same restrictions and obligations that
                   binds the Platform to the users/prospective customers
@@ -199,13 +200,13 @@ const Terms = ({ handleTermsCloseClick }) => {
                   whenever the Platform receives and transmits instructions and
                   communication from prospective users/customers.
                 </li>
-                <li>
+                <li className="list-disc">
                   The subcontractor assumes to the Platform all of the
                   obligations and responsibilities applicable to the performance
                   of the subcontract which the Platform assumes towards the
                   user/customer expecting the performance of such contract.
                 </li>
-                <li>
+                <li className="list-disc">
                   The subcontractor is bound to the Platform to the same extent
                   the Platform is bound to the user/customer. Hence where a
                   job/obligation has been contracted to the Platform and the
@@ -213,7 +214,7 @@ const Terms = ({ handleTermsCloseClick }) => {
                   interpreted to apply to the subcontractor and not the
                   Platform.
                 </li>
-                <li>
+                <li className="list-disc">
                   The Platform shall therefore have without diminution of any
                   further rights it may have and to the fullest extent permitted
                   by the law all rights and remedies against the subcontractor
@@ -225,10 +226,10 @@ const Terms = ({ handleTermsCloseClick }) => {
             </p>
           </div>
 
-          <div class="py-4">
-            <h4 class="text-[30px] font-medium">
+          <div className="py-4">
+            <h4 className="text-[30px] font-medium">
               Payments and Fees
-              <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
+              <span className="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
               The user must make payments due under these Terms in accordance
@@ -239,7 +240,7 @@ const Terms = ({ handleTermsCloseClick }) => {
               services and they include:
               <ul>
                 <br />
-                <li>
+                <li className="list-disc">
                   Debit card online payment (and other options presented by our
                   PCI-DSS compliant payment partners in the course of the online
                   payment)
@@ -251,10 +252,10 @@ const Terms = ({ handleTermsCloseClick }) => {
             </p>
           </div>
 
-          <div class="py-4">
-            <h4 class="text-[30px] font-medium">
+          <div className="py-4">
+            <h4 className="text-[30px] font-medium">
               Disclaimers, Liability Insurance and Severability
-              <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
+              <span className="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
               We provide our Platform "as-is" and do not make any warranties
@@ -284,10 +285,10 @@ const Terms = ({ handleTermsCloseClick }) => {
             </p>
           </div>
 
-          <div class="py-4">
-            <h4 class="text-[30px] font-medium">
+          <div className="py-4">
+            <h4 className="text-[30px] font-medium">
               Choice of Law and Dispute Resolution
-              <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
+              <span className="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
               These Terms are governed by the laws of THE FEDERAL REPUBLIC OF
@@ -305,10 +306,10 @@ const Terms = ({ handleTermsCloseClick }) => {
             </p>
           </div>
 
-          <div class="py-4">
-            <h4 class="text-[30px] font-medium">
+          <div className="py-4">
+            <h4 className="text-[30px] font-medium">
               Intellectual Property
-              <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
+              <span className="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
               The website and its related mobile apps and software are the
@@ -326,10 +327,10 @@ const Terms = ({ handleTermsCloseClick }) => {
             </p>
           </div>
 
-          <div class="py-4">
-            <h4 class="text-[30px] font-medium">
+          <div className="py-4">
+            <h4 className="text-[30px] font-medium">
               Confidentiality
-              <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
+              <span className="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
               The parties to these Terms agree that each shall treat as
@@ -352,10 +353,10 @@ const Terms = ({ handleTermsCloseClick }) => {
             </p>
           </div>
 
-          <div class="py-4">
-            <h4 class="text-[30px] font-medium">
+          <div className="py-4">
+            <h4 className="text-[30px] font-medium">
               Assignment
-              <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
+              <span className="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
               Users hereby agree that the Platform may assign, transfer,
@@ -368,10 +369,10 @@ const Terms = ({ handleTermsCloseClick }) => {
             </p>
           </div>
 
-          <div class="py-4">
-            <h4 class="text-[30px] font-medium">
+          <div className="py-4">
+            <h4 className="text-[30px] font-medium">
               Third Party Rights
-              <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
+              <span className="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
               A contract under these Terms is for our benefit and your benefit
@@ -381,10 +382,10 @@ const Terms = ({ handleTermsCloseClick }) => {
             </p>
           </div>
 
-          <div class="py-4">
-            <h4 class="text-[30px] font-medium">
+          <div className="py-4">
+            <h4 className="text-[30px] font-medium">
               Breaches of these Terms of Service
-              <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
+              <span className="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
               If the Platform permits the registration of an account from a user
@@ -396,17 +397,21 @@ const Terms = ({ handleTermsCloseClick }) => {
               or guidelines in any way, the Platform may:
               <ul>
                 <br />
-                <li>temporarily suspend your access to its platform;</li>
-                <li>permanently prohibit you from accessing its platform;</li>
-                <li>
+                <li className="list-disc">
+                  temporarily suspend your access to its platform;
+                </li>
+                <li className="list-disc">
+                  permanently prohibit you from accessing its platform;
+                </li>
+                <li className="list-disc">
                   block computers using your IP address from accessing its
                   platform;
                 </li>
-                <li>
+                <li className="list-disc">
                   contact any or all of your internet service providers and
                   request that they block your access to its platform;
                 </li>
-                <li>
+                <li className="list-disc">
                   commence legal action against you whether for breach of
                   contract or otherwise.
                 </li>
@@ -414,10 +419,10 @@ const Terms = ({ handleTermsCloseClick }) => {
             </p>
           </div>
 
-          <div class="py-4">
-            <h4 class="text-[30px] font-medium">
+          <div className="py-4">
+            <h4 className="text-[30px] font-medium">
               Changes to Terms
-              <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
+              <span className="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
               We may update these Terms from time to time. We will notify you of
@@ -426,10 +431,10 @@ const Terms = ({ handleTermsCloseClick }) => {
             </p>
           </div>
 
-          <div class="py-4">
-            <h4 class="text-[30px] font-medium">
+          <div className="py-4">
+            <h4 className="text-[30px] font-medium">
               Contact Information
-              <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
+              <span className="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
               For questions or concerns about these Terms, please contact us at
@@ -437,10 +442,10 @@ const Terms = ({ handleTermsCloseClick }) => {
             </p>
           </div>
 
-          <div class="py-4">
-            <h4 class="text-[30px] font-medium">
+          <div className="py-4">
+            <h4 className="text-[30px] font-medium">
               Conclusion
-              <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
+              <span className="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
               All parties confirm that by clicking a button confirming
