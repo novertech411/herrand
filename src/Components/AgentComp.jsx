@@ -8,7 +8,7 @@ const AgentComp = () => {
       </div>
       <div className="right-side-about">
         <div className="advice-txt">MAKE MONEY WITH YOUR FREE TIME</div>
-        <h1 className="abt-h1 fnt">Become an Runner</h1>
+        <h1 className="abt-h1 fnt">Become a Runner</h1>
 
         <div className="abt-body">
           <FaHandHoldingUsd className="arr-lf" />
