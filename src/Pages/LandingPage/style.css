@@ -10,27 +10,29 @@
   padding-top: 8em;
 }
 .left-side-hero {
-  width: 50%;
+  /* width: 50%; */
   padding-left: 80px;
 }
 .right-side-containe {
-  width: 50%;
+  /* width: 50%; */
   margin-right: -50px;
+  /* background-color: green; */
 }
 .main-hero-head {
-  font-size: 48px;
+  /* font-size: 43px; */
   font-weight: 700;
-  line-height: 60px;
+  /* line-height: 60px; */
   color: #282828;
 }
 .main-hero-head span {
   color: #0066f5;
 }
 .head-line-box {
-  width: 90%;
+  width: 96%;
+  /* background-color: red; */
 }
 .hero-simple {
-  font-size: 17px;
+  font-size: 20px;
   margin: 20px 0;
   color: #686868;
 }
@@ -45,7 +47,9 @@
   margin-top: 80px;
 }
 .right-side-containe img {
-  width: 80%;
+  padding-top: 20px;
+  /* transform: translate(20%, 0); */
+  /* width: 40%; */
 }
 
 .land-lay {
@@ -67,15 +71,15 @@
     width: 85%;
   }
   .main-hero-head {
-    font-size: 38px;
-    line-height: 35px;
+    /* font-size: 38px; */
+    /* line-height: 35px; */
   }
   .app-badge-box img {
     width: 50%;
     height: 50px;
   }
   .right-side-containe {
-    width: 45%;
+    /* width: 45%; */
     margin-right: 0px;
   }
 }
@@ -84,8 +88,8 @@
     width: 100%;
   }
   .main-hero-head {
-    font-size: 34px;
-    line-height: 40px;
+    /* font-size: 34px; */
+    /* line-height: 40px; */
   }
   .app-badge-box {
     gap: 10px;
@@ -98,8 +102,8 @@
 }
 @media only screen and (max-width: 750px) {
   .main-hero-head {
-    font-size: 34px;
-    line-height: 40px;
+    /* font-size: 34px; */
+    /* line-height: 40px; */
   }
   .app-badge-box {
     gap: 10px;
@@ -118,8 +122,8 @@
 }
 @media only screen and (max-width: 655px) {
   .main-hero-head {
-    font-size: 25px;
-    line-height: 30px;
+    /* font-size: 25px; */
+    /* line-height: 30px; */
   }
   .app-badge-box {
     gap: 10px;
@@ -138,8 +142,8 @@
 
 @media only screen and (max-width: 500px) {
   .main-hero-head {
-    font-size: 18px;
-    line-height: 25px;
+    /* font-size: 18px; */
+    /* line-height: 25px; */
   }
   .app-badge-box {
     gap: 5px;
@@ -162,8 +166,8 @@
 }
 @media only screen and (max-width: 370px) {
   .main-hero-head {
-    font-size: 14px;
-    line-height: 20px;
+    /* font-size: 14px; */
+    /* line-height: /20px; */
   }
   .hero-simple {
     font-size: 13px;

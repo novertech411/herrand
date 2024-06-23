@@ -2,6 +2,8 @@ import { useState } from "react";
 import "../css/ourfeature.css";
 import AgentComp from "./AgentComp";
 import CustomerComp from "./CustomerComp";
+import CustomerHowItWorks from "./CustomerHowItWorks";
+import AgentHowItWorks from "./AgentHowItWorks";
 const OurFeature = () => {
   const [isAgent, setIsAgent] = useState(false);
 
@@ -36,6 +38,10 @@ const OurFeature = () => {
         </div>
       </div>
       {isAgent ? <CustomerComp /> : <AgentComp />}
+
+      {isAgent ? <CustomerHowItWorks /> : <AgentHowItWorks />}
+      
+   
     </div>
   );
 };

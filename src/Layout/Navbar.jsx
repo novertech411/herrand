@@ -111,7 +111,7 @@ const Navbar = () => {
                   to={`#footer`}
                   onClick={handleToggleItem}
                 >
-                  Contact-Us
+                  Contact Us
                 </Link>
               </li>
             </ul>

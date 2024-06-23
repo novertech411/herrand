@@ -8,21 +8,21 @@ export const Safety = () => {
       <Navbar />
 
       <div class="container text-[16px] flex justify-center items-center w-full pt-16">
-        <div class="content sm:w-[80%] w-[95%] py-24">
+        <div class="content sm:w-[80%] w-[95%] py-24 text-justify">
           <h3 class="text-[30px] font-medium">
             Safety Requirements
             <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
           </h3>
           <div class="py-4">
             <p class="py-4">
-              Hi there, Welcome to our time-sharing community, where you access
-              a smarter way of managing your day!
+              Welcome to our time-sharing community, where you access a smarter way
+              of sending your errands and enjoying convenience!
             </p>
             <p>
-              At Herrands, we prioritize your safety and well-being when you use
-              our time-sharing platform. To ensure you have a stellar experience
-              every time you use our platform, here are some safety tips and
-              recommendations:
+              At Herrands, your safety is our utmost priority. We are committed to
+              providing a secure and trustworthy platform for you to delegate your
+              errands with confidence. To ensure you have a stellar experience every
+              time you use our platform, here are some safety tips and recommendations:
             </p>
           </div>
           <div class="w-full sm:h-[500px] h-[250px] py-4">
@@ -32,18 +32,52 @@ export const Safety = () => {
               src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&amp;loop=1"
             ></iframe>
           </div>
-          <h3 class="text-[30px] font-medium py-8">
+          {/* <h3 class="text-[30px] font-medium py-8">
             Safety Tips
             <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
-          </h3>
+          </h3> */}
           <div class="py-4">
             <span class="flex">
               <p>
                 {" "}
-                <b>Profile Verification :</b> Verify the profiles of agents and
-                make sure they are from our platform before delegating your
-                errands to them. Furthermore, we discourage offline dealings in
-                any form.
+                <b>Profile Verification: </b> Each agent on our platform undergoes
+                a comprehensive background check and verification process to ensure
+                they meet our safety standards. Only agents who pass our stringent
+                vetting process are allowed to complete errands on our platform.
+                So, be sure to stay on the platform before delegating your errands to them.
+                Furthermore, we discourage offline dealings in any form.
+              </p>
+            </span>
+          </div>
+
+
+          <div class="py-4">
+            <span class="flex">
+              <p>
+                {" "}
+                <b>Clear Communication: </b> Maintain clear communication
+                with agents regarding your errands requirements and expectations.
+              </p>
+            </span>
+          </div>
+
+          <div class="py-4">
+            <span class="flex">
+              <p>
+                {" "}
+                <b>Task Guidelines: </b> When sending errands and/or assigning tasks,
+                ensure to provide your agent with clear instructions and specify
+                any safety requirements you have for your maximum satisfaction
+              </p>
+            </span>
+          </div>
+
+          <div class="py-4">
+            <span class="flex">
+              <p>
+                {" "}
+                <b>Meeting in Public: </b> For errands that require physical interactions
+                and meet-ups, consider choosing public places for added safety.
               </p>
             </span>
           </div>
@@ -51,51 +85,78 @@ export const Safety = () => {
             <span class="flex">
               <p>
                 {" "}
-                <b>Meeting in Public :</b> For errands that require physical
+                <b>Payment Safety: </b> Use secure payment methods, and utilise our
+                built-in payment system when sending your errands.
+              </p>
+            </span>
+          </div>
+
+          {/* <div class="py-4">
+            <span class="flex">
+              <p>
+                {" "}
+                <b>Clear Communication: </b> Maintain clear communication
+                with agents regarding your errands requirements and expectations.
+              </p>
+            </span>
+          </div>
+          <div class="py-4">
+            <span class="flex">
+              <p>
+                {" "}
+                <b>Meeting in Public: </b> For errands that require physical
                 interactions and meet-ups, consider choosing public places for
                 added safety.
               </p>
             </span>
-          </div>
+          </div> */}
+
           <div class="py-4">
             <span class="flex">
               <p>
                 {" "}
-                <b>Payment Safety :</b> Use secure payment methods, and utilize
-                our built-in payment system when available
+                <b>Privacy: </b> YSafeguard your personal information and share
+                only the details necessary for the efficient running and
+                completion of your errands.
               </p>
             </span>
           </div>
+
           <div class="py-4">
             <span class="flex">
               <p>
                 {" "}
-                <b>Clear Communication :</b> Maintain clear communication with
-                agents regarding your errands requirements and expectations.
+                <b>Accountability: </b> You play a vital role in ensuring the
+                success of your errands and adherence to these safety guidelines.
+                Your cooperation is appreciated.
               </p>
             </span>
           </div>
-          <h3 class="text-[30px] font-medium py-8">
-            Privacy
-            <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
-          </h3>
+
           <div class="py-4">
-            <p>
-              Safeguard your personal information and share only the details
-              necessary for the efficient running and completion of your
-              errands.
-            </p>
+            <span class="flex">
+              <p>
+                {" "}
+                <b>Feedback and Reviews: </b> Your feedback helps improve our platform
+                and ensures the safety of the community. Share your experiences and
+                thoughts after each task.
+
+              </p>
+            </span>
           </div>
-          <h3 class="text-[30px] font-medium py-8">
-            Task Guidelines
-            <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
-          </h3>
+          
           <div class="py-4">
-            <p>
-              When sending errands and/or assigning tasks, ensure to provide
-              your agent with clear instructions and specify any safety
-              requirements you have for your maximum satisfaction.
-            </p>
+            <span class="flex">
+              <p>
+                {" "}
+                <b>Dispute Resolution: </b> If you encounter any issues or disputes during a task,
+                please make sure to report them as soon as possible. We have a dedicated
+                team to assist in resolving conflicts. Also, if you have any questions
+                about these guidelines and the general operations of our time-sharing platform,
+                you can contact our support team for help.
+
+              </p>
+            </span>
           </div>
         </div>
       </div>
