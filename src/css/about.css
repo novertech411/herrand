@@ -6,7 +6,7 @@
 }
 .advice-txt {
   color: #0066f5;
-  font-size: 14px;
+  font-size: 30px;
 }
 .abt-h1 {
   font-size: 30px;
@@ -32,6 +32,8 @@
   border: none;
   width: 150px;
   cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
 }
 .left-side-about {
   width: 50%;
@@ -40,7 +42,7 @@
   width: 70%;
   border-radius: 20px;
   /* height: 400px; */
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .right-side-about {

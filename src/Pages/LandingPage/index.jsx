@@ -1,7 +1,6 @@
 import AboutSection from "../../Components/AboutSection";
 import DownComp from "../../Components/DownComp";
 import HeroSection from "../../Components/HeroSection";
-import HowItWorks from "../../Components/HowItWorks";
 import OurApp from "../../Components/OurApp";
 import OurFeature from "../../Components/OurFeature";
 import Navbar from "../../Layout/Navbar";
@@ -51,7 +50,7 @@ const LandingPage = () => {
         <div className="our-fer" id="our-feature-section">
           <OurFeature />
         </div>
-        <HowItWorks />
+
         <div className="download-boxx">
           <DownComp />
         </div>

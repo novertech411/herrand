@@ -114,25 +114,30 @@ export const Privacy = () => {
               information in the following ways: <br />
               <br />
               <ul>
-                <li>
+                <li className="list-disc">
                   Operate, maintain, and improve our site, products, and
                   services;
                 </li>
-                <li>
-                  Respond to comments and questions and provide customer
-                  service;
+                <li className="list-disc">
+                  Respond to comments and questions and provide sender service;
                 </li>
-                <li>
+                <li className="list-disc">
                   Link or combine user information with other personal
                   information we get from third parties, to help understand your
                   needs and provide you with better service;
                 </li>
-                <li>
+                <li className="list-disc">
                   Develop, improve, and deliver marketing and advertising for
                   the Services;
                 </li>
-                <li> Provide and deliver products and services you request;</li>
-                <li> Identify you as a user in our system;</li>
+                <li className="list-disc">
+                  {" "}
+                  Provide and deliver products and services you request;
+                </li>
+                <li className="list-disc">
+                  {" "}
+                  Identify you as a user in our system;
+                </li>
               </ul>
               We may also create anonymous data records from your personal
               information by completely excluding information (such as your
@@ -174,23 +179,27 @@ export const Privacy = () => {
               <br />
               <br />
               <ul>
-                <li>
+                <li className="list-disc">
                   To fulfil the purpose for which you provide it, for any other
                   purpose disclosed by us when you provide the information, or
                   with your consent;
                 </li>
-                <li>To third parties designated by you;</li>
-                <li>With our subsidiaries and affiliates;</li>
-                <li>
+                <li className="list-disc">
+                  To third parties designated by you;
+                </li>
+                <li className="list-disc">
+                  With our subsidiaries and affiliates;
+                </li>
+                <li className="list-disc">
                   To third parties to process payments made through the
                   Services;
                 </li>
 
-                <li>
+                <li className="list-disc">
                   With contractors, service providers and other third parties we
                   use to support our business;
                 </li>
-                <li>
+                <li className="list-disc">
                   To a buyer or other successor in the event of a merger,
                   divestiture, restructuring, reorganisation, dissolution or
                   other sale or transfer of some or all of our assets, whether
@@ -216,11 +225,11 @@ export const Privacy = () => {
 
           <div class="py-4">
             <h4 class="text-[30px] font-medium">
-            Third Party Websites
+              Third Party Websites
               <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
-             Our Site may contain links to third party websites. When you click
+              Our Site may contain links to third party websites. When you click
               on a link to any other website or location, you will leave our
               Site or Services and go to another site, and another entity may
               collect personal information or anonymous data from you. We have
@@ -237,11 +246,11 @@ export const Privacy = () => {
           </div>
           <div class="py-4">
             <h4 class="text-[30px] font-medium">
-             Your Choices Regarding Information
+              Your Choices Regarding Information
               <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
-            Choices: We offer you choices regarding the collection, use, and
+              Choices: We offer you choices regarding the collection, use, and
               sharing of your personal information. We may periodically send you
               emails that directly promote the use of our Services. When you
               receive promotional communications from us, you may indicate a
@@ -265,24 +274,24 @@ export const Privacy = () => {
           </div>
           <div class="py-4">
             <h4 class="text-[30px] font-medium">
-             Your Rights
+              Your Rights
               <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
-             As a user of our websites and mobile applications, you have the
+              As a user of our websites and mobile applications, you have the
               following rights, any of which you may exercise by contacting us
               at <a href="send@herrands.com">send@herrands.com</a>.
               <ul>
-                <li>
+                <li className="list-disc">
                   The right to ask what personal data that we hold about you at
                   any time. Extra requests (particularly repetitive) for data
                   may result in a fee being charged to the user.
                 </li>
-                <li>
+                <li className="list-disc">
                   The right to ask us to update and correct any out-of-date or
                   incorrect personal data that we hold about you free of charge.
                 </li>
-                <li>
+                <li className="list-disc">
                   As set out above, the right to opt out of any marketing
                   communications that we may send you .
                 </li>
@@ -295,11 +304,11 @@ export const Privacy = () => {
               <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
-             We have put in place security measures to prevent your personal
+              We have put in place security measures to prevent your personal
               data from being accidentally lost, used or accessed in an
               unauthorised way, altered or disclosed. <br />
               <br /> In addition, we limit access to your personal data to those
-              employees, agents, contractors and other third parties who have a
+              employees, runners, contractors and other third parties who have a
               business need to know. They will only process your personal data
               on our instructions and they are subject to a duty of
               confidentiality. <br />
@@ -321,17 +330,17 @@ export const Privacy = () => {
               as: <br />
               <br />
               <ol type="i">
-                <li>
+                <li className="list-disc">
                   We maintain an ongoing relationship with you. This will enable
                   us to improve your experience with us and to ensure that you
                   receive communications from us
                 </li>
-                <li>
+                <li className="list-disc">
                   Your Personal Data is necessary in connection with the
                   purposes set out in this Privacy Notice and we have a valid
                   legal basis,
                 </li>
-                <li>
+                <li className="list-disc">
                   The duration of: (i) any applicable limitation period (i.e.,
                   any period during which a person could bring a legal claim
                   against us), and;
@@ -344,45 +353,46 @@ export const Privacy = () => {
           </div>
           <div class="py-4">
             <h4 class="text-[30px] font-medium">
-            Introduction
-            <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
+              Introduction
+              <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
-            Welcome to Herrands ("we," "us," or "our"), a company registered
-            with the Corporate Affairs Commision with the number RC6927181. We
-            are committed to protecting your privacy and ensuring that your
-            personal information is handled securely and responsibly. This
-            Privacy Policy explains how we collect, use, disclose, and
-            safeguard your information when you use our mobile application
-            ("App"). <br />
-            <br /> By using our App, you consent to the practices described in
-            this Privacy Policy. If you do not agree with the terms herein,
-            please do not use our App.
+              Welcome to Herrands ("we," "us," or "our"), a company registered
+              with the Corporate Affairs Commision with the number RC6927181. We
+              are committed to protecting your privacy and ensuring that your
+              personal information is handled securely and responsibly. This
+              Privacy Policy explains how we collect, use, disclose, and
+              safeguard your information when you use our mobile application
+              ("App"). <br />
+              <br /> By using our App, you consent to the practices described in
+              this Privacy Policy. If you do not agree with the terms herein,
+              please do not use our App.
             </p>
           </div>
 
-
           <div class="py-4">
             <h4 class="text-[30px] font-medium">
-            Information We Collect
-            <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
+              Information We Collect
+              <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
-            Information You Provide: We may collect information that you
+              Information You Provide: We may collect information that you
               voluntarily provide when using our App, including but not limited
               to: <br />
               <ul className="weinfo">
-                <li>
+                <li className="list-disc">
                   Personal and contact information (e.g., name, email address).
                 </li>
-                <li>
+                <li className="list-disc">
                   User-generated content (e.g., task descriptions, comments).
                 </li>
-                <li>Payment information (if applicable).</li>
-                <li>
+                <li className="list-disc">
+                  Payment information (if applicable).
+                </li>
+                <li className="list-disc">
                   Communication data (e.g., messages sent through our App).
                 </li>
-                <li>
+                <li className="list-disc">
                   Information provided for account registration and profile
                   creation.
                 </li>
@@ -390,67 +400,74 @@ export const Privacy = () => {
               Automatically Collected Information: When you use our App, we may
               automatically collect certain information, including:
               <ul className="weinfo">
-                <li>
+                <li className="list-disc">
                   Device information (e.g., device type, operating system).
                 </li>
-                <li>
+                <li className="list-disc">
                   App usage data (e.g., interactions, preferences, errors).
                 </li>
-                <li>
+                <li className="list-disc">
                   Location data (with your consent), including precise and/or
                   approximate geolocation.
                 </li>
-                <li>Analytics and performance data.</li>
+                <li className="list-disc">Analytics and performance data.</li>
               </ul>
             </p>
           </div>
 
           <div class="py-4">
             <h4 class="text-[30px] font-medium">
-            How We Use Your Information
+              How We Use Your Information
               <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
-            We use the collected information for various purposes, including:{" "}
+              We use the collected information for various purposes, including:{" "}
               <br />
               <ul className="weinfo">
-                <li>
+                <li className="list-disc">
                   Providing and improving our App's services and features.
                 </li>
-                <li>
+                <li className="list-disc">
                   Facilitating task assignment and communication between users.
                 </li>
-                <li>Processing payments and managing transactions.</li>
-                <li>Customizing and personalizing your experience.</li>
-                <li>Analyzing and enhancing the performance of our App.</li>
-                <li>Complying with legal requirements and obligations.</li>
+                <li className="list-disc">
+                  Processing payments and managing transactions.
+                </li>
+                <li className="list-disc">
+                  Customizing and personalizing your experience.
+                </li>
+                <li className="list-disc">
+                  Analyzing and enhancing the performance of our App.
+                </li>
+                <li className="list-disc">
+                  Complying with legal requirements and obligations.
+                </li>
               </ul>
             </p>
           </div>
 
-
           <div class="py-4">
             <h4 class="text-[30px] font-medium">
-            Your Choices
+              Your Choices
               <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
-            You have the following rights regarding your personal information:
+              You have the following rights regarding your personal information:
               <ul className="weinfo">
                 <br />
-                <li>
+                <li className="list-disc">
                   Access: You can request access to your personal data and
                   receive a copy.
                 </li>
-                <li>
+                <li className="list-disc">
                   Rectification: You can correct inaccuracies in your personal
                   data.
                 </li>
-                <li>
+                <li className="list-disc">
                   Deletion: You can request the deletion of your personal data,
                   subject to legal limitations.
                 </li>
-                <li>
+                <li className="list-disc">
                   Object: You can object to the processing of your personal
                   data.
                 </li>
@@ -464,7 +481,7 @@ export const Privacy = () => {
               <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
-            We implement reasonable measures to protect your information from
+              We implement reasonable measures to protect your information from
               unauthorized access, disclosure, alteration, or destruction.
               However, please note that no method of transmission over the
               internet or electronic storage is entirely secure.
@@ -489,7 +506,7 @@ export const Privacy = () => {
               <span class="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
-             If you have questions, concerns, or requests related to this
+              If you have questions, concerns, or requests related to this
               Privacy Policy or your personal data, please contact us at: [
               <a href="mailto:send@herrands.com">send@herrands.com</a>]
             </p>

@@ -1,5 +1,5 @@
-import { FaArrowRightLong } from "react-icons/fa6";
-
+import { FaClock, FaUsers } from "react-icons/fa6";
+import { FaHandHoldingUsd } from "react-icons/fa";
 const AgentComp = () => {
   return (
     <div className="about-section-container">
@@ -11,19 +11,22 @@ const AgentComp = () => {
         <h1 className="abt-h1 fnt">Become an Runner</h1>
 
         <div className="abt-body">
-          <FaArrowRightLong className="arr-lf" /> Earn-as-You-Go: If you're
-          looking to turn your available time into a source of income, our
-          platform is the ideal solution for you. Get paid for running errands
-          and helping others. <br />
+          <FaHandHoldingUsd className="arr-lf" />
+          <span className=" font-bold">Earn-as-You-Go: </span> Turn your free
+          time into a source of income by running errands for others. Join
+          Herrands as a runner and start earning by helping others with their
+          errands. <br />
           <br />
-          <FaArrowRightLong className="arr-lf" /> Flexibility: We value your
+          <FaClock className="arr-lf" />{" "}
+          <span className=" font-bold">Flexible Hours: </span> We value your
           freedom. Work on your schedule and choose errands that suit you.
-          Whether you want to run errands occasionally or make it a regular gig,
-          the choice is yours. <br />
-          <br /> <FaArrowRightLong className="arr-lf" /> Community: Join our
-          thriving community of like-minded individuals making a difference. By
-          becoming an agent, you're not only helping others; you're also
-          contributing to a community that upholds your values.
+          Whether you're looking for a full-time gig or part-time hustle, we
+          offer flexible opportunities to fit your schedule. <br />
+          <br /> <FaUsers className="arr-lf" />{" "}
+          <span className="font-bold">Supportive Community: </span>
+          Join our thriving community of like-minded individuals making a
+          difference. By becoming a runner, you're not only helping others;
+          you're also contributing to a community that upholds your values.
         </div>
         <div className="button-cont">
           <button className="down-btn">Download the App</button>

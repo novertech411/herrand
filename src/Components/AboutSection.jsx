@@ -7,10 +7,12 @@ const AboutSection = () => {
   return (
     <div className="about-section-container" id="about-section">
       <div className="left-side-about">
-        <img src="/images/lagif.gif" alt="" autoPlay loop />
+        <img src="/images/Image2.png" alt="" autoPlay loop />
       </div>
       <div className="right-side-about">
-        <div className="advice-txt">Save Time, Stay Organised, Live Better</div>
+        <div className="advice-txt text-[#0066f5]">
+          Save Time. Stay Organised. Live Better.
+        </div>
         <h1 className="abt-h1">About us</h1>
 
         <div className="abt-body">
