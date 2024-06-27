@@ -35,6 +35,7 @@ const OurApp = () => {
           </div>
         </div>
       </div>
+
       <div className="down-container">
         <div className="down-left-bx">
           <h2 className="abt-h1 reddd red-dw">
@@ -61,9 +62,6 @@ const OurApp = () => {
               alt=""
             />
           </div>
-        </div>
-        <div className="down-right-container">
-          <img src="images/nw.png" alt="" />
         </div>
       </div>
     </div>
