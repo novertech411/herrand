@@ -119,8 +119,7 @@ export const Privacy = () => {
                   services;
                 </li>
                 <li className="list-disc">
-                  Respond to comments and questions and provide customer
-                  service;
+                  Respond to comments and questions and provide sender service;
                 </li>
                 <li className="list-disc">
                   Link or combine user information with other personal
@@ -309,7 +308,7 @@ export const Privacy = () => {
               data from being accidentally lost, used or accessed in an
               unauthorised way, altered or disclosed. <br />
               <br /> In addition, we limit access to your personal data to those
-              employees, agents, contractors and other third parties who have a
+              employees, runners, contractors and other third parties who have a
               business need to know. They will only process your personal data
               on our instructions and they are subject to a duty of
               confidentiality. <br />

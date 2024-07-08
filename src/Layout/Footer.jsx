@@ -35,15 +35,13 @@ const Footer = ({ handleTermsOpenClick, handlePrivacyOpenClick }) => {
               </Link>
             </div>
             <div className="txt-foot">
-             
               <Link to="/guides" className="no-underline text-white">
-                Guides for Agents
+                Guides for Runners
               </Link>
             </div>
             <div className="txt-foot">
-              
               <Link to="/safety" className="no-underline text-white">
-                Safety for Customers
+                Safety for Senders
               </Link>
             </div>
           </div>
@@ -104,8 +102,8 @@ const Footer = ({ handleTermsOpenClick, handlePrivacyOpenClick }) => {
       <div className="pol-copy">
         <div className="copp"></div>
         <div className="copp">
-      ©{currentYear} Herrands Solutions Limited. All rights reserved
-    </div>
+          ©{currentYear} Herrands Solutions Limited. All rights reserved
+        </div>
         <div className="copp"></div>
       </div>
     </div>

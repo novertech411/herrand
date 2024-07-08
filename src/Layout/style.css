@@ -107,6 +107,7 @@
   font-size: 15px;
   cursor: pointer;
   line-height: 25px;
+  margin-bottom: 10px;
 }
 .footer-main-container {
   display: flex;
@@ -222,7 +223,6 @@
     color: #fff;
   }
 
-  
   .bars {
     color: #0066f5;
   }

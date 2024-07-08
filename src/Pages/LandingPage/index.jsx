@@ -50,7 +50,7 @@ const LandingPage = () => {
         <div className="our-fer" id="our-feature-section">
           <OurFeature />
         </div>
-        
+
         <div className="download-boxx">
           <DownComp />
         </div>

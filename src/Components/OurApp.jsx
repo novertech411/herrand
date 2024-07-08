@@ -13,11 +13,11 @@ const OurApp = () => {
 
           <div className="abt-body app-bod">
             Our platform is designed to seamlessly connect individuals with
-            varying needs – you, the customer who needs to send someone on
-            errands, and our dedicated agents who are available on-demand to run
-            your errands. The result? A win-win partnership where everyone
+            varying needs – you, the sender who needs to send someone on
+            errands, and our dedicated runners who are available on-demand to
+            run your errands. The result? A win-win partnership where everyone
             benefits. You gain more time to pursue your passions and achieve
-            your goals. Our agents earn by sharing their time with you and
+            your goals. Our runners earn by sharing their time with you and
             helping you run your errands.
           </div>
           <div className="flex  sm:w-[80%] lg:w-[60%] xl:w-[60%]">
@@ -35,6 +35,7 @@ const OurApp = () => {
           </div>
         </div>
       </div>
+
       <div className="down-container">
         <div className="down-left-bx">
           <h2 className="abt-h1 reddd red-dw">
@@ -61,9 +62,6 @@ const OurApp = () => {
               alt=""
             />
           </div>
-        </div>
-        <div className="down-right-container">
-          <img src="images/nw.png" alt="" />
         </div>
       </div>
     </div>

@@ -29,9 +29,7 @@ const CustomerHowItWorks = () => {
                   Step 1
                 </span>
                 <FaDownload className=" float-start text-[#0066f5] mx-3 text-3xl" />
-                <span className="font-bold  mr-3">
-                  Download the App:
-                </span>
+                <span className="font-bold  mr-3">Download the App:</span>
                 Get started by downloading our user-friendly mobile app on your
                 iOS or Android device.
               </p>
@@ -42,9 +40,7 @@ const CustomerHowItWorks = () => {
                   Step 2
                 </span>
                 <MdPersonAdd className=" float-start text-[#0066f5] mx-3 text-3xl" />
-                <span className="font-bold mr-3">
-                  Create Your Account:
-                </span>
+                <span className="font-bold mr-3">Create Your Account:</span>
                 Our app's user-friendly interface ensures that creating your
                 account is a breeze. In just a few minutes, you'll have your
                 profile up and running, and you'll be well on your way to
@@ -66,13 +62,11 @@ const CustomerHowItWorks = () => {
                   Step 3
                 </span>
                 <FaPaperPlane className=" float-start text-[#0066f5] mx-3 text-3xl" />
-                <span className="font-bold mr-3">
-                  Send Your Errand:
-                </span>
+                <span className="font-bold mr-3">Send Your Errand:</span>
                 Our intuitive platform makes it easy for you to request
                 assistance with your errands. Simply select the type of errand
                 or task you need help with, and we'll connect you with a trusted
-                agent who will run it for you.
+                runner who will run it for you.
               </p>
 
               <br />
@@ -82,11 +76,9 @@ const CustomerHowItWorks = () => {
                   Step 4
                 </span>
                 <FaMapMarkerAlt className=" float-start text-[#0066f5] mx-3 text-3xl" />
-                <span className="font-bold  mr-3">
-                  Track and Relax:
-                </span>
+                <span className="font-bold  mr-3">Track and Relax:</span>
                 Sit back, relax, and monitor the progress of your errand with
-                your dedicated agent while you enjoy convenience and more time.
+                your dedicated runner while you enjoy convenience and more time.
               </p>
             </div>
             <div className="button-cont">

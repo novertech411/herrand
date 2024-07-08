@@ -57,7 +57,7 @@ const Terms = ({ handleTermsCloseClick }) => {
               exchange their time for tasks and errands. <br />
               <br /> Our services range from and include but are not limited to
               any tasks that can be rendered by engaging our
-              subcontractors/agents' time to fulfill such tasks, either
+              subcontractors/runners' time to fulfill such tasks, either
               in-person such as pick-up/delivery, sending items, etc. or virtual
               such as any virtual administrative tasks. <br />
               <br /> Furthermore, our services include but not limited to;
@@ -65,22 +65,22 @@ const Terms = ({ handleTermsCloseClick }) => {
               <ul>
                 <li className="list-disc">
                   Solving the problem of time constraints on the part of
-                  business owners and prospective customers
+                  business owners and prospective senders
                 </li>
                 <li className="list-disc">
                   Acting as a middleman to connect business owners with
                   ready-to-work assistants and logistics
-                  (“Subcontractors/Agents”) as the case may be
+                  (“Subcontractors/Runners”) as the case may be
                 </li>
                 <li className="list-disc">
                   Creating employment opportunities for drivers, car owners and
-                  logistics companies to act as on-site agents in delivering
+                  logistics companies to act as on-site runners in delivering
                   physical assignment
                 </li>
                 <li className="list-disc">
                   Creating employment opportunities for virtual assistants to
                   work as clerical, data entry or support staff to prospective
-                  customers and businesses.
+                  senders and businesses.
                 </li>
               </ul>
             </p>
@@ -168,12 +168,12 @@ const Terms = ({ handleTermsCloseClick }) => {
 
           <div className="py-4">
             <h4 className="text-[30px] font-medium">
-              Subcontractors/Agents and Lessors Obligations
+              Subcontractors/Runners and Lessors Obligations
               <span className="w-[15px] flex rounded-md bg-[#0066F5] h-[5px]"></span>
             </h4>
             <p>
               The Platform's obligations to users under these Terms shall be
-              binding upon all subcontractors/agents and lessors
+              binding upon all subcontractors/runners and lessors
               ("Subcontractors") contributing to the effective delivery of the
               services. The Platform shall incorporate the provisions of this
               contract into all sub-delegated responsibilities.
@@ -193,22 +193,22 @@ const Terms = ({ handleTermsCloseClick }) => {
                 </li>
                 <li className="list-disc">
                   The Platform shall ensure that all of its subcontractors and
-                  agents are bound by the same restrictions and obligations that
-                  binds the Platform to the users/prospective customers
+                  runners are bound by the same restrictions and obligations
+                  that binds the Platform to the users/prospective senders
                   including but not limited to the obligation to implement
                   reasonable and adequate safeguards to protect information
                   whenever the Platform receives and transmits instructions and
-                  communication from prospective users/customers.
+                  communication from prospective users/senders.
                 </li>
                 <li className="list-disc">
                   The subcontractor assumes to the Platform all of the
                   obligations and responsibilities applicable to the performance
                   of the subcontract which the Platform assumes towards the
-                  user/customer expecting the performance of such contract.
+                  user/sender expecting the performance of such contract.
                 </li>
                 <li className="list-disc">
                   The subcontractor is bound to the Platform to the same extent
-                  the Platform is bound to the user/customer. Hence where a
+                  the Platform is bound to the user/sender. Hence where a
                   job/obligation has been contracted to the Platform and the
                   work therein pertains to the subcontractor, such work shall be
                   interpreted to apply to the subcontractor and not the
@@ -219,7 +219,7 @@ const Terms = ({ handleTermsCloseClick }) => {
                   further rights it may have and to the fullest extent permitted
                   by the law all rights and remedies against the subcontractor
                   regarding the performance of any subcontract just as the
-                  user/customer has against the Platform respecting the
+                  user/sender has against the Platform respecting the
                   performance of the prime contract/obligation.
                 </li>
               </ul>

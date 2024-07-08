@@ -8,13 +8,13 @@ const AgentComp = () => {
       </div>
       <div className="right-side-about">
         <div className="advice-txt">MAKE MONEY WITH YOUR FREE TIME</div>
-        <h1 className="abt-h1 fnt">Become an Agent</h1>
+        <h1 className="abt-h1 fnt">Become a Runner</h1>
 
         <div className="abt-body">
           <FaHandHoldingUsd className="arr-lf" />
           <span className=" font-bold">Earn-as-You-Go: </span> Turn your free
           time into a source of income by running errands for others. Join
-          Herrands as an agent and start earning by helping others with their
+          Herrands as a runner and start earning by helping others with their
           errands. <br />
           <br />
           <FaClock className="arr-lf" />{" "}
@@ -25,7 +25,7 @@ const AgentComp = () => {
           <br /> <FaUsers className="arr-lf" />{" "}
           <span className="font-bold">Supportive Community: </span>
           Join our thriving community of like-minded individuals making a
-          difference. By becoming an agent, you're not only helping others;
+          difference. By becoming a runner, you're not only helping others;
           you're also contributing to a community that upholds your values.
         </div>
         <div className="button-cont">

@@ -40,9 +40,7 @@ const AgentHowItWorks = () => {
                   Step 2
                 </span>
                 <FaBell className=" float-start text-[#0066f5] mx-3 text-3xl" />
-                <span className="font-bold  mr-3">
-                  Get Notified:
-                </span>
+                <span className="font-bold  mr-3">Get Notified:</span>
                 Receive notifications of new errands in your area and choose the
                 ones that best suits you.
               </p>
@@ -54,11 +52,9 @@ const AgentHowItWorks = () => {
                   Step 3
                 </span>
                 <FaCheckCircle className=" float-start text-[#0066f5] mx-3 text-3xl" />
-                <span className="font-bold  mr-3">
-                  Complete Errands:
-                </span>
+                <span className="font-bold  mr-3">Complete Errands:</span>
                 Run the errands you accept effectively to improve your ratings,
-                win your customers’ trust and get more opportunities.
+                win your sender's trust and get more opportunities.
               </p>
               <br />
 
