@@ -15,6 +15,7 @@ import Terms from "./Pages/LandingPage/Terms";
 import { Privacy } from "./Pages/Privacy";
 import { Safety } from "./Pages/Safety";
 import { Guides } from "./Pages/Guides";
+import Deletion from "./Pages/Deletion";
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -47,7 +48,7 @@ function App() {
         <Route path="/terms" element={<Terms />} />
         <Route path="/safety" element={<Safety />} />
         <Route path="/guides" element={<Guides />} />
-
+        <Route path="/deletion" element={<Deletion />} />
       </Routes>
     </div>
     // </ClearLocalStorageOnInactivity>
