@@ -45,6 +45,9 @@ const LandingPage = () => {
       <Navbar />
       <div className="landing-page-container">
         <HeroSection />
+        <div className=" bg-blue-100 font-poppins font-[400] text-primary text-[40px] text-center py-6">
+          <p>Save Time. Make Money. Live Better.</p>
+        </div>
         <AboutSection />
         <OurApp />
         <div className="our-fer" id="our-feature-section">

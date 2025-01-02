@@ -1,7 +1,7 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import LandingPage from "./Pages/LandingPage";
-import Dashboard from "./Pages/Dashboard";
+// import Dashboard from "./Pages/Dashboard";
 import Customer from "./Pages/Customer";
 import Agent from "./Pages/Agent";
 import Errand from "./Pages/Errand";
@@ -32,7 +32,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route index path="/" element={<LandingPage />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        {/* <Route path="/dashboard" element={<Dashboard />} /> */}
         {/* <Route
             path="/dashboard"              
             element={<ProtectedRoute element={<Dashboard />} />}

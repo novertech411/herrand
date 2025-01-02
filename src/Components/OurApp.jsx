@@ -1,69 +1,42 @@
+import Container from "./Container";
+import eanr from "../assets/image/earn.png";
+
 const OurApp = () => {
   return (
-    <div className="our-app-container">
-      {" "}
-      <div className="about-section-container">
-        <div className="left-side-about our-app-md">
-          <img src="images/Image3.png" alt="" />
-        </div>
-        <div className="right-side-about app-right-text">
-          <h2 className="abt-h1 reddd">
-            Giving You All the Time You need to Do What You Want
-          </h2>
+    <div className="">
+      <Container>
+        <h3 className=" font-poppins text-center text-black text-[38px] font-[500] ">
+          {" "}
+          What You Stand to gain with Herrands{" "}
+        </h3>
 
-          <div className="abt-body app-bod">
-            Our platform is designed to seamlessly connect individuals with
-            varying needs – you, the sender who needs to send someone on
-            errands, and our dedicated runners who are available on-demand to
-            run your errands. The result? A win-win partnership where everyone
-            benefits. You gain more time to pursue your passions and achieve
-            your goals. Our runners earn by sharing their time with you and
-            helping you run your errands.
+        <div>
+          <div className="w-[373px]  bg-blue-100  px-[40px] py-[70px] rounded-2xl ">
+            <img className=" mx-auto" src={eanr} alt=" " />
+
+            <div className="text-center font-poppins  text-[20px] my-[30px]">
+              <p className=" font-poppins font-[700]"> Earn as you Go</p>
+              <p className=" font-[300] mt-[30px]">
+                Turn your free time into a source of income by running errands
+                for others.
+              </p>
+            </div>
           </div>
-          <div className="flex  sm:w-[80%] lg:w-[60%] xl:w-[60%]">
-            <img
-              className="w-1/2 h-[64px] p-2 xl:h-[80px] "
-              src="images/bad1.png"
-              alt=""
-            />
 
-            <img
-              className="w-1/2 h-[64px] p-2 xl:h-[80px] "
-              src="images/bad2.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
+          <div className="w-[373px]  bg-blue-100  px-[40px] py-[70px] rounded-2xl ">
+            <img className=" mx-auto" src={eanr} alt=" " />
 
-      <div className="down-container">
-        <div className="down-left-bx">
-          <h2 className="abt-h1 reddd red-dw">
-            With our easy to use Platform that Suits Your Daily Errands
-          </h2>
-          <div className="abt-body app-bod">
-            We accommodate the diverse range of daily errands you encounter.
-            From quick delivery runs, moving the heavy goods you just bought and
-            essential household tasks to more intricate personal requests,
-            Herrands offers a seamless and intuitive marketplace that simplifies
-            your life and empowers you to delegate your daily errands with
-            confidence.
-          </div>
-          <div className="flex  sm:w-[80%] lg:w-[60%] xl:w-[60%]">
-            <img
-              className="w-1/2 h-[64px] p-2 xl:h-[80px] "
-              src="images/bad1.png"
-              alt=""
-            />
-
-            <img
-              className="w-1/2 h-[64px] p-2 xl:h-[80px] "
-              src="images/bad2.png"
-              alt=""
-            />
+            <div className="text-center font-poppins  text-[20px] my-[30px]">
+              <p className=" font-poppins font-[700]"> Flexible Hours</p>
+              <p className=" font-[300] mt-[30px]">
+                Work on your schedule and choose errands that suit you. Whether
+                you're looking for a full-time gig or part-time hustle, we offer
+                flexible opportunities to fit your schedule.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 };
