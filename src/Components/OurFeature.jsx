@@ -12,36 +12,14 @@ const OurFeature = () => {
   };
 
   return (
-    <div className="our-feature-container">
+    <div className="our-feature-container bg-blue-100 py-[100px]">
       <div className="our-feature-head">
-        <div className="head-tit">Our Features</div>
-        <div className="rec-head"></div>
+        <h2 className="font-[600] text-[38px] font-poppins ">
+          How Herrand Works
+        </h2>
       </div>
-      <div className="agent-custom">
-        <div className="become-ag-cus-container">
-          <div
-            className={
-              isAgent ? "become-ae-cus-bx " : "become-ae-cus-bx act-tab"
-            }
-            onClick={handleAgentClick}
-          >
-            Become a Runner
-          </div>
-          <div
-            className={
-              isAgent ? "become-ae-cus-bx act-tab " : "become-ae-cus-bx "
-            }
-            onClick={handleAgentClick}
-          >
-            Become a Sender
-          </div>
-        </div>
-      </div>
-      {isAgent ? <CustomerComp /> : <AgentComp />}
 
-      {isAgent ? <CustomerHowItWorks /> : <AgentHowItWorks />}
-      
-   
+      <CustomerComp />
     </div>
   );
 };
