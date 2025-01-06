@@ -9,41 +9,41 @@ import Paid from "../Components/icons/paid.jsx";
 const CustomerComp = () => {
   return (
     <div className="about-section-container font-poppins">
-      <div className="left-side-about resdas ">
+      <div className="left-side-about md:flex   hidden ">
         <img src="images/Image6.png" alt="" />
       </div>
-      <div className="w-[65%] relative">
-        <div className="text-primary text-[30px] font-[300] mb-11">
+      <div className="md:w-[65%] w-full relative">
+        <div className="text-primary md:text-[30px] text-[20px] font-poppins  font-[600] mb-11 md:ml-0  ml-10">
           Turn your time into money in 4 easy steps
         </div>
-        <div className=" border-l-2 border-primary flex gap-9   h-[150px] ">
+        <div className=" border-l-2 border-primary flex md:gap-9  gap-1 md:ml-0  ml-10  h-[150px] ">
           <div className=" -translate-x-11 -translate-y-4">
             <SignUp className="" />
           </div>
 
-          <p className="text-[25px]  font-poppins m">
+          <p className="md:text-[25px]  text-[15px] font-poppins m">
             <span className="    font-poppins font-[600]"> Sign Up :</span>
             Download the app, create your profile and complete the verification
             process.
           </p>
         </div>
-        <div className=" border-l-2 border-primary flex gap-9   h-[150px] ">
+        <div className=" border-l-2 border-primary flex md:gap-9  gap-1  md:ml-0  ml-10 h-[150px] ">
           <div className=" -translate-x-11 -translate-y-4">
             <Get />
           </div>
 
-          <p className="text-[25px]  font-poppins m">
+          <p className="md:text-[25px]  text-[15px] font-poppins m">
             <span className="    font-poppins font-[600]">Get Notified :</span>
             Receive errand request notifications on your phone and accept the
             ones that best suit you.
           </p>
         </div>
-        <div className=" border-l-2 border-primary flex gap-9   h-[150px] ">
+        <div className=" border-l-2 border-primary flex md:gap-9  gap-1 md:ml-0  ml-10 h-[150px] ">
           <div className=" -translate-x-11 -translate-y-4">
             <Complet className="" />
           </div>
 
-          <p className="text-[25px]  font-poppins m">
+          <p className="md:text-[25px]  text-[15px]  font-poppins m">
             <span className="    font-poppins font-[600]">
               {" "}
               Complete Errands :
@@ -52,12 +52,12 @@ const CustomerComp = () => {
             get more bookings
           </p>
         </div>
-        <div className="  flex gap-9   h-[150px] ">
+        <div className="  flex md:gap-9  gap-1  h-[150px]  md:ml-0  ml-10 ">
           <div className=" -translate-x-11 -translate-y-4">
             <Paid className="" />
           </div>
 
-          <p className="text-[25px]  font-poppins m">
+          <p className="md:text-[25px]  text-[15px]  font-poppins ">
             <span className="    font-poppins font-[600]"> Get Paid :</span>
             What’s sweeter than credit alerts? Tell us after you receive your
             money directly into your bank account.

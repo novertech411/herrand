@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import hello from "./src/assets/image/footer2.png";
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -10,6 +11,11 @@ module.exports = {
 
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+      },
+
+      backgroundImage: {
+        footerbg: "url('/src/assets/image/bg.png')",
+        footerbg2: "url('/src/assets/image/footer2.png')",
       },
     },
   },

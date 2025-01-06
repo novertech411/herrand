@@ -54,9 +54,7 @@ const LandingPage = () => {
       </div>
       <Testimoner />
 
-      <div className="download-boxx">
-        <DownComp />
-      </div>
+      <DownComp />
 
       <Footer
         handleTermsOpenClick={handleTermsOpenClick}

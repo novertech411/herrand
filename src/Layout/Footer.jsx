@@ -4,6 +4,11 @@ import { BsFacebook, BsTiktok } from "react-icons/bs";
 import { FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import logo from "../assets/image/logoherr.png";
+import Linkedin from "../Components/icons/Linkedin";
+import Facebook from "../Components/icons/Facebook";
+import Instgarm from "../Components/icons/Instgarm";
+import { Container } from "react-bootstrap";
 
 const Footer = ({ handleTermsOpenClick, handlePrivacyOpenClick }) => {
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
@@ -13,99 +18,60 @@ const Footer = ({ handleTermsOpenClick, handlePrivacyOpenClick }) => {
   }, []);
 
   return (
-    <div className="footer-container" id="footer">
-      <div className="footer-main-container">
-        <div className="footer-logo-bx">
-          <img src="images/alof.jpg" alt="" className="one-mg" />
-          <div className="badge-app-cont">
-            <img src="images/bad1.png" alt="" />
-            <img src="images/bad2.png" alt="" />
+    <div className=" bg-footerbg2  bg-cover pt-[200px] ">
+      <Container>
+        <div className=" font-poppins" id="footer">
+          <div className="flex text-[20px] text-white  justify-evenly  gap-11   md:flex-row flex-col     ">
+            <div className="w-[350px]">
+              <div className="bg-white rounded-xl p-3 flex-wrap  w-[200px] mb-7">
+                {" "}
+                <img className="  " src={logo} alt="" />{" "}
+              </div>
+
+              <p> Save time. Earn Money. Live Better</p>
+
+              <p className="mt-[80px]">
+                Are you looking for a flexible way to earn extra income? Join
+                Herrands as a runner!
+              </p>
+            </div>
+            <div className="w-[200px] text-[20px]">
+              <h2 className=" font-poppins  font-[600px] text-[25px] mb-7">
+                Company{" "}
+              </h2>
+              <p>Terms of Services</p>
+              <p>Guides for Runners</p>
+              <p>Safety for Runners</p>
+              <p>Privacy Policy</p>
+            </div>
+            <div className="w-[200px]">
+              <h2 className=" font-poppins  font-[600px] text-[25px] mb-7 gap-11">
+                Contacts US{" "}
+              </h2>
+              <p>+234-704-418-4306</p>
+              <p>+234-810-292-9044 </p>
+              <p>Safety for Runners</p>
+              <p>Privacy Policy</p>
+
+              <div className="my-10">
+                <h2 className=" font-poppins  font-[600px] text-[25px] md:my-4 my-9 justify-center m">
+                  follow Us{" "}
+                </h2>
+                <div className="flex gap-3 ">
+                  <Linkedin />
+                  <Facebook />
+                  <Instgarm />
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="line-foot text-white" />
+
+          <div className="copp text-white text-center text-[20px]">
+            ©{currentYear} Herrands Solutions Limited. All rights reserved
           </div>
         </div>
-        <div className="the-all-footer-txt">
-          <div className="each-col-cont">
-            <div className="txt-foot">
-              <Link to="/terms" className="no-underline text-white">
-                Terms of Service
-              </Link>
-            </div>
-            <div className="txt-foot">
-              <Link to="/privacy" className="no-underline text-white">
-                Privacy Policy
-              </Link>
-            </div>
-            <div className="txt-foot">
-              <Link to="/guides" className="no-underline text-white">
-                Guides for Runners
-              </Link>
-            </div>
-            <div className="txt-foot">
-              <Link to="/safety" className="no-underline text-white">
-                Safety for Senders
-              </Link>
-            </div>
-          </div>
-          <div className="each-col-cont">
-            <div className="txt-foot chg-wd">
-              Vibranium Valley, <br />
-              42, Local Airport Road, 
-              <br />
-              Ikeja, Lagos.
-            </div>
-          </div>
-          <div className="each-col-cont ">
-            <div className="txt-foot">+234704 418 4306</div>
-            <div className="txt-foot">+234701 526 3608</div>
-            <div className="txt-foot">send@herrands.com </div>
-            <div className="social-mdia">
-              <a href="https://web.facebook.com/sendherrands">
-                <BsFacebook className="face" />
-              </a>
-              <a href="https://www.instagram.com/sendherrands/">
-                <AiFillInstagram className="instam" />
-              </a>
-              <a href="https://www.tiktok.com/@sendherrands">
-                <BsTiktok className="" />
-              </a>
-              <a href="https://www.youtube.com/@sendherrands">
-                <FaYoutube className="tube" />
-              </a>
-              <a href="https://twitter.com/sendherrands">
-                <FaXTwitter className="" />
-              </a>
-              <a href="https://www.linkedin.com/company/sendherrands/">
-                <AiFillLinkedin className="lin" />
-              </a>
-              {/* <a href="https://web.facebook.com/sendherrands">
-                <img src="/images/fa.png" alt="" />
-              </a>
-              <a href="https://www.instagram.com/sendherrands/">
-                <img src="/images/insta.png" alt="" />
-              </a>
-              <a href="https://www.tiktok.com/@sendherrands">
-                <img src="/images/tik.png" alt="" />
-              </a>
-              <a href="https://www.youtube.com/@sendherrands">
-                <img src="/images/tube.png" alt="" />
-              </a>
-              <a href="https://twitter.com/sendherrands">
-                <img src="/images/x.png" alt="" />
-              </a>
-              <a href="https://www.linkedin.com/company/sendherrands/">
-                <img src="/images/in.png" alt="" />
-              </a> */}
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr className="line-foot" />
-      <div className="pol-copy">
-        <div className="copp"></div>
-        <div className="copp">
-          ©{currentYear} Herrands Solutions Limited. All rights reserved
-        </div>
-        <div className="copp"></div>
-      </div>
+      </Container>
     </div>
   );
 };

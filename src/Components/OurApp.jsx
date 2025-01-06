@@ -7,13 +7,15 @@ const OurApp = () => {
   return (
     <div className="">
       <Container>
-        <h3 className=" font-poppins text-center text-black text-[38px] font-[500] mt-[200px] my-11 ">
+        <h3 className=" font-poppins  text-center text-black md:text-[38px] text-5xl font-[600] mt-[200px] my-11 ">
           {" "}
-          What You Stand to gain with Herrands{" "}
+          <span className="text-primary"> What </span>You Stand to <br></br>gain
+          with
+          <span className="text-primary"> Herrands .`</span>{" "}
         </h3>
 
-        <div className=" flex justify-between  mt-[200px]">
-          <div className="w-[373px]  bg-blue-100  px-[40px] py-[70px] rounded-2xl  h-[545px] ">
+        <div className=" flex md:justify-between  justify-center md:flex-row  gap-11 flex-col mt-[200px]">
+          <div className="md:w-[373px]  w-[330px]  bg-blue-100  px-[40px] py-[70px] rounded-2xl  md:h-[545px] mx-auto ">
             <img className=" mx-auto" src={eanr} alt=" " />
 
             <div className="text-center font-poppins  text-[20px] my-[30px]">
@@ -25,7 +27,7 @@ const OurApp = () => {
             </div>
           </div>
 
-          <div className="w-[373px]  bg-blue-100  px-[40px] pt-[70px] rounded-2xl  h-[645px] -mt-[60px]">
+          <div className="md:w-[373px]  w-[330px]  bg-blue-100  px-[40px] pt-[70px] rounded-2xl  md:h-[645px] md:-mt-[60px] mx-auto">
             <img className=" mx-auto" src={flex} alt=" " />
 
             <div className="text-center font-poppins  text-[20px] my-[30px]">
@@ -38,7 +40,7 @@ const OurApp = () => {
             </div>
           </div>
 
-          <div className="w-[373px]  bg-blue-100  px-[40px] pt-[70px] rounded-2xl  h-[545px] ">
+          <div className="md:w-[373px]  w-[330px]  bg-blue-100  px-[40px] pt-[70px] rounded-2xl  md:h-[545px] mx-auto ">
             <img className=" mx-auto" src={delivery} alt=" " />
 
             <div className="text-center font-poppins  text-[20px] my-[30px]">

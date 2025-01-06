@@ -15,11 +15,11 @@ const AboutSection = () => {
         >
           <div className="left-side-about">
             <div
-              className="relative  max-w-6xl bg-red-500 mx-auto h-[600px]"
+              className="relative  md:max-w-6xl mx-auto md:h-[500px]   w-full"
               style={{ paddingTop: "56.25%" /* 16:9 Aspect Ratio */ }}
             >
               <iframe
-                className="absolute top-0 left-0 w-full h-[600px]"
+                className="absolute inset-0 w-full md:h-[500px] h-[200px]"
                 src="https://www.youtube.com/embed/u7iZJL5zxxE"
                 title="YouTube video player"
                 frameBorder="0"
@@ -29,12 +29,12 @@ const AboutSection = () => {
             </div>
           </div>
           <div className="right-side-about ">
-            <div className=" font-poppins font-[600] text-[38px] text-left">
+            <div className=" font-poppins font-[600] md:text-[38px]  text-5xl text-left">
               What To <span className="text-primary"> Know Abou</span>
               <br></br> Herrands
             </div>
 
-            <div className=" text-[18px] text-gray-500  py-8">
+            <div className=" md:text-[18px]  text-[15px] text-gray-500  py-8">
               Herrands is a P2P time-sharing app for busy people who want to
               regain valuable time and enjoy more convenience. Our platform
               connects you with reliable runners who will run your errands, so
@@ -60,15 +60,15 @@ const AboutSection = () => {
         </div>
 
         <div
-          className="about-section-container font-poppins mt-[100px]"
+          className=" flex font-poppins mt-[100px]  flex-col-reverse"
           id="about-section"
         >
-          <div className="right-side-about">
-            <div className=" font-poppins font-[600] text-[38px] text-left">
-              <span className="text-primary">Easy .</span> Fast. Reliable.{" "}
-              <span className="text-primary"> Safe!</span>
+          <div className="right-side-about ">
+            <div className=" font-poppins font-[600]  md:text-[38px]  text-5xl text-left md:block hidden">
+              <span className="text-primary">Easy .</span> Fast .{" "}
+              <span className="text-primary">Reliable . </span>Safe !
             </div>
-            <div className=" text-[18px] text-gray-500  py-8 ">
+            <div className=" md:text-[18px] text-[15px] text-gray-500  py-8 ">
               Herrands gives you all the time you need to do what you want. Our
               platform seamlessly connects individuals with diverse but
               complementary needs – You, the sender, who needs to send someone
@@ -90,7 +90,11 @@ const AboutSection = () => {
               </div>
             </ScrollLink>
           </div>
-          <div className=" w-[50%]">
+          <div className=" md:w-[50%]  w-full] mx-auto">
+            <div className=" font-poppins font-[600]  md:text-[38px]  text-5xl text-left md:hidden  block ">
+              <span className="text-primary">Easy .</span> Fast .{" "}
+              <span className="text-primary">Reliable . </span>Safe !
+            </div>
             <img src={info} alt="" />
           </div>
         </div>

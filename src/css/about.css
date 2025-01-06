@@ -1,7 +1,7 @@
 .about-section-container {
   display: flex;
   align-items: center;
-  padding: 50px 90px;
+  padding: 50px 0px;
   color: #383838;
 }
 .advice-txt {
@@ -37,9 +37,8 @@
 }
 .left-side-about img {
   width: 70%;
-  border-radius: 20px;
+
   /* height: 400px; */
-  object-fit: contain;
 }
 
 .right-side-about {
@@ -133,7 +132,7 @@
 }
 @media only screen and (max-width: 940px) {
   .about-section-container {
-    padding: 70px;
+    padding: 70px 0px;
   }
   .left-side-about img {
     width: 90%;
@@ -148,7 +147,7 @@
 }
 @media only screen and (max-width: 745px) {
   .about-section-container {
-    padding: 25px;
+    padding: 25px 0px;
     flex-direction: column;
     margin: 50px 0;
     gap: 20px;
@@ -201,7 +200,7 @@
 }
 @media only screen and (max-width: 630px) {
   .about-section-container {
-    padding: 25px;
+    padding: 25px 0px;
     flex-direction: column;
     margin: 50px 0;
     gap: 20px;

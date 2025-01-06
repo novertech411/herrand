@@ -4,6 +4,7 @@ import AgentComp from "./AgentComp";
 import CustomerComp from "./CustomerComp";
 import CustomerHowItWorks from "./CustomerHowItWorks";
 import AgentHowItWorks from "./AgentHowItWorks";
+import { Container } from "react-bootstrap";
 const OurFeature = () => {
   const [isAgent, setIsAgent] = useState(false);
 
@@ -14,12 +15,13 @@ const OurFeature = () => {
   return (
     <div className="our-feature-container bg-blue-100 py-[100px]">
       <div className="our-feature-head">
-        <h2 className="font-[600] text-[38px] font-poppins ">
-          How Herrand Works
+        <h2 className="font-[600] md:text-[38px]  text-5xl font-poppins  ">
+          How <span className="text-primary"> Herrand </span> Works
         </h2>
       </div>
-
-      <CustomerComp />
+      <Container>
+        <CustomerComp />
+      </Container>
     </div>
   );
 };

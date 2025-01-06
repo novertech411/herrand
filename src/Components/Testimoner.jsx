@@ -9,26 +9,47 @@ function Testimoner() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 1000,
+    cssEase: "linear",
   };
 
   return (
-    <div>
+    <div className=" ">
       <Container>
-        <h2 className="font-[600] text-[38px] font-poppins  text-center">
-          What Our Users Have To Say
+        <h2 className="font-[600] font-poppins  text-center md:text-[38px] text-5xl ">
+          What Our <span className="text-primary"> Users </span> Have To Say
         </h2>
+        <div className="my-[60px]">
+          <Slider {...settings}>
+            <div className="">
+              <Testcard />
+            </div>
 
-        <Slider {...settings}>
-          <Testcard />
-          <Testcard />
-          <Testcard />
-          <Testcard />
-          <Testcard />
-          <Testcard />
-        </Slider>
+            <div>
+              <Testcard />
+            </div>
+
+            <div>
+              <Testcard />
+            </div>
+
+            <div>
+              <Testcard />
+            </div>
+
+            <div>
+              <Testcard />
+            </div>
+
+            <div>
+              <Testcard />
+            </div>
+          </Slider>
+        </div>
       </Container>
     </div>
   );

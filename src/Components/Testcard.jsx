@@ -3,7 +3,7 @@ import testimage from "../assets/image/testimoner.png";
 
 function Testcard() {
   return (
-    <div className="bg-blue-100 p-9  font-poppins  rounded-2xl w-[450px]">
+    <div className="bg-blue-100 p-9  font-poppins  rounded-2xl md:w-[450px] w-[320px] mx-auto">
       <div className="py-7  rounded-full">
         {" "}
         <img

@@ -5,9 +5,9 @@ const HeroSection = () => {
   return (
     <div className=" relative w-full  overflow-hidden ">
       <Container>
-        <div className="hero-section-container" id="hero-section ">
-          <div className=" w-[90%] pt-10 sm:w-[80%] lg:pt-10">
-            <div className=" py-[100px]">
+        <div className="">
+          <div className=" md:w-[55%] pt-10 sm:w-[80%] lg:pt-10">
+            <div className=" md:py-[100px]">
               <div className="main-hero-head font-[300] font-poppins leading-normal text-5xl sm:text-5xl lg:text-[50px] xl:text-[70px] sm:leading-snug *:lg:leading-snug ">
                 Send Your <span> Errands Anywhere</span> In No Time
               </div>
@@ -20,13 +20,13 @@ const HeroSection = () => {
               </div>
               <div className="flex  mt-8 sm:w-[80%] lg:w-[60%] xl:w-[60%]">
                 <img
-                  className="w-1/2 h-[64px] p-2 xl:h-[80px] "
+                  className="md:w-1/2   md:h-[64px] p-2 xl:h-[80px]  w-[40%]  "
                   src="images/bad1.png"
                   alt=""
                 />
 
                 <img
-                  className="w-1/2 h-[64px] p-2 xl:h-[80px] "
+                  className="md:w-1/2   md:h-[64px] p-2 xl:h-[80px]  w-[40%]  "
                   src="images/bad2.png"
                   alt=""
                 />
@@ -35,7 +35,7 @@ const HeroSection = () => {
           </div>
           <div className="w-[65%]    bg-black   z-20">
             <img
-              className=" absolute  right-0 w-[45%] top-0"
+              className=" absolute  right-0 w-[45%] top-0   md:flex hidden"
               src={heropic}
               alt=""
             />
