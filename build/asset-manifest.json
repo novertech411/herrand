@@ -1,15 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.0b81a16d.css",
-    "main.js": "/static/js/main.cacb0175.js",
+    "main.css": "/static/css/main.b19ac5e1.css",
+    "main.js": "/static/js/main.94326cfd.js",
     "static/js/787.511b1a4e.chunk.js": "/static/js/787.511b1a4e.chunk.js",
+    "static/media/footer1.png": "/static/media/footer1.b62ecb6dc69282211d1d.png",
+    "static/media/herobanner.png": "/static/media/herobanner.6466b86ef61dd1e8a38e.png",
+    "static/media/info.png": "/static/media/info.039a35338980d05d1c3f.png",
+    "static/media/testimoner.png": "/static/media/testimoner.1e3129190f467cf0ef3d.png",
+    "static/media/footer2.png": "/static/media/footer2.9555b6046ccae6cd2871.png",
+    "static/media/bg.png": "/static/media/bg.10741495c4a8ab6cf01f.png",
+    "static/media/earn.png": "/static/media/earn.fd3b09da55782079e650.png",
+    "static/media/flexbility.png": "/static/media/flexbility.0567c2fdbb98e337ee18.png",
+    "static/media/delivery.png": "/static/media/delivery.e5dda0f1814bcdfbb85b.png",
+    "static/media/logoherr.png": "/static/media/logoherr.4fcef6365ed0e948e75b.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/index.html",
-    "main.0b81a16d.css.map": "/static/css/main.0b81a16d.css.map",
-    "main.cacb0175.js.map": "/static/js/main.cacb0175.js.map",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "main.b19ac5e1.css.map": "/static/css/main.b19ac5e1.css.map",
+    "main.94326cfd.js.map": "/static/js/main.94326cfd.js.map",
     "787.511b1a4e.chunk.js.map": "/static/js/787.511b1a4e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b81a16d.css",
-    "static/js/main.cacb0175.js"
+    "static/css/main.b19ac5e1.css",
+    "static/js/main.94326cfd.js"
   ]
 }
