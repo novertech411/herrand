@@ -60,7 +60,7 @@ const AboutSection = () => {
         </div>
 
         <div
-          className=" flex font-poppins mt-[100px]  flex-col-reverse"
+          className=" flex font-poppins mt-[100px]  md:flex-row flex-col-reverse"
           id="about-section"
         >
           <div className="right-side-about ">

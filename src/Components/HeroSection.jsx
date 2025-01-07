@@ -1,5 +1,7 @@
 import heropic from "../assets/image/herobanner.png";
 import Container from "./Container";
+import adndriod from "../assets/image/andriod.png";
+import apple from "../assets/image/appel.png";
 
 const HeroSection = () => {
   return (
@@ -18,18 +20,18 @@ const HeroSection = () => {
                 your errands on-demand, giving you the freedom to focus on what
                 truly matters. It’s easy, quick and safe!
               </div>
-              <div className="flex  mt-8 sm:w-[80%] lg:w-[60%] xl:w-[60%]">
-                <img
-                  className="md:w-1/2   md:h-[64px] p-2 xl:h-[80px]  w-[40%]  "
-                  src="images/bad1.png"
-                  alt=""
-                />
+              <div className="flex  mt-8 sm:w-[80%] lg:w-[60%] xl:w-[60%] ">
+                <div className="md:w-1/2   md:h-[64px] p-2 xl:h-[80px]  w-[40%] ">
+                  <img className=" " src={adndriod} alt="" />
+                </div>
 
-                <img
-                  className="md:w-1/2   md:h-[64px] p-2 xl:h-[80px]  w-[40%]  "
-                  src="images/bad2.png"
-                  alt=""
-                />
+                <div className="relative md:w-1/2   md:h-[60px] p-2 xl:h-[75px]  w-[4%]">
+                  <img className="  " src={apple} alt="" />
+                  <div className="absolute bg-blue-100 text-primary py-2  px-3 rounded-lg -top-8 -right-11 font-poppins text-[15px] font-[500]">
+                    {" "}
+                    Coming Soon...
+                  </div>
+                </div>
               </div>
             </div>
           </div>

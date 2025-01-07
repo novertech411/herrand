@@ -5,12 +5,13 @@ import Get from "../Components/icons/get.jsx";
 import SignUp from "../Components/icons/SignUp.jsx";
 import Complet from "../Components/icons/complete.jsx";
 import Paid from "../Components/icons/paid.jsx";
+import phone from "../assets/image/phone1.png";
 
 const CustomerComp = () => {
   return (
     <div className="about-section-container font-poppins">
       <div className="left-side-about md:flex   hidden ">
-        <img src="images/Image6.png" alt="" />
+        <img src={phone} alt="" />
       </div>
       <div className="md:w-[65%] w-full relative">
         <div className="text-primary md:text-[30px] text-[20px] font-poppins  font-[600] mb-11 md:ml-0  ml-10">
