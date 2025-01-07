@@ -1,5 +1,7 @@
 import { Container } from "react-bootstrap";
 import footer1 from "../assets/image/footer1.png";
+import adriod from "../assets/image/andriod.png";
+import apple from "../assets/image/appel.png";
 
 const DownComp = () => {
   return (
@@ -9,7 +11,7 @@ const DownComp = () => {
           {/* <img className="absolute z-0 " src={fotbg} alt="" /> */}
 
           <div className=" ">
-            <div className="md:w-[50%] md:ml-[80px] ml-0 w-[90%]  mx-auto font-poppins text-white  ">
+            <div className="md:w-[50%] ml-1 w-[90%]  md:mx-1  font-poppins text-white    ">
               <div className=" text-[20px]">
                 Ready to make time for what matters most to you? Need more time
                 to focus on your goals? Or you want to convert your time into
@@ -22,13 +24,22 @@ const DownComp = () => {
             </div>
             <div className=" ">
               <div className=" md:w-full  mx-auto w-[90%] flex   md:flex-row flex-col text-white text-[18px] gap-4  md:ml-[80px] mt-10 ">
-                <div className="apple-down-bx w-[180px]    ">
-                  <div className="for-app-sroid">Download for iOS</div>
-                  <img src="images/bad1.png" alt="" />
+                <div className="apple-down-bx w-[180px]     ">
+                  <div className="for-app-sroid  mb-11">
+                    Download for Android{" "}
+                  </div>
+                  <img src={adriod} alt="" />
                 </div>
-                <div className="apple-down-bx  w-[200px] ">
-                  <div className="for-app-sroid">Download for Android</div>
-                  <img src="images/bad2.png" alt="" />
+                <div className="apple-down-bx  w-[200px]  ">
+                  <div className="for-app-sroid mb-11">Download for iOS</div>
+                  <div className="relative">
+                    {" "}
+                    <img src={apple} alt="" />
+                    <div className="absolute bg-blue-100 text-primary py-2   px-2 rounded-lg -top-8 -right-11 font-poppins text-[12px] font-[500]">
+                      {" "}
+                      Coming Soon...
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -129,14 +129,22 @@ const Navbar = () => {
               offset={scrollOffset}
             >
               <div className="nav-login nnon">
-                <Link className="login-up ">Download the App</Link>
+                <Link
+                  className="login-up "
+                  to="https://play.google.com/store/apps/details?id=com.herrands"
+                >
+                  Become a Runner
+                </Link>
               </div>
             </ScrollLink>
           </ul>
 
           <Link className=" hidden md:flex" to="/#download-section">
-            <div className=" font-poppins  bg-primary border-2 border-primary text-white p-3 font-[500] rounded-2xl hover:bg-white hover:text-primary   cursor-pointer ">
-              Download the App
+            <div
+              className=" font-poppins  bg-primary border-2 border-primary text-white p-3 font-[500] rounded-2xl hover:bg-white hover:text-primary   cursor-pointer "
+              to="https://play.google.com/store/apps/details?id=com.herrands"
+            >
+              Become a Runner
             </div>
           </Link>
 
