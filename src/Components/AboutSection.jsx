@@ -51,18 +51,12 @@ const AboutSection = () => {
               smooth={true}
               duration={500}
               offset={scrollOffset}
-            >
-              <div className="button-cont">
-                <button className=" font-poppins  text-[20px] bg-primary border-2 border-primary text-white p-3 font-[500] rounded-2xl hover:bg-white hover:text-primary   cursor-pointer">
-                  know more
-                </button>
-              </div>
-            </ScrollLink>
+            ></ScrollLink>
           </div>
         </div>
 
         <div
-          className=" flex font-poppins mt-[100px]  md:flex-row flex-col-reverse"
+          className=" flex font-poppins mt-[100px]  md:flex-row flex-col-reverse    gap-[100px] "
           id="about-section"
         >
           <div className="right-side-about ">
@@ -79,18 +73,17 @@ const AboutSection = () => {
               everyone benefits by making time for what matters to them.
             </div>
 
-            <ScrollLink
-              to="download-section"
-              smooth={true}
-              duration={500}
-              offset={scrollOffset}
+            <button
+              className=" font-poppins  mt-11 text-[20px] bg-black border-2 border-black text-white p-3 font-[500] rounded-2xl hover:bg-white hover:text-primary   cursor-pointer"
+              onClick={() =>
+                window.open(
+                  "https://play.google.com/store/apps/details?id=com.herrands",
+                  "_blank"
+                )
+              }
             >
-              <div className="button-cont">
-                <button className=" font-poppins  text-[20px] bg-primary border-2 border-primary text-white p-3 font-[500] rounded-2xl hover:bg-white hover:text-primary   cursor-pointer">
-                  Download App
-                </button>
-              </div>
-            </ScrollLink>
+              Download App
+            </button>
           </div>
           <div className=" md:w-[50%]  w-full] mx-auto">
             <div className=" font-poppins font-[600]  md:text-[38px]  text-5xl text-left md:hidden  block ">

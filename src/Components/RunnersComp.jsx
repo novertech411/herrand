@@ -70,7 +70,15 @@ function RunnersComp() {
           </div>
 
           <div className="button-cont">
-            <button className=" border-2 border-primary text-primary p-4 text-[20px] rounded-2xl">
+            <button
+              className=" border-2 border-primary text-primary p-4 text-[20px] rounded-2xl"
+              onClick={() =>
+                window.open(
+                  "https://play.google.com/store/apps/details?id=com.herrands",
+                  "_blank"
+                )
+              }
+            >
               Become a Sender
             </button>
           </div>

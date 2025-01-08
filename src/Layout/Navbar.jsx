@@ -125,7 +125,12 @@ const Navbar = () => {
               to="download-section"
               smooth={true}
               duration={5}
-              onClick={handleToggleItem}
+              onClick={() =>
+                window.open(
+                  "https://play.google.com/store/apps/details?id=com.herrands",
+                  "_blank"
+                )
+              }
               offset={scrollOffset}
             >
               <div className="nav-login nnon">
@@ -142,7 +147,12 @@ const Navbar = () => {
           <Link className=" hidden md:flex" to="/#download-section">
             <div
               className=" font-poppins  bg-primary border-2 border-primary text-white p-3 font-[500] rounded-2xl hover:bg-white hover:text-primary   cursor-pointer "
-              to="https://play.google.com/store/apps/details?id=com.herrands"
+              onClick={() =>
+                window.open(
+                  "https://play.google.com/store/apps/details?id=com.herrands",
+                  "_blank"
+                )
+              }
             >
               Become a Runner
             </div>
