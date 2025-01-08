@@ -42,7 +42,9 @@ const AboutSection = () => {
               and make time for what matters to you. Whether it’s picking up
               your items or returning packages, last-minute delivery, doing
               household chores, having someone follow you to run errands
-              together, intercepting buses...
+              together, intercepting buses, going to motor parks to collect or
+              send your items, carrying your newly bought household appliances
+              and many more, there's always someone you can send on Herrands.
             </div>
             <ScrollLink
               to="download-section"
