@@ -28,7 +28,7 @@ export const Guides = () => {
             <iframe
               class="w-full h-full"
               title="Guidesdescription"
-              src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&amp;loop=1"
+              src="https://www.youtube.com/embed/CP9CsIBBEFw?playlist=CP9CsIBBEFw&amp;loop=1"
             ></iframe>
           </div>
           <h3 class="text-[30px] font-medium py-8">

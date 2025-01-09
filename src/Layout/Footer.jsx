@@ -9,6 +9,7 @@ import Linkedin from "../Components/icons/Linkedin";
 import Facebook from "../Components/icons/Facebook";
 import Instgarm from "../Components/icons/Instgarm";
 import { Container } from "react-bootstrap";
+import Twitter from "../Components/icons/Twitter";
 
 const Footer = ({ handleTermsOpenClick, handlePrivacyOpenClick }) => {
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
@@ -57,10 +58,19 @@ const Footer = ({ handleTermsOpenClick, handlePrivacyOpenClick }) => {
                 <h2 className=" font-poppins  font-[600px] text-[25px] md:my-4 my-9 justify-center m">
                   follow Us{" "}
                 </h2>
-                <div className="flex gap-3 ">
-                  <Linkedin />
-                  <Facebook />
-                  <Instgarm />
+                <div className="flex gap-3 items-center ">
+                  <a href="https://www.linkedin.com/company/sendherrands/posts/?feedView=all">
+                    <Linkedin />
+                  </a>
+                  <a href="https://x.com/sendherrands">
+                    <Twitter />
+                  </a>
+                  <a href="https://www.instagram.com/sendherrands/">
+                    <Instgarm />{" "}
+                  </a>
+                  <a href="https://web.facebook.com/sendherrands">
+                    <Facebook />
+                  </a>
                 </div>
               </div>
             </div>

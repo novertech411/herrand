@@ -30,7 +30,7 @@ export const Safety = () => {
             <iframe
               class="w-full h-full"
               title="Safety description"
-              src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&amp;loop=1"
+              src="https://www.youtube.com/embed/HzV9RAJfj0A?playlist=HzV9RAJfj0A&amp;loop=1"
             ></iframe>
           </div>
           {/* <h3 class="text-[30px] font-medium py-8">
