@@ -36,14 +36,27 @@ const Footer = ({ handleTermsOpenClick, handlePrivacyOpenClick }) => {
                 Herrands as a runner!
               </p>
             </div>
-            <div className="w-[200px] text-[20px]">
+            <div className="w-[200px] text-[20px] no-underline">
               <h2 className=" font-poppins  font-[600px] text-[25px] mb-7">
                 Company{" "}
               </h2>
-              <p>Terms of Services</p>
-              <p>Guides for Runners</p>
-              <p>Safety for Runners</p>
-              <p>Privacy Policy</p>
+
+              <Link to="/terms  " className="no-underline text-white">
+                {" "}
+                <p>Terms of Services</p>
+              </Link>
+              <Link to="/privacy" className="no-underline text-white">
+                {" "}
+                <p>Privacy Policy</p>{" "}
+              </Link>
+              <Link to="/guides" className="no-underline text-white">
+                {" "}
+                <p>Guides for Runners</p>{" "}
+              </Link>
+              <Link to="/safety" className="no-underline text-white">
+                {" "}
+                <p>Safety for Runners</p>
+              </Link>
             </div>
             <div className="w-[200px]">
               <h2 className=" font-poppins  font-[600px] text-[25px] mb-7 gap-11">
