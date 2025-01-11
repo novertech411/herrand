@@ -55,7 +55,7 @@ const LandingPage = () => {
       <div className="our-fer" id="our-feature-section">
         <OurFeature />
       </div>
-      <Testimoner />
+      {/* <Testimoner /> */}
 
       <DownComp />
 

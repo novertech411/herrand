@@ -55,7 +55,7 @@ const Footer = ({ handleTermsOpenClick, handlePrivacyOpenClick }) => {
               </Link>
               <Link to="/safety" className="no-underline text-white">
                 {" "}
-                <p>Safety for Runners</p>
+                <p>Safety for Senders</p>
               </Link>
             </div>
             <div className="w-[200px]">
@@ -64,12 +64,13 @@ const Footer = ({ handleTermsOpenClick, handlePrivacyOpenClick }) => {
               </h2>
               <p>+234-704-418-4306</p>
               <p>+234-810-292-9044 </p>
-              <p>Safety for Runners</p>
-              <p>Privacy Policy</p>
+              <p>
+                send<span>@</span>herrands.com{" "}
+              </p>
 
               <div className="my-10">
                 <h2 className=" font-poppins  font-[600px] text-[25px] md:my-4 my-9 justify-center m">
-                  follow Us{" "}
+                  Follow Us{" "}
                 </h2>
                 <div className="flex gap-3 items-center ">
                   <a href="https://www.linkedin.com/company/sendherrands/posts/?feedView=all">

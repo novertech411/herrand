@@ -19,7 +19,7 @@ const OurFeature = () => {
     <div className="our-feature-container bg-blue-100 py-[100px]">
       <div className="our-feature-head">
         <h2 className="font-[600] md:text-[38px]  text-5xl font-poppins  ">
-          How <span className="text-primary"> Herrand </span> Works
+          How <span className="text-primary"> Herrands </span> Works
         </h2>
       </div>
 

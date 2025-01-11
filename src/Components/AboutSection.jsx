@@ -30,7 +30,7 @@ const AboutSection = () => {
           </div>
           <div className="right-side-about ">
             <div className=" font-poppins font-[600] md:text-[38px]  text-5xl text-left">
-              What To <span className="text-primary"> Know Abou</span>
+              What To <span className="text-primary"> Know About</span>
               <br></br> Herrands
             </div>
 
