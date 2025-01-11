@@ -18,7 +18,7 @@ const OurApp = () => {
         >
           {" "}
           <span className="text-primary"> What </span>You Stand to Gain with
-          <span className="text-primary"> Herrands .</span>{" "}
+          <span className="text-primary"> Herrands</span>{" "}
         </h3>
 
         <div

@@ -122,37 +122,34 @@ const Navbar = () => {
           </li> */}
 
             <ScrollLink
-              to="download-section"
+              to="/agent"
               smooth={true}
               duration={5}
-              onClick={() =>
-                window.open(
-                  "https://play.google.com/store/apps/details?id=com.herrands",
-                  "_blank"
-                )
-              }
+              // onClick={() =>
+              //   window.open(
+              //     "https://play.google.com/store/apps/details?id=com.herrands",
+              //     "_blank"
+              //   )
+              // }
               offset={scrollOffset}
             >
               <div className="nav-login nnon">
-                <Link
-                  className="login-up "
-                  to="https://play.google.com/store/apps/details?id=com.herrands"
-                >
+                <Link className="login-up " to="/agent">
                   Become a Runner
                 </Link>
               </div>
             </ScrollLink>
           </ul>
 
-          <Link className=" hidden md:flex" to="/#download-section">
+          <Link className=" hidden md:flex" to="/agent">
             <div
               className=" font-poppins  bg-primary border-2 border-primary text-white p-3 font-[500] rounded-2xl hover:bg-white hover:text-primary   cursor-pointer "
-              onClick={() =>
-                window.open(
-                  "https://play.google.com/store/apps/details?id=com.herrands",
-                  "_blank"
-                )
-              }
+              // onClick={() =>
+              //   window.open(
+              //     "https://play.google.com/store/apps/details?id=com.herrands",
+              //     "_blank"
+              //   )
+              // }
             >
               Become a Runner
             </div>
