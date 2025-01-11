@@ -15,6 +15,7 @@ const AboutSection = () => {
         >
           <div className="left-side-about">
             <div
+              data-aos="flip-up"
               className="relative  md:max-w-6xl mx-auto md:h-[500px]   w-full"
               style={{ paddingTop: "56.25%" /* 16:9 Aspect Ratio */ }}
             >
@@ -28,13 +29,13 @@ const AboutSection = () => {
               ></iframe>
             </div>
           </div>
-          <div className="right-side-about ">
+          <div data-aos="fade-up" className="right-side-about ">
             <div className=" font-poppins font-[600] md:text-[38px]  text-5xl text-left">
               What To <span className="text-primary"> Know About</span>
               <br></br> Herrands
             </div>
 
-            <div className=" md:text-[18px]  text-[15px] text-gray-500  py-8">
+            <div className=" md:text-[18px]  text-[15px] text-gray-500  py-8 ">
               Herrands is a P2P time-sharing app for busy people who want to
               regain valuable time and enjoy more convenience. Our platform
               connects you with reliable runners who will run your errands, so
@@ -59,7 +60,7 @@ const AboutSection = () => {
           className=" flex font-poppins mt-[100px]  md:flex-row flex-col-reverse    gap-[100px] "
           id="about-section"
         >
-          <div className="right-side-about ">
+          <div data-aos="zoom-in" className="right-side-about ">
             <div className=" font-poppins font-[600]  md:text-[38px]  text-5xl text-left md:block hidden">
               <span className="text-primary">Easy .</span> Fast .{" "}
               <span className="text-primary">Reliable . </span>Safe !
@@ -85,7 +86,7 @@ const AboutSection = () => {
               Download App
             </button>
           </div>
-          <div className=" md:w-[50%]  w-full] mx-auto">
+          <div data-aos="flip-up" className=" md:w-[50%]  w-full] mx-auto">
             <div className=" font-poppins font-[600]  md:text-[38px]  text-5xl text-left md:hidden  block ">
               <span className="text-primary">Easy .</span> Fast .{" "}
               <span className="text-primary">Reliable . </span>Safe !

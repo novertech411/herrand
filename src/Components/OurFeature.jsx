@@ -16,14 +16,23 @@ const OurFeature = () => {
   const [activeTab, setActiveTab] = useState("runner");
 
   return (
-    <div className="our-feature-container bg-blue-100 py-[100px]">
+    <div
+      className="our-feature-container bg-blue-100 py-[100px]"
+      id="how-it-works-section"
+    >
       <div className="our-feature-head">
-        <h2 className="font-[600] md:text-[38px]  text-5xl font-poppins  ">
+        <h2
+          data-aos="flip-left"
+          className="font-[600] md:text-[38px]  text-5xl font-poppins  "
+        >
           How <span className="text-primary"> Herrands </span> Works
         </h2>
       </div>
 
-      <div className="bg-[#cbe2fc]  border-8  border-6 border-[#cbe2fc] rounded-full    md:w-[430px]   w-[300px] md::h-[80px] h-[65px] justify-between flex flex-wrap text-white mx-auto   ">
+      <div
+        data-aos="fade-right"
+        className="bg-[#cbe2fc] mt-[6rem]  mb-[9rem] border-8  border-6 border-[#cbe2fc] rounded-full    md:w-[430px]   w-[300px] md::h-[80px] h-[65px] justify-between flex flex-wrap text-white mx-auto   "
+      >
         {/* Runner Tab */}
         <div
           className={`rounded-full md:text-[24px]  text-[18px] font-poppins font-[500]    px-[6%]  flex items-center cursor-pointer ${

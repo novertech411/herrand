@@ -9,10 +9,10 @@ function RunnersComp() {
   return (
     <div>
       <div className="about-section-container font-poppins">
-        <div className="left-side-about md:flex   hidden ">
+        <div data-aos="flip-up" className="left-side-about md:flex   hidden ">
           <img src={phone} alt="" />
         </div>
-        <div className="md:w-[65%] w-full relative">
+        <div data-aos="fade-up" className="md:w-[65%] w-full relative">
           <div className="text-primary md:text-[30px] text-[20px] font-poppins  font-[600] mb-11 md:ml-0  ml-10">
             Enjoy convenience and more free time in 4 easy steps
           </div>

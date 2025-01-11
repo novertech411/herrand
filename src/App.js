@@ -16,6 +16,11 @@ import { Privacy } from "./Pages/Privacy";
 import { Safety } from "./Pages/Safety";
 import { Guides } from "./Pages/Guides";
 import Deletion from "./Pages/Deletion";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
+
 function ScrollToTop() {
   const { pathname } = useLocation();
 

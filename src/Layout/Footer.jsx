@@ -23,7 +23,7 @@ const Footer = ({ handleTermsOpenClick, handlePrivacyOpenClick }) => {
       <Container>
         <div className=" font-poppins" id="footer">
           <div className="flex text-[20px] text-white  justify-evenly  gap-11   md:flex-row flex-col     ">
-            <div className="w-[350px]">
+            <div data-aos="zoom-out-up" className="w-[350px]">
               <div className="bg-white rounded-xl p-3 flex-wrap  w-[200px] mb-7">
                 {" "}
                 <img className="  " src={logo} alt="" />{" "}
@@ -36,7 +36,10 @@ const Footer = ({ handleTermsOpenClick, handlePrivacyOpenClick }) => {
                 Herrands as a runner!
               </p>
             </div>
-            <div className="w-[200px] text-[20px] no-underline">
+            <div
+              data-aos="zoom-out-up"
+              className="w-[200px] text-[20px] no-underline"
+            >
               <h2 className=" font-poppins  font-[600px] text-[25px] mb-7">
                 Company{" "}
               </h2>
@@ -58,7 +61,7 @@ const Footer = ({ handleTermsOpenClick, handlePrivacyOpenClick }) => {
                 <p>Safety for Senders</p>
               </Link>
             </div>
-            <div className="w-[200px]">
+            <div data-aos="zoom-out-up" className="w-[200px]">
               <h2 className=" font-poppins  font-[600px] text-[25px] mb-7 gap-11">
                 Contacts US{" "}
               </h2>

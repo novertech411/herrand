@@ -12,13 +12,19 @@ const OurApp = () => {
   return (
     <div className="">
       <Container>
-        <h3 className=" font-poppins  text-center text-black md:text-[38px] text-5xl font-[600] mt-[200px] my-11 ">
+        <h3
+          data-aos="flip-left"
+          className=" font-poppins  text-center text-black md:text-[38px] text-5xl font-[600] mt-[200px] my-11 "
+        >
           {" "}
           <span className="text-primary"> What </span>You Stand to Gain with
           <span className="text-primary"> Herrands .</span>{" "}
         </h3>
 
-        <div className="bg-[#f5f8ff]  border-8  border-6 border-[#f5f8ff] rounded-full    md:w-[430px]   w-[300px] md::h-[80px] h-[65px] justify-between flex flex-wrap text-white mx-auto   ">
+        <div
+          data-aos="fade-right"
+          className="bg-[#f5f8ff]  border-8  border-6 border-[#f5f8ff] rounded-full    md:w-[430px]   w-[300px] md::h-[80px] h-[65px] justify-between flex flex-wrap text-white mx-auto   "
+        >
           {/* Runner Tab */}
           <div
             className={`rounded-full md:text-[24px]  text-[18px] font-poppins font-[500] px-[6%] flex items-center cursor-pointer ${
@@ -44,7 +50,7 @@ const OurApp = () => {
           </div>
         </div>
 
-        <div className="mt-10 text-center">
+        <div data-aos="zoom-in-up" className="mt-10 text-center  ">
           {activeTab === "runner" && <BenefitRunner />}
           {activeTab === "sender" && <BenefitSender />}
         </div>

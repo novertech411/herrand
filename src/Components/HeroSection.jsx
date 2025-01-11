@@ -14,7 +14,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className=" relative w-full  overflow-hidden  pb-[100px]">
+    <div className=" relative w-full  overflow-hidden  pb-[70px]">
       <Container>
         <div className="">
           <div className=" md:w-[55%] pt-10 sm:w-[80%] lg:pt-10">
@@ -56,6 +56,8 @@ const HeroSection = () => {
           </div>
           <div className="w-[65%]    bg-black   z-20">
             <img
+              data-aos="fade-up"
+              data-aos-duration="3000"
               className=" absolute  right-0 w-[45%] top-0   md:flex hidden"
               src={heropic}
               alt=""

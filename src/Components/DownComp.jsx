@@ -19,7 +19,10 @@ const DownComp = () => {
           {/* <img className="absolute z-0 " src={fotbg} alt="" /> */}
 
           <div className=" ">
-            <div className="md:w-[50%] ml-1 w-[90%]  md:mx-1  font-poppins text-white    ">
+            <div
+              data-aos="fade-right"
+              className="md:w-[50%] ml-1 w-[90%]  md:mx-1  font-poppins text-white    "
+            >
               <div className=" text-[20px]">
                 Ready to make time for what matters most to you? Need more time
                 to focus on your goals? Or you want to convert your time into
@@ -30,7 +33,7 @@ const DownComp = () => {
                 Download Herrands Now!
               </div>
             </div>
-            <div className=" ">
+            <div data-aos="fade-up-right" className=" ">
               <div className=" md:w-full  mx-auto w-[90%] flex   md:flex-row flex-col text-white text-[18px] gap-4  md:ml-[80px] mt-10 ">
                 <div
                   className="apple-down-bx w-[180px]     "
@@ -66,6 +69,8 @@ const DownComp = () => {
             </div>
             <div className="   w-[40%]">
               <img
+                data-aos="fade-up"
+                data-aos-duration="3000"
                 className="absolute   w-[25%] right-0 bottom-0"
                 src={footer1}
                 alt=""
