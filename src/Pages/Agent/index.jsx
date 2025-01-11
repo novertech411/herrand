@@ -17,11 +17,37 @@ import DownComp from "../../Components/DownComp";
 import RunnersComp from "../../Components/RunnersComp";
 import Container from "../../Components/Container";
 import CustomerComp from "../../Components/CustomerComp";
+import BenefitRunner from "../../Components/BenefitRunner";
 
 const Agent = () => {
   return (
     <div>
       <Navbar />
+      <Container>
+        <div className=" mb-[9rem]">
+          <h3
+            data-aos="flip-left"
+            className=" font-poppins  text-center text-black md:text-[38px] text-5xl font-[600] mt-[200px] my-11 "
+          >
+            {" "}
+            <span className="text-primary"> What </span>You Stand to{" "}
+            <span className="text-primary">Gain </span> as a
+            <span className="text-primary"> Runner</span>{" "}
+          </h3>
+
+          <div
+            data-aos="flip-right"
+            className=" md:w-[60%] w-[90%] mx-auto md:text-[22px]  text-[15px] text-gray-500  py-8 text-center  "
+          >
+            Are you looking for a flexible way to earn extra income while
+            helping others? Join Herrands as a runner and enjoy the freedom of
+            setting your own schedule, meeting new people, and making a
+            difference in your community.
+          </div>
+
+          <BenefitRunner />
+        </div>
+      </Container>
 
       <div className="bg-blue-200">
         <Container>

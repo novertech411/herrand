@@ -15,7 +15,7 @@ const DownComp = () => {
   return (
     <div className=" translate-y-[12rem]">
       <Container>
-        <div className="   bg-center  bg-cover relative bg-footerbg   overflow-hidden  rounded-2xl md:p-[100px]  py-[100px]  ">
+        <div className="   bg-center  bg-cover relative bg-footerbg   overflow-hidden  rounded-2xl md:p-[100px]  px-8 py-[100px]  ">
           {/* <img className="absolute z-0 " src={fotbg} alt="" /> */}
 
           <div className=" ">
