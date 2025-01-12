@@ -49,7 +49,13 @@ const Agent = () => {
         </div>
       </Container>
 
-      <div className="bg-blue-200">
+      <div className="bg-blue-200 pt-11">
+        <h2
+          data-aos="flip-left"
+          className="font-[600] md:text-[38px]  text-5xl font-poppins  my-[50px] text-center "
+        >
+          How <span className="text-primary"> Herrands </span> Works
+        </h2>
         <Container>
           <CustomerComp />
         </Container>

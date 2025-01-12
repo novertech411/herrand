@@ -62,8 +62,8 @@ const AboutSection = () => {
         >
           <div data-aos="zoom-in" className="right-side-about ">
             <div className=" font-poppins font-[600]  md:text-[38px]  text-5xl text-left md:block hidden">
-              <span className="text-primary">Easy .</span> Fast .{" "}
-              <span className="text-primary">Reliable . </span>Safe !
+              <span className="text-primary">Easy. </span> Fast.{" "}
+              <span className="text-primary"> Reliable. </span> Safe!
             </div>
             <div className=" md:text-[18px] text-[15px] text-gray-500  py-8 ">
               Herrands gives you all the time you need to do what you want. Our

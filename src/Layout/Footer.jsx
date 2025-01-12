@@ -31,10 +31,23 @@ const Footer = ({ handleTermsOpenClick, handlePrivacyOpenClick }) => {
 
               <p> Save time. Earn Money. Live Better</p>
 
-              <p className="mt-[80px]">
+              <p className="mt-[40px]">
                 Are you looking for a flexible way to earn extra income? Join
                 Herrands as a runner!
               </p>
+              <Link className=" hidden md:flex" to="/agent">
+                <div
+                  className=" font-poppins  bg-primary border-2 border-primary text-white p-3 font-[500] rounded-2xl hover:bg-white hover:text-primary   cursor-pointer "
+                  // onClick={() =>
+                  //   window.open(
+                  //     "https://play.google.com/store/apps/details?id=com.herrands",
+                  //     "_blank"
+                  //   )
+                  // }
+                >
+                  Become a Runner
+                </div>
+              </Link>
             </div>
             <div
               data-aos="zoom-out-up"
